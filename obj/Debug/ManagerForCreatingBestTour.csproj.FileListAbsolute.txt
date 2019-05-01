@@ -1,9 +1,0 @@
-C:\Users\VINI\Desktop\KPI\TA\prodgect\ManagerForCreatingBestTour\bin\Debug\ManagerForCreatingBestTour.exe.config
-C:\Users\VINI\Desktop\KPI\TA\prodgect\ManagerForCreatingBestTour\bin\Debug\ManagerForCreatingBestTour.exe
-C:\Users\VINI\Desktop\KPI\TA\prodgect\ManagerForCreatingBestTour\bin\Debug\ManagerForCreatingBestTour.pdb
-C:\Users\VINI\Desktop\KPI\TA\prodgect\ManagerForCreatingBestTour\obj\Debug\ManagerForCreatingBestTour.csprojAssemblyReference.cache
-C:\Users\VINI\Desktop\KPI\TA\prodgect\ManagerForCreatingBestTour\obj\Debug\ManagerForCreatingBestTour.Properties.Resources.resources
-C:\Users\VINI\Desktop\KPI\TA\prodgect\ManagerForCreatingBestTour\obj\Debug\ManagerForCreatingBestTour.csproj.GenerateResource.cache
-C:\Users\VINI\Desktop\KPI\TA\prodgect\ManagerForCreatingBestTour\obj\Debug\ManagerForCreatingBestTour.csproj.CoreCompileInputs.cache
-C:\Users\VINI\Desktop\KPI\TA\prodgect\ManagerForCreatingBestTour\obj\Debug\ManagerForCreatingBestTour.exe
-C:\Users\VINI\Desktop\KPI\TA\prodgect\ManagerForCreatingBestTour\obj\Debug\ManagerForCreatingBestTour.pdb
