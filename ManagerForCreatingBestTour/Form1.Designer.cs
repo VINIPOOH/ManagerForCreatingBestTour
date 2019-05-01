@@ -5,6 +5,19 @@
         /// <summary>
         /// Обязательная переменная конструктора.
         /// </summary>
+        /// смчсмичсм
+        /// чс
+        /// мчс
+        /// м
+        /// чсм
+        /// чсм
+        /// чс
+        /// м
+        /// чсм
+        /// чс
+        /// м
+        /// чсмчситимьт
+        /// 
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
