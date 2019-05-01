@@ -859,7 +859,7 @@
         <dia:point val="20.3853,-13.9625"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="19.6353,-14.7625;24.5496,-6.65"/>
+        <dia:rectangle val="19.6353,-14.7125;24.5496,-5.85"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
@@ -930,7 +930,7 @@
         <dia:point val="11.154,-20.4226"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="11.104,-21.2226;15.2997,-13.1625"/>
+        <dia:rectangle val="11.104,-20.4726;15.2997,-12.3625"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
@@ -1560,7 +1560,7 @@
         <dia:point val="41.9997,-0.3"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="39.0553,-21.25;42.7497,0.5"/>
+        <dia:rectangle val="39.0553,-20.5;42.7497,1.3"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
@@ -1631,7 +1631,7 @@
         <dia:point val="30.4904,-7.45"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="30.4404,-21.25;33.9497,-6.65"/>
+        <dia:rectangle val="30.4404,-20.5;33.9497,-5.85"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
@@ -1666,7 +1666,7 @@
         <dia:point val="1.5146,-8.58126"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="1.4646,-8.63126;12.8446,23.7687"/>
+        <dia:rectangle val="1.4646,-8.63126;12.8446,23.0687"/>
       </dia:attribute>
       <dia:attribute name="elem_corner">
         <dia:point val="1.5146,-8.58126"/>
@@ -1675,7 +1675,7 @@
         <dia:real val="11.279999999999999"/>
       </dia:attribute>
       <dia:attribute name="elem_height">
-        <dia:real val="32.299999999999997"/>
+        <dia:real val="31.599999999999998"/>
       </dia:attribute>
       <dia:attribute name="name">
         <dia:string>#WayCreator#</dia:string>
@@ -1684,7 +1684,7 @@
         <dia:string>##</dia:string>
       </dia:attribute>
       <dia:attribute name="comment">
-        <dia:string>#клас  статический .создающий путь между городами. Возвращает список городов сквозь которые прозодит маршрут. С помощю алгоритма дейкстры находит етот маршрут.#</dia:string>
+        <dia:string>#клас создающий путь между городами. Возвращает список городов сквозь которые прозодит маршрут. С помощю алгоритма дейкстры находит етот маршрут.#</dia:string>
       </dia:attribute>
       <dia:attribute name="abstract">
         <dia:boolean val="false"/>
@@ -1920,7 +1920,7 @@
         <dia:point val="24.55,1.4"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="12.7949,0.6;24.6,8.36874"/>
+        <dia:rectangle val="12.7949,1.35;24.6,8.81874"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
@@ -1928,8 +1928,8 @@
       <dia:attribute name="orth_points">
         <dia:point val="24.55,1.4"/>
         <dia:point val="18.6975,1.4"/>
-        <dia:point val="18.6975,7.56874"/>
-        <dia:point val="12.8449,7.56874"/>
+        <dia:point val="18.6975,7.21874"/>
+        <dia:point val="12.8449,7.21874"/>
       </dia:attribute>
       <dia:attribute name="orth_orient">
         <dia:enum val="0"/>
@@ -2213,19 +2213,19 @@
         <dia:boolean val="false"/>
       </dia:attribute>
       <dia:attribute name="obj_pos">
-        <dia:point val="7.19404,32.5954"/>
+        <dia:point val="7.19404,32.5953"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="7.1046,23.7192;7.67432,33.3954"/>
+        <dia:rectangle val="7.1046,23.0192;7.67432,34.1953"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
       </dia:attribute>
       <dia:attribute name="orth_points">
-        <dia:point val="7.19404,32.5954"/>
-        <dia:point val="7.19404,28.1823"/>
-        <dia:point val="7.1546,28.1823"/>
-        <dia:point val="7.1546,23.7692"/>
+        <dia:point val="7.19404,32.5953"/>
+        <dia:point val="7.19404,27.8323"/>
+        <dia:point val="7.1546,27.8323"/>
+        <dia:point val="7.1546,23.0692"/>
       </dia:attribute>
       <dia:attribute name="orth_orient">
         <dia:enum val="1"/>
@@ -2284,16 +2284,16 @@
         <dia:boolean val="false"/>
       </dia:attribute>
       <dia:attribute name="obj_pos">
-        <dia:point val="7.19404,32.5954"/>
+        <dia:point val="7.19404,32.5953"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="7.14404,28.3004;47.6975,33.3954"/>
+        <dia:rectangle val="7.14404,28.3004;47.6975,34.1953"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
       </dia:attribute>
       <dia:attribute name="orth_points">
-        <dia:point val="7.19404,32.5954"/>
+        <dia:point val="7.19404,32.5953"/>
         <dia:point val="7.19404,30.4729"/>
         <dia:point val="47.4975,30.4729"/>
         <dia:point val="47.4975,28.3504"/>
@@ -2358,7 +2358,7 @@
         <dia:point val="27.495,14.15"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="7.14404,14.1;27.695,33.3956"/>
+        <dia:rectangle val="7.14404,14.1;27.695,34.1956"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
@@ -2387,116 +2387,6 @@
         <dia:connection handle="0" to="O1" connection="6"/>
         <dia:connection handle="1" to="O11" connection="16"/>
       </dia:connections>
-    </dia:object>
-    <dia:object type="UML - Class" version="0" id="O15">
-      <dia:attribute name="obj_pos">
-        <dia:point val="22.3734,33.568"/>
-      </dia:attribute>
-      <dia:attribute name="obj_bb">
-        <dia:rectangle val="22.3234,33.518;28.1734,44.918"/>
-      </dia:attribute>
-      <dia:attribute name="elem_corner">
-        <dia:point val="22.3734,33.568"/>
-      </dia:attribute>
-      <dia:attribute name="elem_width">
-        <dia:real val="5.75"/>
-      </dia:attribute>
-      <dia:attribute name="elem_height">
-        <dia:real val="11.300000000000001"/>
-      </dia:attribute>
-      <dia:attribute name="name">
-        <dia:string>#MapTerminal#</dia:string>
-      </dia:attribute>
-      <dia:attribute name="stereotype">
-        <dia:string>##</dia:string>
-      </dia:attribute>
-      <dia:attribute name="comment">
-        <dia:string>#Терминал с подсвечеными городами итогового маршрута. ПОнадобится тьма свичькейсов или ифоф для подкраски кажхдого города. Столько кейсов сколько будет городов#</dia:string>
-      </dia:attribute>
-      <dia:attribute name="abstract">
-        <dia:boolean val="false"/>
-      </dia:attribute>
-      <dia:attribute name="suppress_attributes">
-        <dia:boolean val="false"/>
-      </dia:attribute>
-      <dia:attribute name="suppress_operations">
-        <dia:boolean val="false"/>
-      </dia:attribute>
-      <dia:attribute name="visible_attributes">
-        <dia:boolean val="true"/>
-      </dia:attribute>
-      <dia:attribute name="visible_operations">
-        <dia:boolean val="true"/>
-      </dia:attribute>
-      <dia:attribute name="visible_comments">
-        <dia:boolean val="true"/>
-      </dia:attribute>
-      <dia:attribute name="wrap_operations">
-        <dia:boolean val="true"/>
-      </dia:attribute>
-      <dia:attribute name="wrap_after_char">
-        <dia:int val="40"/>
-      </dia:attribute>
-      <dia:attribute name="comment_line_length">
-        <dia:int val="17"/>
-      </dia:attribute>
-      <dia:attribute name="comment_tagging">
-        <dia:boolean val="false"/>
-      </dia:attribute>
-      <dia:attribute name="line_width">
-        <dia:real val="0.10000000000000001"/>
-      </dia:attribute>
-      <dia:attribute name="line_color">
-        <dia:color val="#000000"/>
-      </dia:attribute>
-      <dia:attribute name="fill_color">
-        <dia:color val="#ffffff"/>
-      </dia:attribute>
-      <dia:attribute name="text_color">
-        <dia:color val="#000000"/>
-      </dia:attribute>
-      <dia:attribute name="normal_font">
-        <dia:font family="monospace" style="0" name="Courier"/>
-      </dia:attribute>
-      <dia:attribute name="abstract_font">
-        <dia:font family="monospace" style="0" name="Courier"/>
-      </dia:attribute>
-      <dia:attribute name="polymorphic_font">
-        <dia:font family="monospace" style="0" name="Courier"/>
-      </dia:attribute>
-      <dia:attribute name="classname_font">
-        <dia:font family="sans" style="80" name="Helvetica-Bold"/>
-      </dia:attribute>
-      <dia:attribute name="abstract_classname_font">
-        <dia:font family="sans" style="0" name="Helvetica"/>
-      </dia:attribute>
-      <dia:attribute name="comment_font">
-        <dia:font family="sans" style="0" name="Helvetica"/>
-      </dia:attribute>
-      <dia:attribute name="normal_font_height">
-        <dia:real val="0.80000000000000004"/>
-      </dia:attribute>
-      <dia:attribute name="polymorphic_font_height">
-        <dia:real val="0.80000000000000004"/>
-      </dia:attribute>
-      <dia:attribute name="abstract_font_height">
-        <dia:real val="0.80000000000000004"/>
-      </dia:attribute>
-      <dia:attribute name="classname_font_height">
-        <dia:real val="1"/>
-      </dia:attribute>
-      <dia:attribute name="abstract_classname_font_height">
-        <dia:real val="1"/>
-      </dia:attribute>
-      <dia:attribute name="comment_font_height">
-        <dia:real val="0.69999999999999996"/>
-      </dia:attribute>
-      <dia:attribute name="attributes"/>
-      <dia:attribute name="operations"/>
-      <dia:attribute name="template">
-        <dia:boolean val="false"/>
-      </dia:attribute>
-      <dia:attribute name="templates"/>
     </dia:object>
   </dia:layer>
 </dia:diagram>
