@@ -1,0 +1,9 @@
+D:\Polzovateli\LEXA-Tima\Projects C#\ManagerForCreatingBestTour\ManagerForCreatingBestTour\bin\Debug\ManagerForCreatingBestTour.exe.config
+D:\Polzovateli\LEXA-Tima\Projects C#\ManagerForCreatingBestTour\ManagerForCreatingBestTour\bin\Debug\ManagerForCreatingBestTour.exe
+D:\Polzovateli\LEXA-Tima\Projects C#\ManagerForCreatingBestTour\ManagerForCreatingBestTour\bin\Debug\ManagerForCreatingBestTour.pdb
+D:\Polzovateli\LEXA-Tima\Projects C#\ManagerForCreatingBestTour\ManagerForCreatingBestTour\obj\Debug\ManagerForCreatingBestTour.csprojAssemblyReference.cache
+D:\Polzovateli\LEXA-Tima\Projects C#\ManagerForCreatingBestTour\ManagerForCreatingBestTour\obj\Debug\ManagerForCreatingBestTour.Properties.Resources.resources
+D:\Polzovateli\LEXA-Tima\Projects C#\ManagerForCreatingBestTour\ManagerForCreatingBestTour\obj\Debug\ManagerForCreatingBestTour.csproj.GenerateResource.cache
+D:\Polzovateli\LEXA-Tima\Projects C#\ManagerForCreatingBestTour\ManagerForCreatingBestTour\obj\Debug\ManagerForCreatingBestTour.csproj.CoreCompileInputs.cache
+D:\Polzovateli\LEXA-Tima\Projects C#\ManagerForCreatingBestTour\ManagerForCreatingBestTour\obj\Debug\ManagerForCreatingBestTour.exe
+D:\Polzovateli\LEXA-Tima\Projects C#\ManagerForCreatingBestTour\ManagerForCreatingBestTour\obj\Debug\ManagerForCreatingBestTour.pdb
