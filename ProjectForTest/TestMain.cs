@@ -21,6 +21,7 @@ namespace ProjectForTest
             tl.PushFirst(city3);
             tl.PushFirst(city4);
             tl.PushMidle(city2, 3);
+            
             //tl.DelFirst();
             //tl.DelLast();
             

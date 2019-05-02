@@ -283,47 +283,41 @@ namespace ManagerForCreatingBestTour
                 current = current.pNext;
             }
         }
-        //public City findIndex(int index)
-        //{
-        //    if ((Size - 1) / 2 >= index)
-        //    {
-        //        int counter = 0;
-        //        Node link = this.head;
 
-        //        while (link != null)
-        //        {
-        //            if (counter == index)
-        //            {
-        //                return link.data;
-        //            }
-        //            else { return new City(null, 0, 0); }
-        //            link = link.pNext;
-        //            counter++;
+        public void QuickSort1(Node pHead, Node pTail)
+        {
+            if (pHead == pTail)
+                return;
+            Node pivot = pHead;
+            Node current = pHead.pNext;
 
-        //        }
-        //    }
-        //    else if (index == 0)
-        //    {
-        //        return head.data;
-        //    }
-        //    else
-        //    {
-        //        int counter = Size - 1;
-        //        Node link = this.last;
-        //        while (link != null)
-        //        {
-        //            if (counter == index)
-        //            {
-        //                return link.data;
-        //            }
-        //            else { return new City(null, 0, 0); }
-        //            link = link.pPrev;
-        //            counter--;
+            Node help = current;
 
-        //        }
+        }
+        
+        public void QuickSort()
+        {
+            Node pivot = last;
+            Node first = head;
+            if(this.Size > 1)
+            {
+                TwoWayLinkedList listMorePivot = new TwoWayLinkedList();
+                TwoWayLinkedList listLessPivot = new TwoWayLinkedList();
+                foreach (City city in this)
+                {
+                    if (city.AmountPeople >= pivot.data.AmountPeople)
+                    {
+                        listMorePivot.PushFirst(city);
+                    }
+                    else
+                    {
+                        listLessPivot.PushFirst(city);
+                    }
+                }
+            }
+        }
 
-        //    }
-        //}
+
         // получить количество елементов в списке
         int GetSize() { return Size; }
         City Getlust() { return last.data; }
