@@ -43,15 +43,16 @@ namespace ManagerForCreatingBestTour
             }
             else
             {
-                Node link = new Node(data, head);//в сылку мы передаем голову	
+                Node link = new Node(data, head, null);//в сылку мы передаем голову	
                 head.pPrev = link;
                 head = link;
+                //last = link.pNext;
                 Size++;
-                if (Size == 2 && last == null)
-                {
-                    link = head.pNext;
-                    last = link;
-                }
+                //if (Size == 2 )
+                //{
+                    
+                //    last = link.pNext;
+                //}
             }
 
         }
@@ -103,7 +104,7 @@ namespace ManagerForCreatingBestTour
         public void PushLast(City data)
         {
 
-            if (head == null)
+            if (head == null && last == null)
             {
                 PushFirst(data);
             }
@@ -113,6 +114,8 @@ namespace ManagerForCreatingBestTour
                 head.pNext = link;
                 last = link;
                 Size++;
+                Console.WriteLine("das;dasdad");
+               
             }
             else
             {
@@ -284,27 +287,42 @@ namespace ManagerForCreatingBestTour
             }
         }
 
-        public void QuickSort1(Node pHead, Node pTail)
+      
+        public void Concatenation(TwoWayLinkedList secondList)/// В этот метод передаёться список который надо добавить к 
+            ///самому себе лист.конкатенация(лист2) 
         {
-            if (pHead == pTail)
+            // secondHead =  secondList.head;
+            //Node secondTail = secondList.last;
+            if(secondList.Size == 0)
+            {
+                
                 return;
-            Node pivot = pHead;
-            Node current = pHead.pNext;
-
-            Node help = current;
-
+            }
+            else if(this.Size == 0)
+            {
+                head = secondList.head;
+                last = secondList.last;
+            }
+            this.last.pNext = secondList.head;
+            this.last = secondList.last;
         }
-        
+
+
+
         public void QuickSort()
         {
-            Node pivot = last;
-            Node first = head;
+            Node pivot = this.last;
+            //Node first = this.head;
             if(this.Size > 1)
             {
                 TwoWayLinkedList listMorePivot = new TwoWayLinkedList();
                 TwoWayLinkedList listLessPivot = new TwoWayLinkedList();
                 foreach (City city in this)
                 {
+                    if (city == this.last.data)
+                    {
+                        break;
+                    }
                     if (city.AmountPeople >= pivot.data.AmountPeople)
                     {
                         listMorePivot.PushFirst(city);
@@ -314,6 +332,17 @@ namespace ManagerForCreatingBestTour
                         listLessPivot.PushFirst(city);
                     }
                 }
+
+                listMorePivot.QuickSort();
+                listLessPivot.QuickSort();
+                
+                listLessPivot.PushLast(pivot.data);
+                listLessPivot.Concatenation(listMorePivot);
+                 
+                this.head = listLessPivot.head;
+                this.last = listLessPivot.last; // присваевается концу списка меньших за опорный ибо после конкатенации в списке меньших за опроный 
+                // находится уже сума списков больших и меньших за опроных, а список больших остаеться быть таким же и иногода он может  быть пустым.
+                
             }
         }
 
@@ -326,7 +355,7 @@ namespace ManagerForCreatingBestTour
         //City& operator[] (const int index);
         int Size;
         public Node head;
-        Node last;
+        public Node last;
     }
 }
 
