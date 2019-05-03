@@ -25,8 +25,7 @@ namespace ManagerForCreatingBestTour
             if (city.Name == null && city.AmountPeople == 0 && city.AmountPeopleYoungerTwenty == 0)
                 return true;
             return false;
-        }
-        
+        }   
         
         public static bool operator false(City city)
         {

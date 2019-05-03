@@ -57,8 +57,6 @@ namespace ManagerForCreatingBestTour
 
         }
 
-
-
         //добавление элемента в список по указанному индексу
         public void PushMidle(City data, int index)
         {
@@ -263,6 +261,7 @@ namespace ManagerForCreatingBestTour
             }
             return new City(null, 0, 0);//почемуто возвращает -112. решено....
         }
+
         public IEnumerable<City> BackEnumerator()
         {
             Node current = last;
@@ -272,6 +271,7 @@ namespace ManagerForCreatingBestTour
                 current = current.pPrev;
             }
         }
+
         IEnumerator IEnumerable.GetEnumerator()
         {
             return ((IEnumerable)this).GetEnumerator();
@@ -286,7 +286,6 @@ namespace ManagerForCreatingBestTour
                 current = current.pNext;
             }
         }
-
       
         public void Concatenation(TwoWayLinkedList secondList)/// В этот метод передаёться список который надо добавить к 
             ///самому себе лист.конкатенация(лист2) 
@@ -306,8 +305,6 @@ namespace ManagerForCreatingBestTour
             this.last.pNext = secondList.head;
             this.last = secondList.last;
         }
-
-
 
         public void QuickSort()
         {
@@ -345,7 +342,6 @@ namespace ManagerForCreatingBestTour
                 
             }
         }
-
 
         // получить количество елементов в списке
         int GetSize() { return Size; }
