@@ -133,7 +133,7 @@ namespace ManagerForCreatingBestTour
         }
 
         //удаление элемента в списке по указанному индексу
-        public void delMidle(int index)
+        public void DelMidle(int index)
         {
             if (index == 0)
             {
@@ -192,6 +192,32 @@ namespace ManagerForCreatingBestTour
             }
         }
 
+        public int IndexOf(City city)
+        {
+            int index = 0;
+            Node node = head;
+            while (index != Size)
+            {
+                if (city.Name == node.data.Name) return index;
+                node = node.pNext;
+                index++;
+            }
+            throw new Exception("There is no such element");
+        }
+
+        public bool Contains(City city)
+        {
+            Node node = head;
+            int index = 0;
+            while (index != Size)
+            {
+                if (city.Name == node.data.Name) return true;
+                node = node.pNext;
+                index++;
+            }
+            return false;
+        }
+
         //заменить первый
         public void ReplaceFirst(City data)
         {
@@ -236,7 +262,7 @@ namespace ManagerForCreatingBestTour
             last.data = data;
         }
         // очистить список
-        public void clear() {
+        public void Clear() {
             while (Size > 0)
             {
                 Node link = head;
@@ -344,9 +370,9 @@ namespace ManagerForCreatingBestTour
         }
 
         // получить количество елементов в списке
-        int GetSize() { return Size; }
-        City Getlust() { return last.data; }
-        City GetFirst() { return head.data; }
+        public int GetSize() { return Size; }
+        public City Getlast() { return last.data; }
+        public City GetFirst() { return head.data; }
         // перегруженный оператор [] 
         //City& operator[] (const int index);
         int Size;

@@ -9,9 +9,40 @@ namespace ProjectForTest
 {
     class TestMain
     {
-        static void Main(string[] args)
+        static void DijkstraTest()
         {
+            WayCreator wayCreator = new WayCreator();
+            City[] cities = CitiesInfo.Cities();
+            int[,] distances = CitiesInfo.Distances();
 
+            int[] citiesWeight = wayCreator.Dijkstra(distances, 1);
+
+            for (int i = 0; i < cities.Length; i++)
+            {
+                Console.WriteLine(cities[i].Name + " " + citiesWeight[i]);
+            }
+        }
+
+        static void GetRouteTest()
+        {
+            WayCreator wayCreator = new WayCreator();
+            TwoWayLinkedList chosenCities = new TwoWayLinkedList();
+            City startPoint = CitiesInfo.Cities()[1]; // Kiev
+            chosenCities.PushLast(CitiesInfo.Cities()[0]); // Berlin
+            chosenCities.PushLast(CitiesInfo.Cities()[2]); // Minsk
+            chosenCities.PushLast(CitiesInfo.Cities()[3]); // Warsaw
+            chosenCities.PushLast(CitiesInfo.Cities()[5]); // Vien
+            chosenCities.PushLast(CitiesInfo.Cities()[6]); // Budapesht
+            TwoWayLinkedList route = wayCreator.GetRoute(chosenCities, startPoint);
+            int index = 1;
+            foreach (City city in route)
+            {
+                Console.WriteLine(index++.ToString() + ". " + city.Name);
+            }
+        }
+
+        static void TwoWayLinkedListTest()
+        {
             City city1 = new City("1", 9, 4);
             City city2 = new City("2", 14, 8);
             City city3 = new City("3", 231, 2);
@@ -55,10 +86,12 @@ namespace ProjectForTest
             lst.QuickSort();
             foreach (var item in lst)
             {
-               Console.WriteLine(item.AmountPeople);
+                Console.WriteLine(item.AmountPeople);
             }
-           
-           
+
+            Console.WriteLine(tl.IndexOf(city2));
+            Console.WriteLine(tl.Contains(city2));
+            Console.WriteLine(tl.Contains(new City("popopo", 111, 222)));
             //Console.WriteLine(tl.head.data.Name);
             //TwoWayLinkedList empt = new TwoWayLinkedList();
             //TwoWayLinkedList empt2 = new TwoWayLinkedList();
@@ -76,7 +109,19 @@ namespace ProjectForTest
             //{
             //   Console.WriteLine(item.AmountPeople);
             //}
-            Console.ReadLine();
+        }
+
+        static void Main(string[] args)
+        {
+            TwoWayLinkedListTest();
+            Console.WriteLine();
+            DijkstraTest();
+            Console.WriteLine();
+            GetRouteTest();
+            Console.WriteLine();
+
+
+            Console.ReadKey();
         }
     }
 }

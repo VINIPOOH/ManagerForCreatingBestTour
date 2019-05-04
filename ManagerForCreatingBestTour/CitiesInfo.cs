@@ -31,7 +31,7 @@ namespace ManagerForCreatingBestTour
 
         public static int[,] Distances()
         {
-            int inf = int.MaxValue;
+            int inf = int.MaxValue/2;
             int[,] distances = new int[7, 7]
             {/*
                             Berlin Kiev Minsk Vien Prague Warsaw Budapesht
