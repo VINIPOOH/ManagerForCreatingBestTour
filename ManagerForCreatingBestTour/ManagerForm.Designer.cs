@@ -1,6 +1,6 @@
 ﻿namespace ManagerForCreatingBestTour
 {
-    partial class Form1
+    partial class ManagerForm
     {
         /// <summary>
         /// Обязательная переменная конструктора.

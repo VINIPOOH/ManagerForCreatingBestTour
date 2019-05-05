@@ -20,3 +20,14 @@ E:\Programming\C#\CM\ManagerForCreatingBestTour\ProjectForTest\obj\Debug\Project
 E:\Programming\C#\CM\ManagerForCreatingBestTour\ProjectForTest\obj\Debug\ProjectForTest.csproj.CopyComplete
 E:\Programming\C#\CM\ManagerForCreatingBestTour\ProjectForTest\obj\Debug\ProjectForTest.exe
 E:\Programming\C#\CM\ManagerForCreatingBestTour\ProjectForTest\obj\Debug\ProjectForTest.pdb
+C:\Users\VINI\Desktop\KPI\TA\prodgect\ManagerForCreatingBestTour\ProjectForTest\bin\Debug\ProjectForTest.exe.config
+C:\Users\VINI\Desktop\KPI\TA\prodgect\ManagerForCreatingBestTour\ProjectForTest\bin\Debug\ProjectForTest.exe
+C:\Users\VINI\Desktop\KPI\TA\prodgect\ManagerForCreatingBestTour\ProjectForTest\bin\Debug\ProjectForTest.pdb
+C:\Users\VINI\Desktop\KPI\TA\prodgect\ManagerForCreatingBestTour\ProjectForTest\bin\Debug\ManagerForCreatingBestTour.exe
+C:\Users\VINI\Desktop\KPI\TA\prodgect\ManagerForCreatingBestTour\ProjectForTest\bin\Debug\ManagerForCreatingBestTour.pdb
+C:\Users\VINI\Desktop\KPI\TA\prodgect\ManagerForCreatingBestTour\ProjectForTest\bin\Debug\ManagerForCreatingBestTour.exe.config
+C:\Users\VINI\Desktop\KPI\TA\prodgect\ManagerForCreatingBestTour\ProjectForTest\obj\Debug\ProjectForTest.csprojAssemblyReference.cache
+C:\Users\VINI\Desktop\KPI\TA\prodgect\ManagerForCreatingBestTour\ProjectForTest\obj\Debug\ProjectForTest.csproj.CoreCompileInputs.cache
+C:\Users\VINI\Desktop\KPI\TA\prodgect\ManagerForCreatingBestTour\ProjectForTest\obj\Debug\ProjectForTest.csproj.CopyComplete
+C:\Users\VINI\Desktop\KPI\TA\prodgect\ManagerForCreatingBestTour\ProjectForTest\obj\Debug\ProjectForTest.exe
+C:\Users\VINI\Desktop\KPI\TA\prodgect\ManagerForCreatingBestTour\ProjectForTest\obj\Debug\ProjectForTest.pdb

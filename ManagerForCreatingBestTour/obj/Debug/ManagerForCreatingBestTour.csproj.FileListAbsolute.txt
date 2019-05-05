@@ -17,3 +17,13 @@ E:\Programming\C#\CM\ManagerForCreatingBestTour\ManagerForCreatingBestTour\obj\D
 E:\Programming\C#\CM\ManagerForCreatingBestTour\ManagerForCreatingBestTour\obj\Debug\ManagerForCreatingBestTour.exe
 E:\Programming\C#\CM\ManagerForCreatingBestTour\ManagerForCreatingBestTour\obj\Debug\ManagerForCreatingBestTour.pdb
 E:\Programming\C#\CM\ManagerForCreatingBestTour\ManagerForCreatingBestTour\obj\Debug\ManagerForCreatingBestTour.Form1.resources
+C:\Users\VINI\Desktop\KPI\TA\prodgect\ManagerForCreatingBestTour\ManagerForCreatingBestTour\bin\Debug\ManagerForCreatingBestTour.exe.config
+C:\Users\VINI\Desktop\KPI\TA\prodgect\ManagerForCreatingBestTour\ManagerForCreatingBestTour\bin\Debug\ManagerForCreatingBestTour.exe
+C:\Users\VINI\Desktop\KPI\TA\prodgect\ManagerForCreatingBestTour\ManagerForCreatingBestTour\bin\Debug\ManagerForCreatingBestTour.pdb
+C:\Users\VINI\Desktop\KPI\TA\prodgect\ManagerForCreatingBestTour\ManagerForCreatingBestTour\obj\Debug\ManagerForCreatingBestTour.csprojAssemblyReference.cache
+C:\Users\VINI\Desktop\KPI\TA\prodgect\ManagerForCreatingBestTour\ManagerForCreatingBestTour\obj\Debug\ManagerForCreatingBestTour.Properties.Resources.resources
+C:\Users\VINI\Desktop\KPI\TA\prodgect\ManagerForCreatingBestTour\ManagerForCreatingBestTour\obj\Debug\ManagerForCreatingBestTour.csproj.GenerateResource.cache
+C:\Users\VINI\Desktop\KPI\TA\prodgect\ManagerForCreatingBestTour\ManagerForCreatingBestTour\obj\Debug\ManagerForCreatingBestTour.csproj.CoreCompileInputs.cache
+C:\Users\VINI\Desktop\KPI\TA\prodgect\ManagerForCreatingBestTour\ManagerForCreatingBestTour\obj\Debug\ManagerForCreatingBestTour.exe
+C:\Users\VINI\Desktop\KPI\TA\prodgect\ManagerForCreatingBestTour\ManagerForCreatingBestTour\obj\Debug\ManagerForCreatingBestTour.pdb
+C:\Users\VINI\Desktop\KPI\TA\prodgect\ManagerForCreatingBestTour\ManagerForCreatingBestTour\obj\Debug\ManagerForCreatingBestTour.ManagerForm.resources
