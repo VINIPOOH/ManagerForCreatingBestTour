@@ -15,11 +15,23 @@ namespace ProjectForTest
             City[] cities = CitiesInfo.Cities();
             int[,] distances = CitiesInfo.Distances();
 
-            int[] citiesWeight = wayCreator.Dijkstra(distances, 1);
+            int[] citiesWeight = wayCreator.Dijkstra(distances, 3);
 
             for (int i = 0; i < cities.Length; i++)
             {
                 Console.WriteLine(cities[i].Name + " " + citiesWeight[i]);
+            }
+
+            int index = 1;
+
+            foreach (TwoWayLinkedList list in wayCreator.intermediateCities)
+            {
+                Console.Write(index++.ToString() + ". ");
+                foreach (City city in list)
+                {
+                    Console.Write(city.Name + " ");
+                }
+                Console.WriteLine();
             }
         }
 
@@ -27,12 +39,13 @@ namespace ProjectForTest
         {
             WayCreator wayCreator = new WayCreator();
             TwoWayLinkedList chosenCities = new TwoWayLinkedList();
-            City startPoint = CitiesInfo.Cities()[1]; // Kiev
-            chosenCities.PushLast(CitiesInfo.Cities()[0]); // Berlin
-            chosenCities.PushLast(CitiesInfo.Cities()[2]); // Minsk
-            chosenCities.PushLast(CitiesInfo.Cities()[3]); // Warsaw
-            chosenCities.PushLast(CitiesInfo.Cities()[5]); // Vien
+            City startPoint = CitiesInfo.Cities()[0]; // Berlin
+            chosenCities.PushLast(CitiesInfo.Cities()[1]); // Kiev
             chosenCities.PushLast(CitiesInfo.Cities()[6]); // Budapesht
+            chosenCities.PushLast(CitiesInfo.Cities()[2]); // Minsk
+            //chosenCities.PushLast(CitiesInfo.Cities()[3]); // Warsaw
+            chosenCities.PushLast(CitiesInfo.Cities()[5]); // Vien
+            chosenCities.PushLast(CitiesInfo.Cities()[4]); // Prague
             TwoWayLinkedList route = wayCreator.GetRoute(chosenCities, startPoint);
             int index = 1;
             foreach (City city in route)

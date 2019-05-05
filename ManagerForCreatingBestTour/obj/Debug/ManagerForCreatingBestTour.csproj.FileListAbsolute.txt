@@ -16,3 +16,4 @@ E:\Programming\C#\CM\ManagerForCreatingBestTour\ManagerForCreatingBestTour\obj\D
 E:\Programming\C#\CM\ManagerForCreatingBestTour\ManagerForCreatingBestTour\obj\Debug\ManagerForCreatingBestTour.csproj.CoreCompileInputs.cache
 E:\Programming\C#\CM\ManagerForCreatingBestTour\ManagerForCreatingBestTour\obj\Debug\ManagerForCreatingBestTour.exe
 E:\Programming\C#\CM\ManagerForCreatingBestTour\ManagerForCreatingBestTour\obj\Debug\ManagerForCreatingBestTour.pdb
+E:\Programming\C#\CM\ManagerForCreatingBestTour\ManagerForCreatingBestTour\obj\Debug\ManagerForCreatingBestTour.Form1.resources
