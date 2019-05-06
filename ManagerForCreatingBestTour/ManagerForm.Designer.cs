@@ -53,7 +53,7 @@
             this.underTwentyCheckBox = new System.Windows.Forms.CheckBox();
             this.cityNumberCheckBox = new System.Windows.Forms.CheckBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.longGridView = new System.Windows.Forms.DataGridView();
+            this.routeCitiesGridView = new System.Windows.Forms.DataGridView();
             this.sortBtn = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.populationSizeSortCheckBox = new System.Windows.Forms.CheckBox();
@@ -62,14 +62,16 @@
             this.populationSizeSortSecondcheckBox = new System.Windows.Forms.CheckBox();
             this.label8 = new System.Windows.Forms.Label();
             this.secondSortBtn = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.tourCitiesGridView = new System.Windows.Forms.DataGridView();
             this.getWayBtn = new System.Windows.Forms.Button();
             this.mapBtn = new System.Windows.Forms.Button();
+            this.finishedGridView = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.populationTrackBar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.underTwentyTrackBar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cityNumberTrackBar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.longGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.routeCitiesGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tourCitiesGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.finishedGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // populationTrackBar
@@ -82,7 +84,7 @@
             // 
             // underTwentyTrackBar
             // 
-            this.underTwentyTrackBar.Location = new System.Drawing.Point(274, 66);
+            this.underTwentyTrackBar.Location = new System.Drawing.Point(12, 130);
             this.underTwentyTrackBar.Name = "underTwentyTrackBar";
             this.underTwentyTrackBar.Size = new System.Drawing.Size(205, 45);
             this.underTwentyTrackBar.TabIndex = 1;
@@ -91,17 +93,19 @@
             // cityNumberTrackBar
             // 
             this.cityNumberTrackBar.AccessibleDescription = "";
-            this.cityNumberTrackBar.Location = new System.Drawing.Point(547, 66);
+            this.cityNumberTrackBar.Location = new System.Drawing.Point(360, 66);
+            this.cityNumberTrackBar.Maximum = 7;
             this.cityNumberTrackBar.Name = "cityNumberTrackBar";
             this.cityNumberTrackBar.Size = new System.Drawing.Size(205, 45);
             this.cityNumberTrackBar.TabIndex = 2;
+            this.cityNumberTrackBar.TabStop = false;
             this.cityNumberTrackBar.Tag = "";
             this.cityNumberTrackBar.TickStyle = System.Windows.Forms.TickStyle.TopLeft;
             // 
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(232, 9);
+            this.label1.Location = new System.Drawing.Point(139, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(293, 23);
             this.label1.TabIndex = 3;
@@ -110,7 +114,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(271, 32);
+            this.label2.Location = new System.Drawing.Point(178, 32);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(208, 13);
             this.label2.TabIndex = 4;
@@ -128,7 +132,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(343, 98);
+            this.label4.Location = new System.Drawing.Point(81, 162);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(136, 13);
             this.label4.TabIndex = 6;
@@ -137,7 +141,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(669, 98);
+            this.label5.Location = new System.Drawing.Point(482, 98);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(83, 13);
             this.label5.TabIndex = 7;
@@ -146,7 +150,7 @@
             // populationCheckBox
             // 
             this.populationCheckBox.AutoSize = true;
-            this.populationCheckBox.Location = new System.Drawing.Point(599, 129);
+            this.populationCheckBox.Location = new System.Drawing.Point(415, 129);
             this.populationCheckBox.Name = "populationCheckBox";
             this.populationCheckBox.Size = new System.Drawing.Size(97, 17);
             this.populationCheckBox.TabIndex = 8;
@@ -156,7 +160,7 @@
             // underTwentyCheckBox
             // 
             this.underTwentyCheckBox.AutoSize = true;
-            this.underTwentyCheckBox.Location = new System.Drawing.Point(599, 152);
+            this.underTwentyCheckBox.Location = new System.Drawing.Point(415, 152);
             this.underTwentyCheckBox.Name = "underTwentyCheckBox";
             this.underTwentyCheckBox.Size = new System.Drawing.Size(155, 17);
             this.underTwentyCheckBox.TabIndex = 9;
@@ -166,7 +170,7 @@
             // cityNumberCheckBox
             // 
             this.cityNumberCheckBox.AutoSize = true;
-            this.cityNumberCheckBox.Location = new System.Drawing.Point(599, 175);
+            this.cityNumberCheckBox.Location = new System.Drawing.Point(415, 175);
             this.cityNumberCheckBox.Name = "cityNumberCheckBox";
             this.cityNumberCheckBox.Size = new System.Drawing.Size(102, 17);
             this.cityNumberCheckBox.TabIndex = 10;
@@ -176,23 +180,23 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(544, 130);
+            this.label6.Location = new System.Drawing.Point(360, 130);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(44, 13);
             this.label6.TabIndex = 11;
             this.label6.Text = "Find by:";
             // 
-            // longGridView
+            // routeCitiesGridView
             // 
-            this.longGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.longGridView.Location = new System.Drawing.Point(41, 198);
-            this.longGridView.Name = "longGridView";
-            this.longGridView.Size = new System.Drawing.Size(669, 37);
-            this.longGridView.TabIndex = 12;
+            this.routeCitiesGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.routeCitiesGridView.Location = new System.Drawing.Point(12, 196);
+            this.routeCitiesGridView.Name = "routeCitiesGridView";
+            this.routeCitiesGridView.Size = new System.Drawing.Size(553, 37);
+            this.routeCitiesGridView.TabIndex = 12;
             // 
             // sortBtn
             // 
-            this.sortBtn.Location = new System.Drawing.Point(317, 246);
+            this.sortBtn.Location = new System.Drawing.Point(12, 239);
             this.sortBtn.Name = "sortBtn";
             this.sortBtn.Size = new System.Drawing.Size(125, 35);
             this.sortBtn.TabIndex = 13;
@@ -202,7 +206,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(544, 250);
+            this.label7.Location = new System.Drawing.Point(357, 250);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(43, 13);
             this.label7.TabIndex = 14;
@@ -211,7 +215,7 @@
             // populationSizeSortCheckBox
             // 
             this.populationSizeSortCheckBox.AutoSize = true;
-            this.populationSizeSortCheckBox.Location = new System.Drawing.Point(599, 241);
+            this.populationSizeSortCheckBox.Location = new System.Drawing.Point(412, 241);
             this.populationSizeSortCheckBox.Name = "populationSizeSortCheckBox";
             this.populationSizeSortCheckBox.Size = new System.Drawing.Size(97, 17);
             this.populationSizeSortCheckBox.TabIndex = 15;
@@ -221,7 +225,7 @@
             // underTwentySortCheckBox
             // 
             this.underTwentySortCheckBox.AutoSize = true;
-            this.underTwentySortCheckBox.Location = new System.Drawing.Point(599, 264);
+            this.underTwentySortCheckBox.Location = new System.Drawing.Point(412, 264);
             this.underTwentySortCheckBox.Name = "underTwentySortCheckBox";
             this.underTwentySortCheckBox.Size = new System.Drawing.Size(155, 17);
             this.underTwentySortCheckBox.TabIndex = 17;
@@ -231,7 +235,7 @@
             // underTwentySortSecondCheckBox
             // 
             this.underTwentySortSecondCheckBox.AutoSize = true;
-            this.underTwentySortSecondCheckBox.Location = new System.Drawing.Point(599, 420);
+            this.underTwentySortSecondCheckBox.Location = new System.Drawing.Point(412, 370);
             this.underTwentySortSecondCheckBox.Name = "underTwentySortSecondCheckBox";
             this.underTwentySortSecondCheckBox.Size = new System.Drawing.Size(155, 17);
             this.underTwentySortSecondCheckBox.TabIndex = 22;
@@ -241,7 +245,7 @@
             // populationSizeSortSecondcheckBox
             // 
             this.populationSizeSortSecondcheckBox.AutoSize = true;
-            this.populationSizeSortSecondcheckBox.Location = new System.Drawing.Point(599, 397);
+            this.populationSizeSortSecondcheckBox.Location = new System.Drawing.Point(412, 347);
             this.populationSizeSortSecondcheckBox.Name = "populationSizeSortSecondcheckBox";
             this.populationSizeSortSecondcheckBox.Size = new System.Drawing.Size(97, 17);
             this.populationSizeSortSecondcheckBox.TabIndex = 21;
@@ -251,7 +255,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(544, 406);
+            this.label8.Location = new System.Drawing.Point(357, 356);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(43, 13);
             this.label8.TabIndex = 20;
@@ -259,24 +263,24 @@
             // 
             // secondSortBtn
             // 
-            this.secondSortBtn.Location = new System.Drawing.Point(317, 402);
+            this.secondSortBtn.Location = new System.Drawing.Point(12, 345);
             this.secondSortBtn.Name = "secondSortBtn";
             this.secondSortBtn.Size = new System.Drawing.Size(125, 35);
             this.secondSortBtn.TabIndex = 19;
             this.secondSortBtn.Text = "Sort";
             this.secondSortBtn.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // tourCitiesGridView
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(41, 354);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(669, 37);
-            this.dataGridView1.TabIndex = 18;
+            this.tourCitiesGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tourCitiesGridView.Location = new System.Drawing.Point(12, 302);
+            this.tourCitiesGridView.Name = "tourCitiesGridView";
+            this.tourCitiesGridView.Size = new System.Drawing.Size(553, 37);
+            this.tourCitiesGridView.TabIndex = 18;
             // 
             // getWayBtn
             // 
-            this.getWayBtn.Location = new System.Drawing.Point(317, 303);
+            this.getWayBtn.Location = new System.Drawing.Point(143, 239);
             this.getWayBtn.Name = "getWayBtn";
             this.getWayBtn.Size = new System.Drawing.Size(125, 35);
             this.getWayBtn.TabIndex = 23;
@@ -285,31 +289,40 @@
             // 
             // mapBtn
             // 
-            this.mapBtn.Location = new System.Drawing.Point(317, 452);
+            this.mapBtn.Location = new System.Drawing.Point(12, 386);
             this.mapBtn.Name = "mapBtn";
             this.mapBtn.Size = new System.Drawing.Size(125, 35);
             this.mapBtn.TabIndex = 24;
             this.mapBtn.Text = "Build a map";
             this.mapBtn.UseVisualStyleBackColor = true;
             // 
+            // finishedGridView
+            // 
+            this.finishedGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.finishedGridView.Location = new System.Drawing.Point(576, 117);
+            this.finishedGridView.Name = "finishedGridView";
+            this.finishedGridView.Size = new System.Drawing.Size(346, 37);
+            this.finishedGridView.TabIndex = 25;
+            // 
             // ManagerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(764, 499);
+            this.ClientSize = new System.Drawing.Size(934, 430);
+            this.Controls.Add(this.finishedGridView);
             this.Controls.Add(this.mapBtn);
             this.Controls.Add(this.getWayBtn);
             this.Controls.Add(this.underTwentySortSecondCheckBox);
             this.Controls.Add(this.populationSizeSortSecondcheckBox);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.secondSortBtn);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.tourCitiesGridView);
             this.Controls.Add(this.underTwentySortCheckBox);
             this.Controls.Add(this.populationSizeSortCheckBox);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.sortBtn);
-            this.Controls.Add(this.longGridView);
+            this.Controls.Add(this.routeCitiesGridView);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.cityNumberCheckBox);
             this.Controls.Add(this.underTwentyCheckBox);
@@ -327,8 +340,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.populationTrackBar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.underTwentyTrackBar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cityNumberTrackBar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.longGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.routeCitiesGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tourCitiesGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.finishedGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -348,7 +362,7 @@
         private System.Windows.Forms.CheckBox underTwentyCheckBox;
         private System.Windows.Forms.CheckBox cityNumberCheckBox;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.DataGridView longGridView;
+        private System.Windows.Forms.DataGridView routeCitiesGridView;
         private System.Windows.Forms.Button sortBtn;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.CheckBox populationSizeSortCheckBox;
@@ -357,9 +371,10 @@
         private System.Windows.Forms.CheckBox populationSizeSortSecondcheckBox;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button secondSortBtn;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView tourCitiesGridView;
         private System.Windows.Forms.Button getWayBtn;
         private System.Windows.Forms.Button mapBtn;
+        private System.Windows.Forms.DataGridView finishedGridView;
     }
 }
 
