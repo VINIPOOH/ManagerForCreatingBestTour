@@ -49,6 +49,12 @@
   <ItemGroup>
     <Compile Include="CitiesInfo.cs" />
     <Compile Include="City.cs" />
+    <Compile Include="MapFForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MapFForm.designer.cs">
+      <DependentUpon>MapFForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ManagerForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -59,6 +65,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TwoWayLinkedList.cs" />
     <Compile Include="WayCreator.cs" />
+    <EmbeddedResource Include="MapFForm.resx">
+      <DependentUpon>MapFForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ManagerForm.resx">
       <DependentUpon>ManagerForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -83,6 +92,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Properties\Map.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
