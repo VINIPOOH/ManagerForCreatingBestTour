@@ -1,14 +1,14 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BinaryTree
+namespace ManagerForCreatingBestTour
 {
-    class BinaryTree <T>
+    class BinaryTree 
     {
-        private Node<T> root;
+        private Node root;
         public int count { get; set; }
 
         public BinaryTree()
@@ -22,11 +22,16 @@ namespace BinaryTree
             return (root == null);
         }
 
-        public void insert(int key , T value)
+        public void insert(City value)
+        {
+            Hideninsert(GetHash(value),value);
+        }
+
+        private void Hideninsert(int key , City value)
         {
             if (isEmpty())
             {
-                this.root = new Node<T>(key , value);
+                this.root = new Node (key , value);
             }
             else
             {
@@ -36,7 +41,12 @@ namespace BinaryTree
             count++;
         }
 
-        public T search(int key)
+        public bool search(City city)
+        {
+            return (HidenSearch(GetHash(city)));
+        }
+
+        private bool HidenSearch(int key)
         {
             return (root.search(root, key));
         }
@@ -66,13 +76,13 @@ namespace BinaryTree
         //
 
 
-        class Node<T>
+        class Node
         {
             private int key;
-            private T value;
-            public Node<T> leftLeaf, rightLeaf;
+            private City value;
+            public Node leftLeaf, rightLeaf;
 
-            public Node (int key , T value)
+            public Node (int key , City value)
             {
                 this.key = key;
                 this.value = value;
@@ -80,16 +90,16 @@ namespace BinaryTree
                 rightLeaf = null;
             }
 
-            public bool isLeaf(Node<T> node)
+            public bool isLeaf(Node node)
             {
                 return (node.rightLeaf == null && node.leftLeaf == null);
             }
 
-            public  void insertValue(ref Node<T> node , int key , T value)
+            public  void insertValue(ref Node node , int key , City value)
             {
                 if(node == null)
                 {
-                    node = new Node<T>(key,value);
+                    node = new Node(key,value);
                 }
                 else if (node.key < key)
                 {
@@ -101,11 +111,11 @@ namespace BinaryTree
                 }
             }
 
-            public T search(Node<T> node , int toSearch)
+            public bool search(Node node , int toSearch)
             {
                 if(node == null)
                 {
-                    return default(T);
+                    return false;
                 }
                 else if (node.key < toSearch)
                 {
@@ -117,11 +127,11 @@ namespace BinaryTree
                 }
                 else //if (node.key == toSearch)
                 {
-                    return (node.value);
+                    return (true);
                 }
             }
 
-            public void show(Node<T> node)
+            public void show(Node node)
             {
                 if(node == null)
                 {
