@@ -48,6 +48,22 @@ namespace BinaryTree
                 root.show(root);
             }
         }
+        //code imported from Tree.cs
+        private int AmountPeopleYoungerTwenty;
+        private int AmountPeople;
+        private int constant = 31;
+
+        public void BTree(int people, int peopleTwenty)
+        {
+            AmountPeopleYoungerTwenty = peopleTwenty;
+            AmountPeople = people;
+        }
+        public int GetHash(City city)
+        {
+            int toReturn = city.AmountPeople * this.AmountPeople * constant + city.AmountPeopleYoungerTwenty * this.AmountPeopleYoungerTwenty * constant;
+            return toReturn;
+        }
+        //
 
 
         class Node<T>
