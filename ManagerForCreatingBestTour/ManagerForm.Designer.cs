@@ -65,13 +65,14 @@
             this.tourCitiesGridView = new System.Windows.Forms.DataGridView();
             this.getWayBtn = new System.Windows.Forms.Button();
             this.mapBtn = new System.Windows.Forms.Button();
-            this.finishedGridView = new System.Windows.Forms.DataGridView();
+            this.finishGridView = new System.Windows.Forms.DataGridView();
+            this.finishBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.populationTrackBar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.underTwentyTrackBar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cityNumberTrackBar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.routeCitiesGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tourCitiesGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.finishedGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.finishGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // populationTrackBar
@@ -196,12 +197,13 @@
             // 
             // sortBtn
             // 
+            this.sortBtn.BackColor = System.Drawing.SystemColors.Control;
             this.sortBtn.Location = new System.Drawing.Point(12, 239);
             this.sortBtn.Name = "sortBtn";
             this.sortBtn.Size = new System.Drawing.Size(125, 35);
             this.sortBtn.TabIndex = 13;
             this.sortBtn.Text = "Sort";
-            this.sortBtn.UseVisualStyleBackColor = true;
+            this.sortBtn.UseVisualStyleBackColor = false;
             // 
             // label7
             // 
@@ -263,12 +265,13 @@
             // 
             // secondSortBtn
             // 
+            this.secondSortBtn.BackColor = System.Drawing.SystemColors.Control;
             this.secondSortBtn.Location = new System.Drawing.Point(12, 345);
             this.secondSortBtn.Name = "secondSortBtn";
             this.secondSortBtn.Size = new System.Drawing.Size(125, 35);
             this.secondSortBtn.TabIndex = 19;
             this.secondSortBtn.Text = "Sort";
-            this.secondSortBtn.UseVisualStyleBackColor = true;
+            this.secondSortBtn.UseVisualStyleBackColor = false;
             // 
             // tourCitiesGridView
             // 
@@ -280,37 +283,50 @@
             // 
             // getWayBtn
             // 
+            this.getWayBtn.BackColor = System.Drawing.SystemColors.Control;
             this.getWayBtn.Location = new System.Drawing.Point(143, 239);
             this.getWayBtn.Name = "getWayBtn";
             this.getWayBtn.Size = new System.Drawing.Size(125, 35);
             this.getWayBtn.TabIndex = 23;
             this.getWayBtn.Text = "Get directions";
-            this.getWayBtn.UseVisualStyleBackColor = true;
+            this.getWayBtn.UseVisualStyleBackColor = false;
             // 
             // mapBtn
             // 
+            this.mapBtn.BackColor = System.Drawing.SystemColors.Control;
             this.mapBtn.Location = new System.Drawing.Point(12, 386);
             this.mapBtn.Name = "mapBtn";
             this.mapBtn.Size = new System.Drawing.Size(125, 35);
             this.mapBtn.TabIndex = 24;
             this.mapBtn.Text = "Build a map";
-            this.mapBtn.UseVisualStyleBackColor = true;
+            this.mapBtn.UseVisualStyleBackColor = false;
             // 
-            // finishedGridView
+            // finishGridView
             // 
-            this.finishedGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.finishedGridView.Location = new System.Drawing.Point(576, 117);
-            this.finishedGridView.Name = "finishedGridView";
-            this.finishedGridView.Size = new System.Drawing.Size(346, 37);
-            this.finishedGridView.TabIndex = 25;
+            this.finishGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.finishGridView.Location = new System.Drawing.Point(12, 427);
+            this.finishGridView.Name = "finishGridView";
+            this.finishGridView.Size = new System.Drawing.Size(553, 37);
+            this.finishGridView.TabIndex = 25;
+            // 
+            // finishBtn
+            // 
+            this.finishBtn.BackColor = System.Drawing.SystemColors.Control;
+            this.finishBtn.Location = new System.Drawing.Point(12, 470);
+            this.finishBtn.Name = "finishBtn";
+            this.finishBtn.Size = new System.Drawing.Size(125, 35);
+            this.finishBtn.TabIndex = 26;
+            this.finishBtn.Text = "Choose";
+            this.finishBtn.UseVisualStyleBackColor = false;
             // 
             // ManagerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(934, 430);
-            this.Controls.Add(this.finishedGridView);
+            this.ClientSize = new System.Drawing.Size(581, 518);
+            this.Controls.Add(this.finishBtn);
+            this.Controls.Add(this.finishGridView);
             this.Controls.Add(this.mapBtn);
             this.Controls.Add(this.getWayBtn);
             this.Controls.Add(this.underTwentySortSecondCheckBox);
@@ -342,7 +358,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.cityNumberTrackBar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.routeCitiesGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tourCitiesGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.finishedGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.finishGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -374,7 +390,8 @@
         private System.Windows.Forms.DataGridView tourCitiesGridView;
         private System.Windows.Forms.Button getWayBtn;
         private System.Windows.Forms.Button mapBtn;
-        private System.Windows.Forms.DataGridView finishedGridView;
+        private System.Windows.Forms.DataGridView finishGridView;
+        private System.Windows.Forms.Button finishBtn;
     }
 }
 
