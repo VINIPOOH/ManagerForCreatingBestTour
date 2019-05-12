@@ -47,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BinaryTree.cs" />
     <Compile Include="CitiesInfo.cs" />
     <Compile Include="City.cs" />
     <Compile Include="MapFForm.cs">

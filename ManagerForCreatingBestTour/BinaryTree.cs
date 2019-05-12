@@ -6,80 +6,146 @@ using System.Threading.Tasks;
 
 namespace ManagerForCreatingBestTour
 {
-    class BinaryTree 
+    public class BinaryTree 
     {
         private Node root;
-        public int count { get; set; }
+        public int Count { get; set; }
 
         public BinaryTree()
         {
             this.root = null;
-            count = 0;
+            Count = 0;
         }
 
-        public bool isEmpty()
+        public bool IsEmpty()
         {
             return (root == null);
         }
 
-        public void insert(City value)
+        public void Insert(City value)
         {
             Hideninsert(GetHash(value),value);
         }
 
         private void Hideninsert(int key , City value)
         {
-            if (isEmpty())
+            if (IsEmpty())
             {
                 this.root = new Node (key , value);
             }
             else
             {
-                this.root.insertValue(ref this.root, key, value);
+                this.root.InsertValue(ref this.root, key, value);
             }
 
-            count++;
+            Count++;
         }
 
-        public bool search(City city)
+        public bool Search(City city)
         {
             return (HidenSearch(GetHash(city)));
         }
 
         private bool HidenSearch(int key)
         {
-            return (root.search(root, key));
+            return (root.Search(root, key));
         }
 
         public void show()
         {
-            if (!isEmpty())
+            if (!IsEmpty())
             {
                 root.show(root);
             }
         }
-        //code imported from Tree.cs
-        private int AmountPeopleYoungerTwenty;
-        private int AmountPeople;
-        private int constant = 31;
+        //code imported from Tree.cs (and changed by sany_nikonov)
+        
+        private const int constant = 31;
 
-        public void BTree(int people, int peopleTwenty)
-        {
-            AmountPeopleYoungerTwenty = peopleTwenty;
-            AmountPeople = people;
-        }
         public int GetHash(City city)
         {
-            int toReturn = city.AmountPeople * this.AmountPeople * constant + city.AmountPeopleYoungerTwenty * this.AmountPeopleYoungerTwenty * constant;
+            int toReturn = city.AmountPeople * constant + city.AmountPeopleYoungerTwenty * constant;
             return toReturn;
         }
         //
+        /*
+        public TwoWayLinkedList TreeTraversal(int minPopulation, int maxPopulation, int citiesQuantity)
+        {
+            Node node = root;
+            int citiesLeft = citiesQuantity;
+            if (!node.IsLeaf())
+            {
+                if (node.rightLeaf != null)
+                {
+                    
+                }
+            }
+            
+        }
+        
+        private TwoWayLinkedList HiddenTreeTraversal(int minPopulation, int maxPopulation, int citiesQuantity, Node node)
+        {
+            Node node = root;
+            int citiesLeft = citiesQuantity;
+            if (!node.IsLeaf())
+            {
+                if (node.rightLeaf != null)
+                {
+                    HiddenTreeTraversal(minPopulation, maxPopulation, citiesQuantity, node.rightLeaf);
+                }
+                else
+                {
+                    HiddenTreeTraversal(minPopulation, maxPopulation, citiesQuantity, node.rightLeaf);
+                }
+            }
+            else
+            {
+                if (citiesLeft != 0)
+                {
+                    
+                }
+            }
+        }
+        */
+        public TwoWayLinkedList GetBestCities(int citiesQuantity)
+        {
+            TwoWayLinkedList cities = new TwoWayLinkedList();
+            HidddenRMLTraversal(ref citiesQuantity, cities, root);
+            return cities;
+        }
 
+        private void HidddenRMLTraversal(ref int citiesQuantity, TwoWayLinkedList cities, Node node)
+        {
+            if (node.IsLeaf())
+            {
+                if (citiesQuantity != 0)
+                {
+                    cities.PushLast(node.value);
+                    citiesQuantity--;
+                }
+            }
+            else
+            {
+                if (node.rightLeaf != null)
+                {
+                    HidddenRMLTraversal(ref citiesQuantity, cities, node.rightLeaf);
+                }
+                if (citiesQuantity != 0)
+                {
+                    cities.PushLast(node.value);
+                    citiesQuantity--;
+                    if (node.leftLeaf != null)
+                    {
+                        HidddenRMLTraversal(ref citiesQuantity, cities, node.leftLeaf);
+                    }
+                }
+            }
+        }
 
         class Node
         {
             private int key;
-            private City value;
+            public City value;
             public Node leftLeaf, rightLeaf;
 
             public Node (int key , City value)
@@ -90,12 +156,12 @@ namespace ManagerForCreatingBestTour
                 rightLeaf = null;
             }
 
-            public bool isLeaf(Node node)
+            public bool IsLeaf()
             {
-                return (node.rightLeaf == null && node.leftLeaf == null);
+                return (rightLeaf == null && leftLeaf == null);
             }
 
-            public  void insertValue(ref Node node , int key , City value)
+            public void InsertValue(ref Node node , int key , City value)
             {
                 if(node == null)
                 {
@@ -103,15 +169,15 @@ namespace ManagerForCreatingBestTour
                 }
                 else if (node.key < key)
                 {
-                    insertValue(ref node.rightLeaf, key, value);
+                    InsertValue(ref node.rightLeaf, key, value);
                 }
                 else if (node.key > key)
                 {
-                    insertValue(ref node.leftLeaf, key , value);
+                    InsertValue(ref node.leftLeaf, key , value);
                 }
             }
 
-            public bool search(Node node , int toSearch)
+            public bool Search(Node node , int toSearch)
             {
                 if(node == null)
                 {
@@ -119,11 +185,11 @@ namespace ManagerForCreatingBestTour
                 }
                 else if (node.key < toSearch)
                 {
-                    return (search(node.rightLeaf, toSearch));
+                    return (Search(node.rightLeaf, toSearch));
                 }
                 else if  (node.key > toSearch)
                 {
-                    return (search(node.leftLeaf, toSearch));
+                    return (Search(node.leftLeaf, toSearch));
                 }
                 else //if (node.key == toSearch)
                 {

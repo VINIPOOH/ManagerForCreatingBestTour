@@ -9,6 +9,31 @@ namespace ProjectForTest
 {
     class TestMain
     {
+        static void BinaryTree_GetBestCities_Test()
+        {
+            BinaryTree binaryTree = new BinaryTree();
+            binaryTree.Insert(CitiesInfo.Cities()[2]);
+            binaryTree.Insert(CitiesInfo.Cities()[3]);
+            binaryTree.Insert(CitiesInfo.Cities()[4]);
+            binaryTree.Insert(CitiesInfo.Cities()[5]);
+            
+            TwoWayLinkedList cities = binaryTree.GetBestCities(2);
+            foreach (City city in cities)
+            {
+                Console.WriteLine(city.ToString());
+            }
+            Console.WriteLine();
+
+            binaryTree.Insert(CitiesInfo.Cities()[0]);
+            binaryTree.Insert(CitiesInfo.Cities()[1]);
+
+            TwoWayLinkedList cities1 = binaryTree.GetBestCities(4);
+            foreach (City city in cities1)
+            {
+                Console.WriteLine(city.ToString());
+            }
+        }
+
         static void DijkstraTest()
         {
             WayCreator wayCreator = new WayCreator();
@@ -132,7 +157,8 @@ namespace ProjectForTest
             Console.WriteLine();
             GetRouteTest();
             Console.WriteLine();
-
+            BinaryTree_GetBestCities_Test();
+            Console.WriteLine();
 
             Console.ReadKey();
         }

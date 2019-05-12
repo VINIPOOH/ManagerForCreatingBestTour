@@ -37,6 +37,11 @@ namespace ManagerForCreatingBestTour
         {
             if (city) { return "Это город мёртвых! АААААААА"; }
             else return " Нормальненький такой город)";
-        } 
+        }
+
+        public override string ToString()
+        {
+            return Name + ": " + AmountPeople + ", " + AmountPeopleYoungerTwenty;
+        }
     }
 }
