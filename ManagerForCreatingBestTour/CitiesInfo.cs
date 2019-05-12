@@ -17,10 +17,10 @@ namespace ManagerForCreatingBestTour
         {
             City[] cities =
             {
-                new City("Berlin", 3000000, 0),
-                new City("Kiev", 2000000, 0),
-                new City("Minsk", 500000, 0),
-                new City("Vien", 1000000, 0),
+                new City("Berlin", 3000000, 100),
+                new City("Kiev", 2000000, 10),
+                new City("Minsk", 500000, 20),
+                new City("Vien", 1000000, 11111110),
                 new City("Prague", 700000, 0),
                 new City("Warsaw", 1500000, 0),
                 new City("Budapesht", 600000, 0)

@@ -67,46 +67,105 @@ namespace ManagerForCreatingBestTour
             int toReturn = city.AmountPeople * constant + city.AmountPeopleYoungerTwenty * constant;
             return toReturn;
         }
-        //
-        /*
-        public TwoWayLinkedList TreeTraversal(int minPopulation, int maxPopulation, int citiesQuantity)
+
+        public TwoWayLinkedList BestCitiesByPopulation(int minPopulation, int maxPopulation, int citiesQuantity)
         {
-            Node node = root;
-            int citiesLeft = citiesQuantity;
-            if (!node.IsLeaf())
-            {
-                if (node.rightLeaf != null)
-                {
-                    
-                }
-            }
-            
+            TwoWayLinkedList cities = new TwoWayLinkedList();
+            HiddenBestCitiesByPopulation(minPopulation, maxPopulation, ref citiesQuantity, cities, root);
+            return cities;
         }
-        
-        private TwoWayLinkedList HiddenTreeTraversal(int minPopulation, int maxPopulation, int citiesQuantity, Node node)
+
+        private void HiddenBestCitiesByPopulation(int minPopulation, int maxPopulation, ref int citiesQuantity, TwoWayLinkedList cities, Node node)
         {
-            Node node = root;
-            int citiesLeft = citiesQuantity;
-            if (!node.IsLeaf())
+            if (node.IsLeaf())
             {
-                if (node.rightLeaf != null)
+                if (node.value.AmountPeople >= minPopulation && node.value.AmountPeople <= maxPopulation)
                 {
-                    HiddenTreeTraversal(minPopulation, maxPopulation, citiesQuantity, node.rightLeaf);
-                }
-                else
-                {
-                    HiddenTreeTraversal(minPopulation, maxPopulation, citiesQuantity, node.rightLeaf);
+                    if (citiesQuantity != 0)
+                    {
+                        cities.PushLast(node.value);
+                        citiesQuantity--;
+                    }
+                    else
+                    {
+                        return;
+                    }
                 }
             }
             else
             {
-                if (citiesLeft != 0)
+                if (node.rightLeaf != null)
                 {
-                    
+                    HiddenBestCitiesByPopulation(minPopulation, maxPopulation, ref citiesQuantity, cities, node.rightLeaf);
+                }
+                if (node.value.AmountPeople >= minPopulation && node.value.AmountPeople <= maxPopulation)
+                {
+                    if (citiesQuantity != 0)
+                    {
+                        cities.PushLast(node.value);
+                        citiesQuantity--;
+                    }
+                    else
+                    {
+                        return;
+                    }
+                }
+                if (node.leftLeaf != null)
+                {
+                    HiddenBestCitiesByPopulation(minPopulation, maxPopulation, ref citiesQuantity, cities, node.leftLeaf);
                 }
             }
         }
-        */
+
+        public TwoWayLinkedList BestCitiesByPopulationYounger20(int minPopulation, int maxPopulation, int citiesQuantity)
+        {
+            TwoWayLinkedList cities = new TwoWayLinkedList();
+            HiddenBestCitiesByPopulationYounger20(minPopulation, maxPopulation, ref citiesQuantity, cities, root);
+            return cities;
+        }
+
+        private void HiddenBestCitiesByPopulationYounger20(int minPopulation, int maxPopulation, ref int citiesQuantity, TwoWayLinkedList cities, Node node)
+        {
+            if (node.IsLeaf())
+            {
+                if (node.value.AmountPeopleYoungerTwenty >= minPopulation && node.value.AmountPeopleYoungerTwenty <= maxPopulation)
+                {
+                    if (citiesQuantity != 0)
+                    {
+                        cities.PushLast(node.value);
+                        citiesQuantity--;
+                    }
+                    else
+                    {
+                        return;
+                    }
+                }
+            }
+            else
+            {
+                if (node.rightLeaf != null)
+                {
+                    HiddenBestCitiesByPopulationYounger20(minPopulation, maxPopulation, ref citiesQuantity, cities, node.rightLeaf);
+                }
+                if (node.value.AmountPeopleYoungerTwenty >= minPopulation && node.value.AmountPeopleYoungerTwenty <= maxPopulation)
+                {
+                    if (citiesQuantity != 0)
+                    {
+                        cities.PushLast(node.value);
+                        citiesQuantity--;
+                    }
+                    else
+                    {
+                        return;
+                    }
+                }
+                if (node.leftLeaf != null)
+                {
+                    HiddenBestCitiesByPopulationYounger20(minPopulation, maxPopulation, ref citiesQuantity, cities, node.leftLeaf);
+                }
+            }
+        }
+
         public TwoWayLinkedList GetBestCities(int citiesQuantity)
         {
             TwoWayLinkedList cities = new TwoWayLinkedList();
@@ -123,6 +182,10 @@ namespace ManagerForCreatingBestTour
                     cities.PushLast(node.value);
                     citiesQuantity--;
                 }
+                else
+                {
+                    return;
+                }
             }
             else
             {
@@ -138,6 +201,10 @@ namespace ManagerForCreatingBestTour
                     {
                         HidddenRMLTraversal(ref citiesQuantity, cities, node.leftLeaf);
                     }
+                }
+                else
+                {
+                    return;
                 }
             }
         }

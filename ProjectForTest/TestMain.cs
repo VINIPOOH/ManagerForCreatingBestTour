@@ -34,6 +34,56 @@ namespace ProjectForTest
             }
         }
 
+        static void BinaryTree_BestCitiesByPopulation_Test()
+        {
+            BinaryTree binaryTree = new BinaryTree();
+            binaryTree.Insert(CitiesInfo.Cities()[2]);
+            binaryTree.Insert(CitiesInfo.Cities()[3]);
+            binaryTree.Insert(CitiesInfo.Cities()[4]);
+            binaryTree.Insert(CitiesInfo.Cities()[5]);
+
+            TwoWayLinkedList cities = binaryTree.BestCitiesByPopulation(100000, 5000000, 3);
+            foreach (City city in cities)
+            {
+                Console.WriteLine(city.ToString());
+            }
+            Console.WriteLine();
+
+            binaryTree.Insert(CitiesInfo.Cities()[0]);
+            binaryTree.Insert(CitiesInfo.Cities()[1]);
+
+            TwoWayLinkedList cities1 = binaryTree.BestCitiesByPopulation(1700000, 5000000, 3);
+            foreach (City city in cities1)
+            {
+                Console.WriteLine(city.ToString());
+            }
+        }
+
+        static void BinaryTree_BestCitiesByPopulationYounger20_Test()
+        {
+            BinaryTree binaryTree = new BinaryTree();
+            binaryTree.Insert(CitiesInfo.Cities()[2]);
+            binaryTree.Insert(CitiesInfo.Cities()[3]);
+            binaryTree.Insert(CitiesInfo.Cities()[4]);
+            binaryTree.Insert(CitiesInfo.Cities()[5]);
+
+            TwoWayLinkedList cities = binaryTree.BestCitiesByPopulationYounger20(0, 100000000, 3);
+            foreach (City city in cities)
+            {
+                Console.WriteLine(city.ToString());
+            }
+            Console.WriteLine();
+
+            binaryTree.Insert(CitiesInfo.Cities()[0]);
+            binaryTree.Insert(CitiesInfo.Cities()[1]);
+
+            TwoWayLinkedList cities1 = binaryTree.BestCitiesByPopulationYounger20(0, 1000, 3);
+            foreach (City city in cities1)
+            {
+                Console.WriteLine(city.ToString());
+            }
+        }
+
         static void DijkstraTest()
         {
             WayCreator wayCreator = new WayCreator();
@@ -158,6 +208,8 @@ namespace ProjectForTest
             GetRouteTest();
             Console.WriteLine();
             BinaryTree_GetBestCities_Test();
+            Console.WriteLine();
+            BinaryTree_BestCitiesByPopulation_Test();
             Console.WriteLine();
 
             Console.ReadKey();
