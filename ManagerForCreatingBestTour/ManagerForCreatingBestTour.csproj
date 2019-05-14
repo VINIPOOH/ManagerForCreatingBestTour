@@ -64,7 +64,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Tree.cs" />
     <Compile Include="TwoWayLinkedList.cs" />
     <Compile Include="WayCreator.cs" />
     <EmbeddedResource Include="MapFForm.resx">

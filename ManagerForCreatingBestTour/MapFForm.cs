@@ -12,9 +12,11 @@ namespace ManagerForCreatingBestTour
 {
     public partial class MapForm : Form
     {
-        public MapForm()
-        {
+        TwoWayLinkedList cities;
+        public MapForm(TwoWayLinkedList city)
+        {        
             InitializeComponent();
+            this.cities = city;
         }
     }
 }
