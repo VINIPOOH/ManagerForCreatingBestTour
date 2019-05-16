@@ -8,21 +8,22 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace ManagerForCreatingBestTour
 {
     public partial class ManagerForm : Form
     {
-        BinaryTree citistree = new BinaryTree();
-        TwoWayLinkedList toReturn = new TwoWayLinkedList();// список городов для передачи на следущую форму
-        
+        BinaryTree citiestree = new BinaryTree();
+        TwoWayLinkedList toReturn = new TwoWayLinkedList();// список городов для передачи на следущую форму      
         
         public ManagerForm()
         {
+            this.Height = 245;
             InitializeComponent();
             //наполение нашего дерева городами
             foreach (City  curentCity in CitiesInfo.Cities())
             {
-                citistree.Insert(curentCity);
+                citiestree.Insert(curentCity);
             }
         }
 
@@ -31,6 +32,17 @@ namespace ManagerForCreatingBestTour
             MapForm mapForm = new MapForm(toReturn);
             this.Hide();
             mapForm.Show();
+        }
+
+        private void setParametersBtn_Click(object sender, EventArgs e)
+        {
+            var populationSizePar = populationTrackBar.Value;
+            var populationUnderTwentyPar = underTwentyTrackBar.Value;
+        }
+
+        private void findCitiesBtn_Click(object sender, EventArgs e)
+        {
+            this.Height = 553;
         }
     }
 }

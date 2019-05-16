@@ -47,3 +47,4 @@ E:\Programming\C#\ManagerForCreatingBestTour\ManagerForCreatingBestTour\bin\Debu
 E:\Programming\C#\ManagerForCreatingBestTour\ManagerForCreatingBestTour\bin\Debug\ManagerForCreatingBestTour.exe
 E:\Programming\C#\ManagerForCreatingBestTour\ManagerForCreatingBestTour\bin\Debug\ManagerForCreatingBestTour.pdb
 C:\Users\VINI\Desktop\KPI\TA\prodgect\ManagerForCreatingBestTour\ManagerForCreatingBestTour\obj\Debug\ManagerForCreatingBestTour.MapForm.resources
+C:\Users\stnkj\Source\Repos\VINIPOOH\ManagerForCreatingBestTour\ManagerForCreatingBestTour\obj\Debug\ManagerForCreatingBestTour.MapForm.resources
