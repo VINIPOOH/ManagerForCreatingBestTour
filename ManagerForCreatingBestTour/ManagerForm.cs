@@ -13,18 +13,18 @@ namespace ManagerForCreatingBestTour
 {
     public partial class ManagerForm : Form
     {
-        BinaryTree citiestree = new BinaryTree();
+        // BinaryTree citiestree = new BinaryTree();
         TwoWayLinkedList toReturn = new TwoWayLinkedList();// список городов для передачи на следущую форму      
         
         public ManagerForm()
         {
-            this.Height = 245;
             InitializeComponent();
+            this.Height = 248;
             //наполение нашего дерева городами
-            foreach (City  curentCity in CitiesInfo.Cities())
-            {
-                citiestree.Insert(curentCity);
-            }
+            //foreach (City  curentCity in CitiesInfo.Cities())
+            //{
+            //    citiestree.Insert(curentCity);
+            //}
         }
 
         private void mapBtn_Click(object sender, EventArgs e)
