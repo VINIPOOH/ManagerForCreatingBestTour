@@ -14,11 +14,22 @@ namespace ManagerForCreatingBestTour
     {
         TwoWayLinkedList cities;
         public MapForm(TwoWayLinkedList city)
-        {        
-            InitializeComponent();
-            this.cities = city;
+        {
 
-            //!!!2 написать кучу свичь кейсов для подсвечивания нужных кнопок исходя из полеченого списка городов
+            InitializeComponent();
+
+            this.cities = city;
+            foreach (City qrentCity in cities)
+            {
+                switch (qrentCity.Name)
+                {
+                    case "Berlin":
+                        berlinBtn.BackColor = Color.Tomato;
+                        break;
+                    
+
+                }
+            }
         }
     }
 }
