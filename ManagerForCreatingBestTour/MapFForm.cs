@@ -26,8 +26,24 @@ namespace ManagerForCreatingBestTour
                     case "Berlin":
                         berlinBtn.BackColor = Color.Tomato;
                         break;
-                    
-
+                    case "Kiev":
+                        kievBtn.BackColor = Color.Tomato;
+                        break;
+                    case "Minsk":
+                        minskBtn.BackColor = Color.Tomato;
+                        break;
+                    case "Wien":
+                        wienBtn.BackColor = Color.Tomato;
+                        break;
+                    case "Prague":
+                        prahaBtn.BackColor = Color.Tomato;
+                        break;
+                    case "Warsaw":
+                        warsawBtn.BackColor = Color.Tomato;
+                        break;
+                    case "Budapest":
+                        budapestBtn.BackColor = Color.Tomato;
+                        break;
                 }
             }
         }
