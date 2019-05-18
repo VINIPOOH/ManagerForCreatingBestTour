@@ -332,7 +332,7 @@ namespace ManagerForCreatingBestTour
             this.last = secondList.last;
         }
 
-        public void QuickSort()
+        public void QuickSortAmountPeople()
         {
             Node pivot = this.last;
             //Node first = this.head;
@@ -356,8 +356,8 @@ namespace ManagerForCreatingBestTour
                     }
                 }
 
-                listMorePivot.QuickSort();
-                listLessPivot.QuickSort();
+                listMorePivot.QuickSortAmountPeople();
+                listLessPivot.QuickSortAmountPeople();
                 
                 listLessPivot.PushLast(pivot.data);
                 listLessPivot.Concatenation(listMorePivot);
@@ -368,7 +368,42 @@ namespace ManagerForCreatingBestTour
                 
             }
         }
+        public void QuickSortPeopleYoungerTwenty()
+        {
+            Node pivot = this.last;
+            //Node first = this.head;
+            if (this.Size > 1)
+            {
+                TwoWayLinkedList listMorePivot = new TwoWayLinkedList();
+                TwoWayLinkedList listLessPivot = new TwoWayLinkedList();
+                foreach (City city in this)
+                {
+                    if (city == this.last.data)
+                    {
+                        break;
+                    }
+                    if (city.AmountPeople >= pivot.data.AmountPeopleYoungerTwenty)
+                    {
+                        listMorePivot.PushFirst(city);
+                    }
+                    else
+                    {
+                        listLessPivot.PushFirst(city);
+                    }
+                }
 
+                listMorePivot.QuickSortPeopleYoungerTwenty();
+                listLessPivot.QuickSortPeopleYoungerTwenty();
+
+                listLessPivot.PushLast(pivot.data);
+                listLessPivot.Concatenation(listMorePivot);
+
+                this.head = listLessPivot.head;
+                this.last = listLessPivot.last; // присваевается концу списка меньших за опорный ибо после конкатенации в списке меньших за опроный 
+                                                // находится уже сума списков больших и меньших за опроных, а список больших остаеться быть таким же и иногода он может  быть пустым.
+
+            }
+        }
         // получить количество елементов в списке
         public int GetSize() { return Size; }
         public City Getlast() { return last.data; }
