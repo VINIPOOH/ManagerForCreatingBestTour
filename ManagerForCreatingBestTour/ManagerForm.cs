@@ -14,35 +14,49 @@ namespace ManagerForCreatingBestTour
     public partial class ManagerForm : Form
     {
         // BinaryTree citiestree = new BinaryTree();
-        TwoWayLinkedList toReturn = new TwoWayLinkedList();// список городов для передачи на следущую форму      
         
         public ManagerForm()
         {
+            this.Height = 235;
+            BinaryTree citiesBTree = new BinaryTree(populationTrackBar.Value, underTwentyTrackBar.Value);
+            TwoWayLinkedList toReturnList = new TwoWayLinkedList();// список городов для передачи на следущую форму      
+
             InitializeComponent();
-            this.Height = 248;
-            //наполение нашего дерева городами
-            //foreach (City  curentCity in CitiesInfo.Cities())
-            //{
-            //    citiestree.Insert(curentCity);
-            //}
-        }
 
-        private void mapBtn_Click(object sender, EventArgs e)
-        {//переход на слежущую форму 
-            MapForm mapForm = new MapForm(toReturn);
-            this.Hide();
-            mapForm.Show();
-        }
+            foreach (City curentCity in CitiesInfo.Cities())
+            {
+                citiesBTree.Insert(curentCity);
+            }
 
-        private void setParametersBtn_Click(object sender, EventArgs e)
-        {
-            var populationSizePar = populationTrackBar.Value;
-            var populationUnderTwentyPar = underTwentyTrackBar.Value;
         }
 
         private void findCitiesBtn_Click(object sender, EventArgs e)
         {
-            this.Height = 553;
+            this.Height = 564;
+            if (populationRBtn.Checked)
+            {
+                
+            }
+            if (underTwentyRBtn.Checked)
+            {
+
+            }
+            if (citiesNumRBtn.Checked)
+            {
+
+            }
+            else
+            {
+                MessageBox.Show("Ошибочка!");
+            }
         }
+
+        private void mapBtn_Click(object sender, EventArgs e)
+        {
+            MapForm mapForm = new MapForm(toReturn);
+            this.Hide();
+            mapForm.Show();
+        }    
+
     }
 }

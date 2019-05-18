@@ -43,38 +43,52 @@
         {
             this.populationTrackBar = new System.Windows.Forms.TrackBar();
             this.underTwentyTrackBar = new System.Windows.Forms.TrackBar();
-            this.cityNumberTrackBar = new System.Windows.Forms.TrackBar();
+            this.cityNumTrackBar = new System.Windows.Forms.TrackBar();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.populationCheckBox = new System.Windows.Forms.CheckBox();
-            this.underTwentyCheckBox = new System.Windows.Forms.CheckBox();
-            this.cityNumberCheckBox = new System.Windows.Forms.CheckBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.routeCitiesGridViewA = new System.Windows.Forms.DataGridView();
+            this.givenCitiesGridViewA = new System.Windows.Forms.DataGridView();
             this.sortBtn = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
-            this.populationSizeSortCheckBox = new System.Windows.Forms.CheckBox();
-            this.underTwentySortCheckBox = new System.Windows.Forms.CheckBox();
-            this.underTwentySortSecondCheckBox = new System.Windows.Forms.CheckBox();
-            this.populationSizeSortSecondcheckBox = new System.Windows.Forms.CheckBox();
-            this.label8 = new System.Windows.Forms.Label();
             this.secondSortBtn = new System.Windows.Forms.Button();
-            this.tourCitiesGridViewB = new System.Windows.Forms.DataGridView();
             this.getWayBtn = new System.Windows.Forms.Button();
             this.mapBtn = new System.Windows.Forms.Button();
-            this.gottenDirectGridViewC = new System.Windows.Forms.DataGridView();
-            this.finalGridViewD = new System.Windows.Forms.DataGridView();
             this.findCitiesBtn = new System.Windows.Forms.Button();
-            this.setParametersBtn = new System.Windows.Forms.Button();
+            this.findGroupBox = new System.Windows.Forms.GroupBox();
+            this.citiesNumRBtn = new System.Windows.Forms.RadioButton();
+            this.underTwentyRBtn = new System.Windows.Forms.RadioButton();
+            this.populationRBtn = new System.Windows.Forms.RadioButton();
+            this.sortGroupBox = new System.Windows.Forms.GroupBox();
+            this.populationRBtn2 = new System.Windows.Forms.RadioButton();
+            this.underTwentyRBtn2 = new System.Windows.Forms.RadioButton();
+            this.sortSecGroupBox = new System.Windows.Forms.GroupBox();
+            this.populationRBtn3 = new System.Windows.Forms.RadioButton();
+            this.underTwentyRBtn3 = new System.Windows.Forms.RadioButton();
+            this.city = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.population = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.underTwenty = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tourGridViewB = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gottenGridViewC = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.finalGridViewD = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.populationTrackBar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.underTwentyTrackBar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cityNumberTrackBar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.routeCitiesGridViewA)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tourCitiesGridViewB)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gottenDirectGridViewC)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cityNumTrackBar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.givenCitiesGridViewA)).BeginInit();
+            this.findGroupBox.SuspendLayout();
+            this.sortGroupBox.SuspendLayout();
+            this.sortSecGroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tourGridViewB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gottenGridViewC)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.finalGridViewD)).BeginInit();
             this.SuspendLayout();
             // 
@@ -94,17 +108,17 @@
             this.underTwentyTrackBar.TabIndex = 1;
             this.underTwentyTrackBar.TickStyle = System.Windows.Forms.TickStyle.TopLeft;
             // 
-            // cityNumberTrackBar
+            // cityNumTrackBar
             // 
-            this.cityNumberTrackBar.AccessibleDescription = "";
-            this.cityNumberTrackBar.Location = new System.Drawing.Point(159, 110);
-            this.cityNumberTrackBar.Maximum = 7;
-            this.cityNumberTrackBar.Name = "cityNumberTrackBar";
-            this.cityNumberTrackBar.Size = new System.Drawing.Size(205, 45);
-            this.cityNumberTrackBar.TabIndex = 2;
-            this.cityNumberTrackBar.TabStop = false;
-            this.cityNumberTrackBar.Tag = "";
-            this.cityNumberTrackBar.TickStyle = System.Windows.Forms.TickStyle.TopLeft;
+            this.cityNumTrackBar.AccessibleDescription = "";
+            this.cityNumTrackBar.Location = new System.Drawing.Point(145, 99);
+            this.cityNumTrackBar.Maximum = 7;
+            this.cityNumTrackBar.Name = "cityNumTrackBar";
+            this.cityNumTrackBar.Size = new System.Drawing.Size(205, 45);
+            this.cityNumTrackBar.TabIndex = 2;
+            this.cityNumTrackBar.TabStop = false;
+            this.cityNumTrackBar.Tag = "";
+            this.cityNumTrackBar.TickStyle = System.Windows.Forms.TickStyle.TopLeft;
             // 
             // label1
             // 
@@ -145,149 +159,48 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(291, 142);
+            this.label5.Location = new System.Drawing.Point(277, 131);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(73, 13);
             this.label5.TabIndex = 7;
             this.label5.Text = "К-во городов";
             // 
-            // populationCheckBox
+            // givenCitiesGridViewA
             // 
-            this.populationCheckBox.AutoSize = true;
-            this.populationCheckBox.Location = new System.Drawing.Point(508, 123);
-            this.populationCheckBox.Name = "populationCheckBox";
-            this.populationCheckBox.Size = new System.Drawing.Size(82, 17);
-            this.populationCheckBox.TabIndex = 8;
-            this.populationCheckBox.Text = "Население";
-            this.populationCheckBox.UseVisualStyleBackColor = true;
-            // 
-            // underTwentyCheckBox
-            // 
-            this.underTwentyCheckBox.AutoSize = true;
-            this.underTwentyCheckBox.Location = new System.Drawing.Point(508, 146);
-            this.underTwentyCheckBox.Name = "underTwentyCheckBox";
-            this.underTwentyCheckBox.Size = new System.Drawing.Size(144, 17);
-            this.underTwentyCheckBox.TabIndex = 9;
-            this.underTwentyCheckBox.Text = "К-во людей, младше 20";
-            this.underTwentyCheckBox.UseVisualStyleBackColor = true;
-            // 
-            // cityNumberCheckBox
-            // 
-            this.cityNumberCheckBox.AutoSize = true;
-            this.cityNumberCheckBox.Location = new System.Drawing.Point(508, 169);
-            this.cityNumberCheckBox.Name = "cityNumberCheckBox";
-            this.cityNumberCheckBox.Size = new System.Drawing.Size(92, 17);
-            this.cityNumberCheckBox.TabIndex = 10;
-            this.cityNumberCheckBox.Text = "К-во городов";
-            this.cityNumberCheckBox.UseVisualStyleBackColor = true;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(437, 124);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(65, 13);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "Искать по: ";
-            // 
-            // routeCitiesGridViewA
-            // 
-            this.routeCitiesGridViewA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.routeCitiesGridViewA.Location = new System.Drawing.Point(12, 210);
-            this.routeCitiesGridViewA.Name = "routeCitiesGridViewA";
-            this.routeCitiesGridViewA.Size = new System.Drawing.Size(367, 100);
-            this.routeCitiesGridViewA.TabIndex = 12;
+            this.givenCitiesGridViewA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.givenCitiesGridViewA.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.city,
+            this.population,
+            this.underTwenty});
+            this.givenCitiesGridViewA.Location = new System.Drawing.Point(12, 196);
+            this.givenCitiesGridViewA.Name = "givenCitiesGridViewA";
+            this.givenCitiesGridViewA.Size = new System.Drawing.Size(367, 100);
+            this.givenCitiesGridViewA.TabIndex = 12;
             // 
             // sortBtn
             // 
             this.sortBtn.BackColor = System.Drawing.SystemColors.Control;
-            this.sortBtn.Location = new System.Drawing.Point(12, 316);
+            this.sortBtn.Location = new System.Drawing.Point(12, 302);
             this.sortBtn.Name = "sortBtn";
             this.sortBtn.Size = new System.Drawing.Size(125, 35);
             this.sortBtn.TabIndex = 13;
             this.sortBtn.Text = "Сортировать";
             this.sortBtn.UseVisualStyleBackColor = false;
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(156, 325);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(90, 13);
-            this.label7.TabIndex = 14;
-            this.label7.Text = "Сортировать по:";
-            // 
-            // populationSizeSortCheckBox
-            // 
-            this.populationSizeSortCheckBox.AutoSize = true;
-            this.populationSizeSortCheckBox.Location = new System.Drawing.Point(252, 316);
-            this.populationSizeSortCheckBox.Name = "populationSizeSortCheckBox";
-            this.populationSizeSortCheckBox.Size = new System.Drawing.Size(82, 17);
-            this.populationSizeSortCheckBox.TabIndex = 15;
-            this.populationSizeSortCheckBox.Text = "Население";
-            this.populationSizeSortCheckBox.UseVisualStyleBackColor = true;
-            // 
-            // underTwentySortCheckBox
-            // 
-            this.underTwentySortCheckBox.AutoSize = true;
-            this.underTwentySortCheckBox.Location = new System.Drawing.Point(252, 339);
-            this.underTwentySortCheckBox.Name = "underTwentySortCheckBox";
-            this.underTwentySortCheckBox.Size = new System.Drawing.Size(144, 17);
-            this.underTwentySortCheckBox.TabIndex = 17;
-            this.underTwentySortCheckBox.Text = "К-во людей, младше 20";
-            this.underTwentySortCheckBox.UseVisualStyleBackColor = true;
-            // 
-            // underTwentySortSecondCheckBox
-            // 
-            this.underTwentySortSecondCheckBox.AutoSize = true;
-            this.underTwentySortSecondCheckBox.Location = new System.Drawing.Point(680, 341);
-            this.underTwentySortSecondCheckBox.Name = "underTwentySortSecondCheckBox";
-            this.underTwentySortSecondCheckBox.Size = new System.Drawing.Size(144, 17);
-            this.underTwentySortSecondCheckBox.TabIndex = 22;
-            this.underTwentySortSecondCheckBox.Text = "К-во людей, младше 20";
-            this.underTwentySortSecondCheckBox.UseVisualStyleBackColor = true;
-            // 
-            // populationSizeSortSecondcheckBox
-            // 
-            this.populationSizeSortSecondcheckBox.AutoSize = true;
-            this.populationSizeSortSecondcheckBox.Location = new System.Drawing.Point(680, 318);
-            this.populationSizeSortSecondcheckBox.Name = "populationSizeSortSecondcheckBox";
-            this.populationSizeSortSecondcheckBox.Size = new System.Drawing.Size(82, 17);
-            this.populationSizeSortSecondcheckBox.TabIndex = 21;
-            this.populationSizeSortSecondcheckBox.Text = "Население";
-            this.populationSizeSortSecondcheckBox.UseVisualStyleBackColor = true;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(584, 327);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(90, 13);
-            this.label8.TabIndex = 20;
-            this.label8.Text = "Сортировать по:";
-            // 
             // secondSortBtn
             // 
             this.secondSortBtn.BackColor = System.Drawing.SystemColors.Control;
-            this.secondSortBtn.Location = new System.Drawing.Point(440, 316);
+            this.secondSortBtn.Location = new System.Drawing.Point(442, 302);
             this.secondSortBtn.Name = "secondSortBtn";
             this.secondSortBtn.Size = new System.Drawing.Size(125, 35);
             this.secondSortBtn.TabIndex = 19;
             this.secondSortBtn.Text = "Сортировать";
             this.secondSortBtn.UseVisualStyleBackColor = false;
             // 
-            // tourCitiesGridViewB
-            // 
-            this.tourCitiesGridViewB.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tourCitiesGridViewB.Location = new System.Drawing.Point(12, 364);
-            this.tourCitiesGridViewB.Name = "tourCitiesGridViewB";
-            this.tourCitiesGridViewB.Size = new System.Drawing.Size(367, 102);
-            this.tourCitiesGridViewB.TabIndex = 18;
-            // 
             // getWayBtn
             // 
             this.getWayBtn.BackColor = System.Drawing.SystemColors.Control;
-            this.getWayBtn.Location = new System.Drawing.Point(254, 472);
+            this.getWayBtn.Location = new System.Drawing.Point(254, 484);
             this.getWayBtn.Name = "getWayBtn";
             this.getWayBtn.Size = new System.Drawing.Size(125, 35);
             this.getWayBtn.TabIndex = 23;
@@ -297,7 +210,7 @@
             // mapBtn
             // 
             this.mapBtn.BackColor = System.Drawing.SystemColors.Control;
-            this.mapBtn.Location = new System.Drawing.Point(681, 472);
+            this.mapBtn.Location = new System.Drawing.Point(683, 484);
             this.mapBtn.Name = "mapBtn";
             this.mapBtn.Size = new System.Drawing.Size(125, 35);
             this.mapBtn.TabIndex = 24;
@@ -305,26 +218,10 @@
             this.mapBtn.UseVisualStyleBackColor = false;
             this.mapBtn.Click += new System.EventHandler(this.mapBtn_Click);
             // 
-            // gottenDirectGridViewC
-            // 
-            this.gottenDirectGridViewC.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gottenDirectGridViewC.Location = new System.Drawing.Point(440, 210);
-            this.gottenDirectGridViewC.Name = "gottenDirectGridViewC";
-            this.gottenDirectGridViewC.Size = new System.Drawing.Size(366, 100);
-            this.gottenDirectGridViewC.TabIndex = 27;
-            // 
-            // finalGridViewD
-            // 
-            this.finalGridViewD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.finalGridViewD.Location = new System.Drawing.Point(440, 364);
-            this.finalGridViewD.Name = "finalGridViewD";
-            this.finalGridViewD.Size = new System.Drawing.Size(366, 102);
-            this.finalGridViewD.TabIndex = 28;
-            // 
             // findCitiesBtn
             // 
             this.findCitiesBtn.BackColor = System.Drawing.SystemColors.Control;
-            this.findCitiesBtn.Location = new System.Drawing.Point(346, 169);
+            this.findCitiesBtn.Location = new System.Drawing.Point(348, 155);
             this.findCitiesBtn.Name = "findCitiesBtn";
             this.findCitiesBtn.Size = new System.Drawing.Size(125, 35);
             this.findCitiesBtn.TabIndex = 29;
@@ -332,59 +229,257 @@
             this.findCitiesBtn.UseVisualStyleBackColor = false;
             this.findCitiesBtn.Click += new System.EventHandler(this.findCitiesBtn_Click);
             // 
-            // setParametersBtn
+            // findGroupBox
             // 
-            this.setParametersBtn.BackColor = System.Drawing.SystemColors.Control;
-            this.setParametersBtn.Location = new System.Drawing.Point(346, 69);
-            this.setParametersBtn.Name = "setParametersBtn";
-            this.setParametersBtn.Size = new System.Drawing.Size(125, 35);
-            this.setParametersBtn.TabIndex = 30;
-            this.setParametersBtn.Text = "Задать параметры";
-            this.setParametersBtn.UseVisualStyleBackColor = false;
-            this.setParametersBtn.Click += new System.EventHandler(this.setParametersBtn_Click);
+            this.findGroupBox.Controls.Add(this.citiesNumRBtn);
+            this.findGroupBox.Controls.Add(this.underTwentyRBtn);
+            this.findGroupBox.Controls.Add(this.populationRBtn);
+            this.findGroupBox.Location = new System.Drawing.Point(490, 99);
+            this.findGroupBox.Name = "findGroupBox";
+            this.findGroupBox.Size = new System.Drawing.Size(156, 91);
+            this.findGroupBox.TabIndex = 30;
+            this.findGroupBox.TabStop = false;
+            this.findGroupBox.Text = "Искать по:";
+            // 
+            // citiesNumRBtn
+            // 
+            this.citiesNumRBtn.AutoSize = true;
+            this.citiesNumRBtn.Location = new System.Drawing.Point(6, 65);
+            this.citiesNumRBtn.Name = "citiesNumRBtn";
+            this.citiesNumRBtn.Size = new System.Drawing.Size(91, 17);
+            this.citiesNumRBtn.TabIndex = 33;
+            this.citiesNumRBtn.TabStop = true;
+            this.citiesNumRBtn.Text = "К-во городов";
+            this.citiesNumRBtn.UseVisualStyleBackColor = true;
+            // 
+            // underTwentyRBtn
+            // 
+            this.underTwentyRBtn.AutoSize = true;
+            this.underTwentyRBtn.Location = new System.Drawing.Point(6, 42);
+            this.underTwentyRBtn.Name = "underTwentyRBtn";
+            this.underTwentyRBtn.Size = new System.Drawing.Size(143, 17);
+            this.underTwentyRBtn.TabIndex = 32;
+            this.underTwentyRBtn.TabStop = true;
+            this.underTwentyRBtn.Text = "К-во людей, младше 20";
+            this.underTwentyRBtn.UseVisualStyleBackColor = true;
+            // 
+            // populationRBtn
+            // 
+            this.populationRBtn.AutoSize = true;
+            this.populationRBtn.Location = new System.Drawing.Point(6, 19);
+            this.populationRBtn.Name = "populationRBtn";
+            this.populationRBtn.Size = new System.Drawing.Size(81, 17);
+            this.populationRBtn.TabIndex = 31;
+            this.populationRBtn.TabStop = true;
+            this.populationRBtn.Text = "Население";
+            this.populationRBtn.UseVisualStyleBackColor = true;
+            // 
+            // sortGroupBox
+            // 
+            this.sortGroupBox.Controls.Add(this.populationRBtn2);
+            this.sortGroupBox.Controls.Add(this.underTwentyRBtn2);
+            this.sortGroupBox.Location = new System.Drawing.Point(213, 302);
+            this.sortGroupBox.Name = "sortGroupBox";
+            this.sortGroupBox.Size = new System.Drawing.Size(156, 68);
+            this.sortGroupBox.TabIndex = 34;
+            this.sortGroupBox.TabStop = false;
+            this.sortGroupBox.Text = "Сортировать по:";
+            // 
+            // populationRBtn2
+            // 
+            this.populationRBtn2.AutoSize = true;
+            this.populationRBtn2.Location = new System.Drawing.Point(6, 42);
+            this.populationRBtn2.Name = "populationRBtn2";
+            this.populationRBtn2.Size = new System.Drawing.Size(81, 17);
+            this.populationRBtn2.TabIndex = 33;
+            this.populationRBtn2.TabStop = true;
+            this.populationRBtn2.Text = "Население";
+            this.populationRBtn2.UseVisualStyleBackColor = true;
+            // 
+            // underTwentyRBtn2
+            // 
+            this.underTwentyRBtn2.AutoSize = true;
+            this.underTwentyRBtn2.Location = new System.Drawing.Point(6, 19);
+            this.underTwentyRBtn2.Name = "underTwentyRBtn2";
+            this.underTwentyRBtn2.Size = new System.Drawing.Size(143, 17);
+            this.underTwentyRBtn2.TabIndex = 32;
+            this.underTwentyRBtn2.TabStop = true;
+            this.underTwentyRBtn2.Text = "К-во людей, младше 20";
+            this.underTwentyRBtn2.UseVisualStyleBackColor = true;
+            // 
+            // sortSecGroupBox
+            // 
+            this.sortSecGroupBox.Controls.Add(this.populationRBtn3);
+            this.sortSecGroupBox.Controls.Add(this.underTwentyRBtn3);
+            this.sortSecGroupBox.Location = new System.Drawing.Point(642, 302);
+            this.sortSecGroupBox.Name = "sortSecGroupBox";
+            this.sortSecGroupBox.Size = new System.Drawing.Size(156, 68);
+            this.sortSecGroupBox.TabIndex = 35;
+            this.sortSecGroupBox.TabStop = false;
+            this.sortSecGroupBox.Text = "Сортировать по:";
+            // 
+            // populationRBtn3
+            // 
+            this.populationRBtn3.AutoSize = true;
+            this.populationRBtn3.Location = new System.Drawing.Point(6, 42);
+            this.populationRBtn3.Name = "populationRBtn3";
+            this.populationRBtn3.Size = new System.Drawing.Size(81, 17);
+            this.populationRBtn3.TabIndex = 34;
+            this.populationRBtn3.TabStop = true;
+            this.populationRBtn3.Text = "Население";
+            this.populationRBtn3.UseVisualStyleBackColor = true;
+            // 
+            // underTwentyRBtn3
+            // 
+            this.underTwentyRBtn3.AutoSize = true;
+            this.underTwentyRBtn3.Location = new System.Drawing.Point(6, 19);
+            this.underTwentyRBtn3.Name = "underTwentyRBtn3";
+            this.underTwentyRBtn3.Size = new System.Drawing.Size(143, 17);
+            this.underTwentyRBtn3.TabIndex = 32;
+            this.underTwentyRBtn3.TabStop = true;
+            this.underTwentyRBtn3.Text = "К-во людей, младше 20";
+            this.underTwentyRBtn3.UseVisualStyleBackColor = true;
+            // 
+            // city
+            // 
+            this.city.HeaderText = "Город";
+            this.city.Name = "city";
+            this.city.Width = 120;
+            // 
+            // population
+            // 
+            this.population.HeaderText = "Население";
+            this.population.Name = "population";
+            // 
+            // underTwenty
+            // 
+            this.underTwenty.HeaderText = "Младше 20";
+            this.underTwenty.Name = "underTwenty";
+            // 
+            // tourGridViewB
+            // 
+            this.tourGridViewB.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tourGridViewB.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewTextBoxColumn8,
+            this.dataGridViewTextBoxColumn9});
+            this.tourGridViewB.Location = new System.Drawing.Point(12, 378);
+            this.tourGridViewB.Name = "tourGridViewB";
+            this.tourGridViewB.Size = new System.Drawing.Size(367, 100);
+            this.tourGridViewB.TabIndex = 39;
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.HeaderText = "Город";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.Width = 120;
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.HeaderText = "Население";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.HeaderText = "Младше 20";
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            // 
+            // gottenGridViewC
+            // 
+            this.gottenGridViewC.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gottenGridViewC.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn10});
+            this.gottenGridViewC.Location = new System.Drawing.Point(441, 196);
+            this.gottenGridViewC.Name = "gottenGridViewC";
+            this.gottenGridViewC.Size = new System.Drawing.Size(367, 100);
+            this.gottenGridViewC.TabIndex = 40;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.HeaderText = "Город";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.Width = 120;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.HeaderText = "Население";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.HeaderText = "Младше 20";
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            // 
+            // finalGridViewD
+            // 
+            this.finalGridViewD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.finalGridViewD.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn11});
+            this.finalGridViewD.Location = new System.Drawing.Point(441, 378);
+            this.finalGridViewD.Name = "finalGridViewD";
+            this.finalGridViewD.Size = new System.Drawing.Size(367, 100);
+            this.finalGridViewD.TabIndex = 41;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.HeaderText = "Город";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Width = 120;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.HeaderText = "Население";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.HeaderText = "Младше 20";
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
             // 
             // ManagerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(829, 514);
-            this.Controls.Add(this.setParametersBtn);
-            this.Controls.Add(this.findCitiesBtn);
+            this.ClientSize = new System.Drawing.Size(823, 525);
             this.Controls.Add(this.finalGridViewD);
-            this.Controls.Add(this.gottenDirectGridViewC);
+            this.Controls.Add(this.gottenGridViewC);
+            this.Controls.Add(this.tourGridViewB);
+            this.Controls.Add(this.sortSecGroupBox);
+            this.Controls.Add(this.sortGroupBox);
+            this.Controls.Add(this.findGroupBox);
+            this.Controls.Add(this.findCitiesBtn);
             this.Controls.Add(this.mapBtn);
             this.Controls.Add(this.getWayBtn);
-            this.Controls.Add(this.underTwentySortSecondCheckBox);
-            this.Controls.Add(this.populationSizeSortSecondcheckBox);
-            this.Controls.Add(this.label8);
             this.Controls.Add(this.secondSortBtn);
-            this.Controls.Add(this.tourCitiesGridViewB);
-            this.Controls.Add(this.underTwentySortCheckBox);
-            this.Controls.Add(this.populationSizeSortCheckBox);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.sortBtn);
-            this.Controls.Add(this.routeCitiesGridViewA);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.cityNumberCheckBox);
-            this.Controls.Add(this.underTwentyCheckBox);
-            this.Controls.Add(this.populationCheckBox);
+            this.Controls.Add(this.givenCitiesGridViewA);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.cityNumberTrackBar);
+            this.Controls.Add(this.cityNumTrackBar);
             this.Controls.Add(this.underTwentyTrackBar);
             this.Controls.Add(this.populationTrackBar);
             this.Name = "ManagerForm";
             this.Text = "Best Tour Manager";
             ((System.ComponentModel.ISupportInitialize)(this.populationTrackBar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.underTwentyTrackBar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cityNumberTrackBar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.routeCitiesGridViewA)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tourCitiesGridViewB)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gottenDirectGridViewC)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cityNumTrackBar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.givenCitiesGridViewA)).EndInit();
+            this.findGroupBox.ResumeLayout(false);
+            this.findGroupBox.PerformLayout();
+            this.sortGroupBox.ResumeLayout(false);
+            this.sortGroupBox.PerformLayout();
+            this.sortSecGroupBox.ResumeLayout(false);
+            this.sortSecGroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tourGridViewB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gottenGridViewC)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.finalGridViewD)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -395,32 +490,43 @@
 
         private System.Windows.Forms.TrackBar populationTrackBar;
         private System.Windows.Forms.TrackBar underTwentyTrackBar;
-        private System.Windows.Forms.TrackBar cityNumberTrackBar;
+        private System.Windows.Forms.TrackBar cityNumTrackBar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.CheckBox populationCheckBox;
-        private System.Windows.Forms.CheckBox underTwentyCheckBox;
-        private System.Windows.Forms.CheckBox cityNumberCheckBox;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.DataGridView routeCitiesGridViewA;
+        private System.Windows.Forms.DataGridView givenCitiesGridViewA;
         private System.Windows.Forms.Button sortBtn;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.CheckBox populationSizeSortCheckBox;
-        private System.Windows.Forms.CheckBox underTwentySortCheckBox;
-        private System.Windows.Forms.CheckBox underTwentySortSecondCheckBox;
-        private System.Windows.Forms.CheckBox populationSizeSortSecondcheckBox;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button secondSortBtn;
-        private System.Windows.Forms.DataGridView tourCitiesGridViewB;
         private System.Windows.Forms.Button getWayBtn;
         private System.Windows.Forms.Button mapBtn;
-        private System.Windows.Forms.DataGridView gottenDirectGridViewC;
-        private System.Windows.Forms.DataGridView finalGridViewD;
         private System.Windows.Forms.Button findCitiesBtn;
-        private System.Windows.Forms.Button setParametersBtn;
+        private System.Windows.Forms.GroupBox findGroupBox;
+        private System.Windows.Forms.RadioButton citiesNumRBtn;
+        private System.Windows.Forms.RadioButton underTwentyRBtn;
+        private System.Windows.Forms.RadioButton populationRBtn;
+        private System.Windows.Forms.GroupBox sortGroupBox;
+        private System.Windows.Forms.RadioButton populationRBtn2;
+        private System.Windows.Forms.RadioButton underTwentyRBtn2;
+        private System.Windows.Forms.GroupBox sortSecGroupBox;
+        private System.Windows.Forms.RadioButton populationRBtn3;
+        private System.Windows.Forms.RadioButton underTwentyRBtn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn city;
+        private System.Windows.Forms.DataGridViewTextBoxColumn population;
+        private System.Windows.Forms.DataGridViewTextBoxColumn underTwenty;
+        private System.Windows.Forms.DataGridView tourGridViewB;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
+        private System.Windows.Forms.DataGridView gottenGridViewC;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
+        private System.Windows.Forms.DataGridView finalGridViewD;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
     }
 }
 
