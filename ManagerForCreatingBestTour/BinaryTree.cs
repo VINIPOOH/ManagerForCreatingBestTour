@@ -64,8 +64,7 @@ namespace ManagerForCreatingBestTour
             }
         }
         //code imported from Tree.cs (and changed by sany_nikonov)
-        
-        
+               
 
         public int GetHash(City city)
         {

@@ -17,6 +17,8 @@ namespace ManagerForCreatingBestTour
         {        
             InitializeComponent();
             this.cities = city;
+
+            //!!!2 написать кучу свичь кейсов для подсвечивания нужных кнопок исходя из полеченого списка городов
         }
     }
 }
