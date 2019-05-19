@@ -9,13 +9,34 @@ namespace ProjectForTest
 {
     class TestMain
     {
+        static void CitiesInfo_Distances_NewTest()
+        {
+            WayCreator wayCreator = new WayCreator();
+            Random random = new Random();
+            TwoWayLinkedList chosenCities = new TwoWayLinkedList();
+            City startPoint = CitiesInfo.Cities[0];
+            foreach (City city in CitiesInfo.Cities)
+            {
+                if (!chosenCities.Contains(city))
+                {
+                    chosenCities.PushLast(city);
+                }
+            }
+            TwoWayLinkedList route = wayCreator.GetRoute(chosenCities, startPoint);
+            int index = 1;
+            foreach (City city in route)
+            {
+                Console.WriteLine(index++.ToString() + ". " + city.Name);
+            }
+        }
+
         static void BinaryTree_GetBestCities_Test()
         {
             BinaryTree binaryTree = new BinaryTree(1, 1);
-            binaryTree.Insert(CitiesInfo.Cities()[2]);
-            binaryTree.Insert(CitiesInfo.Cities()[3]);
-            binaryTree.Insert(CitiesInfo.Cities()[4]);
-            binaryTree.Insert(CitiesInfo.Cities()[5]);
+            binaryTree.Insert(CitiesInfo.Cities[2]);
+            binaryTree.Insert(CitiesInfo.Cities[3]);
+            binaryTree.Insert(CitiesInfo.Cities[4]);
+            binaryTree.Insert(CitiesInfo.Cities[5]);
             
             TwoWayLinkedList cities = binaryTree.GetBestCities(2);
             foreach (City city in cities)
@@ -24,8 +45,8 @@ namespace ProjectForTest
             }
             Console.WriteLine();
 
-            binaryTree.Insert(CitiesInfo.Cities()[0]);
-            binaryTree.Insert(CitiesInfo.Cities()[1]);
+            binaryTree.Insert(CitiesInfo.Cities[0]);
+            binaryTree.Insert(CitiesInfo.Cities[1]);
 
             TwoWayLinkedList cities1 = binaryTree.GetBestCities(4);
             foreach (City city in cities1)
@@ -37,10 +58,10 @@ namespace ProjectForTest
         static void BinaryTree_BestCitiesByPopulation_Test()
         {
             BinaryTree binaryTree = new BinaryTree(1, 1);
-            binaryTree.Insert(CitiesInfo.Cities()[2]);
-            binaryTree.Insert(CitiesInfo.Cities()[3]);
-            binaryTree.Insert(CitiesInfo.Cities()[4]);
-            binaryTree.Insert(CitiesInfo.Cities()[5]);
+            binaryTree.Insert(CitiesInfo.Cities[2]);
+            binaryTree.Insert(CitiesInfo.Cities[3]);
+            binaryTree.Insert(CitiesInfo.Cities[4]);
+            binaryTree.Insert(CitiesInfo.Cities[5]);
 
             TwoWayLinkedList cities = binaryTree.BestCitiesByPopulation(100000, 5000000, 3);
             foreach (City city in cities)
@@ -49,8 +70,8 @@ namespace ProjectForTest
             }
             Console.WriteLine();
 
-            binaryTree.Insert(CitiesInfo.Cities()[0]);
-            binaryTree.Insert(CitiesInfo.Cities()[1]);
+            binaryTree.Insert(CitiesInfo.Cities[0]);
+            binaryTree.Insert(CitiesInfo.Cities[1]);
 
             TwoWayLinkedList cities1 = binaryTree.BestCitiesByPopulation(1700000, 5000000, 3);
             foreach (City city in cities1)
@@ -62,10 +83,10 @@ namespace ProjectForTest
         static void BinaryTree_BestCitiesByPopulationYounger20_Test()
         {
             BinaryTree binaryTree = new BinaryTree(1, 1);
-            binaryTree.Insert(CitiesInfo.Cities()[2]);
-            binaryTree.Insert(CitiesInfo.Cities()[3]);
-            binaryTree.Insert(CitiesInfo.Cities()[4]);
-            binaryTree.Insert(CitiesInfo.Cities()[5]);
+            binaryTree.Insert(CitiesInfo.Cities[2]);
+            binaryTree.Insert(CitiesInfo.Cities[3]);
+            binaryTree.Insert(CitiesInfo.Cities[4]);
+            binaryTree.Insert(CitiesInfo.Cities[5]);
 
             TwoWayLinkedList cities = binaryTree.BestCitiesByPopulationYounger20(0, 100000000, 3);
             foreach (City city in cities)
@@ -74,8 +95,8 @@ namespace ProjectForTest
             }
             Console.WriteLine();
 
-            binaryTree.Insert(CitiesInfo.Cities()[0]);
-            binaryTree.Insert(CitiesInfo.Cities()[1]);
+            binaryTree.Insert(CitiesInfo.Cities[0]);
+            binaryTree.Insert(CitiesInfo.Cities[1]);
 
             TwoWayLinkedList cities1 = binaryTree.BestCitiesByPopulationYounger20(0, 1000, 3);
             foreach (City city in cities1)
@@ -87,8 +108,8 @@ namespace ProjectForTest
         static void DijkstraTest()
         {
             WayCreator wayCreator = new WayCreator();
-            City[] cities = CitiesInfo.Cities();
-            int[,] distances = CitiesInfo.Distances();
+            City[] cities = CitiesInfo.Cities;
+            int[,] distances = CitiesInfo.Distances;
 
             int[] citiesWeight = wayCreator.Dijkstra(distances, 3);
 
@@ -114,13 +135,13 @@ namespace ProjectForTest
         {
             WayCreator wayCreator = new WayCreator();
             TwoWayLinkedList chosenCities = new TwoWayLinkedList();
-            City startPoint = CitiesInfo.Cities()[0]; // Berlin
-            chosenCities.PushLast(CitiesInfo.Cities()[1]); // Kiev
-            chosenCities.PushLast(CitiesInfo.Cities()[6]); // Budapesht
-            chosenCities.PushLast(CitiesInfo.Cities()[2]); // Minsk
+            City startPoint = CitiesInfo.Cities[0]; // Berlin
+            chosenCities.PushLast(CitiesInfo.Cities[1]); // Kiev
+            chosenCities.PushLast(CitiesInfo.Cities[6]); // Budapesht
+            chosenCities.PushLast(CitiesInfo.Cities[2]); // Minsk
             //chosenCities.PushLast(CitiesInfo.Cities()[3]); // Warsaw
-            chosenCities.PushLast(CitiesInfo.Cities()[5]); // Vien
-            chosenCities.PushLast(CitiesInfo.Cities()[4]); // Prague
+            chosenCities.PushLast(CitiesInfo.Cities[5]); // Vien
+            chosenCities.PushLast(CitiesInfo.Cities[4]); // Prague
             TwoWayLinkedList route = wayCreator.GetRoute(chosenCities, startPoint);
             int index = 1;
             foreach (City city in route)
@@ -201,7 +222,7 @@ namespace ProjectForTest
 
         static void Main(string[] args)
         {
-            
+            CitiesInfo_Distances_NewTest();
             Console.ReadKey();
         }
     }

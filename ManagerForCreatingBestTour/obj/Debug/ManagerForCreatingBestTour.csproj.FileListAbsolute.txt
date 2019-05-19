@@ -53,3 +53,4 @@ C:\Users\stnkj\Source\Repos\VINIPOOH\ManagerForCreatingBestTour\ManagerForCreati
 D:\Polzovateli\LEXA-Tima\Projects C#\ManagerForCreatingBestTour\ManagerForCreatingBestTour\obj\Debug\ManagerForCreatingBestTour.MapForm.resources
 D:\Polzovateli\LEXA-Tima\Projects C#\ManagerForCreatingBestTour\ManagerForCreatingBestTour\obj\Debug\ManagerForCreatingBestTour.ManagerForm.resources
 D:\Polzovateli\LEXA-Tima\Projects C#\ManagerForCreatingBestTour\ManagerForCreatingBestTour\obj\Debug\ManagerForCreatingBestTour.Resource1.resources
+E:\Programming\C#\ManagerForCreatingBestTour\ManagerForCreatingBestTour\obj\Debug\ManagerForCreatingBestTour.Resource1.resources

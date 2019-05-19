@@ -509,13 +509,13 @@ namespace ManagerForCreatingBestTour
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::ManagerForCreatingBestTour.Resource1.Map;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-<<<<<<< HEAD
+//<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(1350, 730);
             //this.Controls.Add(this.button20);
-=======
+//=======
             this.ClientSize = new System.Drawing.Size(875, 462);
             this.Controls.Add(this.veniceBtn);
->>>>>>> c12393ec3638afea213e7772ee604fe5a39c33fb
+//>>>>>>> c12393ec3638afea213e7772ee604fe5a39c33fb
             this.Controls.Add(this.button19);
             this.Controls.Add(this.button18);
             this.Controls.Add(this.button17);

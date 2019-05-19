@@ -86,7 +86,7 @@ namespace ManagerForCreatingBestTour
         {
             citiesBTree = new BinaryTree(populationTrackBar.Value, underTwentyTrackBar.Value);
 
-            foreach (City curentCity in CitiesInfo.Cities())
+            foreach (City curentCity in CitiesInfo.Cities)
             {
                 citiesBTree.Insert(curentCity);
             }

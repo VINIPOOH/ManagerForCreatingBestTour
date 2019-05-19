@@ -8,7 +8,7 @@ namespace ManagerForCreatingBestTour
 {
     public class WayCreator
     {
-        public readonly TwoWayLinkedList[] intermediateCities = new TwoWayLinkedList[CitiesInfo.Cities().Length];
+        public readonly TwoWayLinkedList[] intermediateCities = new TwoWayLinkedList[CitiesInfo.Cities.Length];
 
         private class Vertex
         {
@@ -42,7 +42,7 @@ namespace ManagerForCreatingBestTour
             for (int i = 0; i < citiesNumber; i++)
             {
                 vertices[i] = new Vertex(int.MaxValue / 2, true);
-                vertices[i].Route.PushFirst(CitiesInfo.Cities()[startCityIndex]);
+                vertices[i].Route.PushFirst(CitiesInfo.Cities[startCityIndex]);
             }
 
             vertices[startCityIndex].Weight = 0;
@@ -70,7 +70,7 @@ namespace ManagerForCreatingBestTour
                     {
                         vertices[j].Weight = vertices[minVertex].Weight + matrix[minVertex, j];
                         if (vertices[j].Route.GetSize() != 0) vertices[j].Route = CopyList(vertices[minVertex].Route);
-                        if (minVertex != startCityIndex) vertices[j].Route.PushLast(CitiesInfo.Cities()[minVertex]);
+                        if (minVertex != startCityIndex) vertices[j].Route.PushLast(CitiesInfo.Cities[minVertex]);
                     }
                 }
                 vertices[minVertex].IsValid = false;
@@ -93,7 +93,7 @@ namespace ManagerForCreatingBestTour
             int minIndex = 0;
             for (int i = 0; i < array.Length; i++)
             {
-                if (array[i] < minValue && array[i] != 0 && chosenCities.Contains(CitiesInfo.Cities()[i]))
+                if (array[i] < minValue && array[i] != 0 && chosenCities.Contains(CitiesInfo.Cities[i]))
                 {
                     minIndex = i;
                     minValue = array[i];
@@ -104,9 +104,9 @@ namespace ManagerForCreatingBestTour
 
         private int FindCurrentCityIndex(City currentCity)
         {
-            for (int i = 0; i < CitiesInfo.Cities().Length; i++)
+            for (int i = 0; i < CitiesInfo.Cities.Length; i++)
             {
-                if (currentCity.Name == CitiesInfo.Cities()[i].Name)
+                if (currentCity.Name == CitiesInfo.Cities[i].Name)
                 {
                     return i;
                 }
@@ -154,9 +154,9 @@ namespace ManagerForCreatingBestTour
             while (chosenCities.GetSize() != 0)
             {
                 currentCityIndex = FindCurrentCityIndex(currentCity);
-                distanceFromCurrentCity = Dijkstra(CitiesInfo.Distances(), currentCityIndex);
+                distanceFromCurrentCity = Dijkstra(CitiesInfo.Distances, currentCityIndex);
                 nearestNeighbourIndex = MinDistanceIndex(distanceFromCurrentCity, chosenCities);
-                nearestNeighbour = CitiesInfo.Cities()[nearestNeighbourIndex];
+                nearestNeighbour = CitiesInfo.Cities[nearestNeighbourIndex];
                 route.Concatenation(intermediateCities[nearestNeighbourIndex]);
                 route.PushLast(nearestNeighbour);
                 chosenCities.DelMidle(chosenCities.IndexOf(nearestNeighbour));

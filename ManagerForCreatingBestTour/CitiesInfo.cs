@@ -13,10 +13,12 @@ namespace ManagerForCreatingBestTour
      */
     public static class CitiesInfo
     {
-        public static City[] Cities()
+        public static City[] Cities
         {
-            City[] cities =
+            get
             {
+                City[] cities =
+                {
                 new City("Berlin", 3611000, 830530),
                 new City("Kiev", 2934000, 850860),
                 new City("Minsk", 1992000, 537840),
@@ -39,16 +41,17 @@ namespace ManagerForCreatingBestTour
                 new City("Bremen", 568000, 124960),
             };
 
-            return cities;
+                return cities;
+            }
         }
 
-        
-
-        public static int[,] Distances()
+        public static int[,] Distances
         {
-            int inf = int.MaxValue/2;
-            int[,] distances = new int[7, 7]
-            {/*
+            get
+            {
+                int inf = int.MaxValue / 2;
+                int[,] distances = new int[20, 20]
+                {/*
                             Berlin Kiev Minsk Vien Prague Warsaw Budapesht
                 Berlin
                 Kiev
@@ -59,17 +62,30 @@ namespace ManagerForCreatingBestTour
                 Budapesht
 
                 */
-                { 0, inf, inf, inf, 349, 575, inf},
-                { inf, 0, 569, inf, inf, 788, 1116},
-                { inf, 589, 0, inf, inf, 547, inf},
-                { inf, inf, inf, 0, 333, 683, 243},
-                { 349, inf, inf, 333, 0, 688, inf},
-                { 575, 788, 547, 683, 688, 0, 871},
-                { inf, 1116, inf, 243, inf, 871, 0}
-            };
+                { 0, inf, inf, inf, 349, 575, inf, inf, inf, inf, 600, inf, inf, inf, inf, inf, inf, inf, inf, 407},
+                { inf, 0, 569, inf, inf, 788, inf, 475, 472, 541, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf},
+                { inf, 589, 0, inf, inf, 547, inf, inf, inf, inf, 774, inf, inf, inf, inf, inf, inf, inf, inf, inf},
+                { inf, inf, inf, 0, 333, inf, 243, inf, inf, inf, inf, 464, inf, 376, 602, 435, inf, inf, inf, inf},
+                { 349, inf, inf, 333, 0, 688, inf, inf, inf, inf, inf, 534, inf, inf, inf, inf, inf, 299, inf, 617},
+                { 575, 788, 547, inf, 688, 0, inf, inf, inf, 399, 339, 293, inf, inf, inf, inf, inf, inf, inf, inf},
+                { inf, inf, inf, 243, inf, inf, 0, inf, 966, inf, inf, inf, 260, inf, inf, inf, inf, inf, inf, inf},
+                { inf, 475, inf, inf, inf, inf, inf, 0, 178, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf},
+                { inf, 472, inf, inf, inf, inf, 966, 178, 0, 590, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf},
+                { inf, 541, inf, inf, inf, 399, inf, inf, 590, 0, inf, 326, 326, inf, inf, inf, inf, inf, inf, inf},
+                { 600, inf, 774, inf, inf, 339, inf, inf, inf, inf, 0, inf, inf, inf, inf, inf, inf, inf, inf, inf},
+                { inf, inf, inf, 464, 534, 293, inf, inf, inf, 326, inf, 0, 247, inf, inf, inf, inf, inf, inf, inf},
+                { inf, inf, inf, inf, inf, inf, 260, inf, inf, 326, inf, 247, 0, inf, inf, inf, inf, inf, inf, inf},
+                { inf, inf, inf, 376, inf, inf, inf, inf, inf, inf, inf, inf, inf, 0, 374, inf, inf, inf, inf, inf},
+                { inf, inf, inf, 602, inf, inf, inf, inf, inf, inf, inf, inf, inf, 374, 0, 544, 541, inf, inf, inf},
+                { inf, inf, inf, 435, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, 544, 0, 316, 169, inf, inf},
+                { inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, 541, 316, 0, inf, 573, inf},
+                { inf, inf, inf, inf, 299, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, 169, inf, 0, 407, inf},
+                { inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, 573, 407, 0, 329},
+                { 407, inf, inf, inf, 617, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, inf, 329, 0}
+                };
 
-            return distances;
+                return distances;
+            }
         }
-
     }
 }
