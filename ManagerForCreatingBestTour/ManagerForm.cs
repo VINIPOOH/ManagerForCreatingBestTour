@@ -177,6 +177,7 @@ namespace ManagerForCreatingBestTour
             City city = B.GetFirst();
             B.DelFirst();
             C = wayCreator.GetRoute(B,city);
+            CClon = wayCreator.GetRoute(B, city);
             ShouC();
             groupBoxSelectMandatoryCityToVisit.Enabled = false; // это должно быть в конце метода!!!!
             groupBoxDefinitionListOfCities.Enabled = true;//  это должно быть в конце метода!!!!
@@ -215,7 +216,12 @@ namespace ManagerForCreatingBestTour
         
         private void mapBtn_Click(object sender, EventArgs e)
         {
-            MapForm mapForm = new MapForm(D);
+            foreach(City city in C)
+            {
+                CClon.DelByName(city.Name);
+            }
+            C = CClon;
+            MapForm mapForm = new MapForm(CClon);
             this.Hide();
             mapForm.Show();
         }
@@ -262,10 +268,20 @@ namespace ManagerForCreatingBestTour
         {
             string cityName = tourGridViewB.CurrentCell.Value.ToString();
             City city = C.Find(cityName);
-            //C.DelByName(cityName);
+            C.DelByName(cityName);
             D.PushLast(city);
             ShouC();
             ShouD();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            foreach (City city in C)
+            {
+                CClon.DelByName(city.Name);
+            }
+            C = CClon;
+            ShouC();
         }
     }
 }

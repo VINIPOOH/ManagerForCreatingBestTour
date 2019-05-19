@@ -17,14 +17,22 @@ namespace ManagerForCreatingBestTour
         {
 
             InitializeComponent();
+            cities = city;
+            
+            
+        }
 
-            this.cities = city;
+        private void MapForm_Load(object sender, EventArgs e)
+        {
+            int i = 0;
             foreach (City qrentCity in cities)
             {
+                i++;
                 switch (qrentCity.Name)
                 {
                     case "Berlin":
                         berlinBtn.BackColor = Color.Tomato;
+                        berlinBtn.Text = i + "||" + qrentCity.Name;
                         break;
                     case "Kiev":
                         kievBtn.BackColor = Color.Tomato;

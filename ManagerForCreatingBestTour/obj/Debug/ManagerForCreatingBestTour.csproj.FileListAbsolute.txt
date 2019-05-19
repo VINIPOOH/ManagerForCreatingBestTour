@@ -66,3 +66,4 @@ D:\Polzovateli\LEXA-Tima\Projects C#\ManagerForCreatingBestTour - копия\Man
 D:\Polzovateli\LEXA-Tima\Projects C#\ManagerForCreatingBestTour - копия\ManagerForCreatingBestTour\obj\Debug\ManagerForCreatingBestTour.csproj.CoreCompileInputs.cache
 D:\Polzovateli\LEXA-Tima\Projects C#\ManagerForCreatingBestTour - копия\ManagerForCreatingBestTour\obj\Debug\ManagerForCreatingBestTour.exe
 D:\Polzovateli\LEXA-Tima\Projects C#\ManagerForCreatingBestTour - копия\ManagerForCreatingBestTour\obj\Debug\ManagerForCreatingBestTour.pdb
+C:\Users\VINI\Desktop\KPI\TA\prodgect\ManagerForCreatingBestTour\ManagerForCreatingBestTour\obj\Debug\ManagerForCreatingBestTour.csprojAssemblyReference.cache
