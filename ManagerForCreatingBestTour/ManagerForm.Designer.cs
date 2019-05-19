@@ -410,6 +410,7 @@
             this.tourGridViewB.Name = "tourGridViewB";
             this.tourGridViewB.Size = new System.Drawing.Size(550, 154);
             this.tourGridViewB.TabIndex = 39;
+            this.tourGridViewB.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tourGridViewB_CellContentClick);
             // 
             // dataGridViewTextBoxColumn7
             // 
