@@ -21,39 +21,39 @@ namespace ManagerForCreatingBestTour
         TwoWayLinkedList D = new TwoWayLinkedList();
         public ManagerForm()
         {
-            this.Height = 235;
-            
-            TwoWayLinkedList toReturnList = new TwoWayLinkedList();// список городов для передачи на следущую форму      
-
+            TwoWayLinkedList toReturnList = new TwoWayLinkedList();// список городов для передачи на следущую форму 
+           
             InitializeComponent();
-
-
         }
 
         private void findCitiesBtn_Click(object sender, EventArgs e)
         {
-            this.Height = 564;
             int amountCytisWichWined = cityNumTrackBar.Value;
             if (populationRBtn.Checked)
             {
                 //!!!1 вытащить из дерева нужный список добавить на офрму нужные текст боксы для данных аналоично
                 //!!!1 для последующих ийфов. Текстбоксы с мин и макс занчением можно сделать общиедля всех
+                groupBoxSearchAmountCities.Enabled = false;
+                groupBoxSelectMandatoryCityToVisit.Enabled = true;
             }
             else if (underTwentyRBtn.Checked)
             {
-
+                groupBoxSearchAmountCities.Enabled = false;
+                groupBoxSelectMandatoryCityToVisit.Enabled = true;
             }
             else if (citiesHashRBtn.Checked)
             {
-
+                groupBoxSearchAmountCities.Enabled = false;
+                groupBoxSelectMandatoryCityToVisit.Enabled = true;
             }
             else
             {
                 MessageBox.Show("Выбирите 1 параметр по которому нужно представить города");
             }
-            cityNumTrackBar.Enabled = false;
-            findGroupBox.Enabled = false;
-            findCitiesBtn.Enabled = false;
+            
+            //cityNumTrackBar.Enabled = false;
+            //findGroupBox.Enabled = false;
+            //findCitiesBtn.Enabled = false;
             //!!!1 добавленые поля толжны стать не доступны после нажатия указаного батона
             //!!!1 также небходимо будет создать кнопку обнуления которая сбросит вообще все параметры на начало если юзер рукожоп и ошибся
             //!!!1 вывести в грид вю "givenCitiesGridViewA" список полученый в итоге
@@ -69,11 +69,14 @@ namespace ManagerForCreatingBestTour
 
         private void MakeWayBtn_Click(object sender, EventArgs e)
         {
+            groupBoxSelectMandatoryCityToVisit.Enabled = false; // это должно быть в конце метода!!!!
+            groupBoxDefinitionListOfCities.Enabled = true;//  это должно быть в конце метода!!!!
             //!!!1 в грид С передать список городов который был проложен саниным искателем пути (в искатель пути передать спаисок Б)
             //!!!1 Сделать не активными все уж ненужные елементы формы
         }
         private void SortWayBtn_Click(object sender, EventArgs e)
         {
+            
             //!!!1 полностю аналогично пердыдущим пердеудущему методу сортировки на сей рас с списком С
             //!!!1 далее также аналогично нужно создать с списком Д и формой Д передачю на последжнюю гридвю Д
             //!!!1 при нажатии на кнопку покахзать на карте будет передаватся на следущую форму списоук Д
@@ -87,13 +90,13 @@ namespace ManagerForCreatingBestTour
             {
                 citiesBTree.Insert(curentCity);
             }
-            populationTrackBar.Enabled = false;
-            underTwentyTrackBar.Enabled = false;
-            PreperToFindButton.Enabled = false;
+            groupBoxPriorityToCityParameters.Enabled = false;
+            groupBoxSearchAmountCities.Enabled = true;
+            //populationTrackBar.Enabled = false;
+            //underTwentyTrackBar.Enabled = false;
+            //PreperToFindButton.Enabled = false;
         }// исходя из введенных весов строим дерево
         
-
-
         private void mapBtn_Click(object sender, EventArgs e)
         {
             MapForm mapForm = new MapForm(D);
@@ -101,6 +104,32 @@ namespace ManagerForCreatingBestTour
             mapForm.Show();
         }
 
-        
+        private void populationTrackBar_Scroll(object sender, EventArgs e)
+        {
+            labelAmountPeople.Text = String.Format("Текущее значение: {0}", populationTrackBar.Value);
+        }
+
+        private void underTwentyTrackBar_Scroll(object sender, EventArgs e)
+        {
+            labelAmountPeopleUnderTwenty.Text = String.Format("Текущее значение: {0}", underTwentyTrackBar.Value);
+
+        }
+        private void cityNumTrackBar_Scroll(object sender, EventArgs e)
+        {
+            labelAmountCities.Text = String.Format("Текущее значение: {0}", cityNumTrackBar.Value);
+        }
+
+        private void ManagerForm_Load(object sender, EventArgs e)
+        {
+            groupBoxDefinitionListOfCities.Enabled = false;
+            groupBoxSearchAmountCities.Enabled = false;
+            groupBoxSelectMandatoryCityToVisit.Enabled = false;
+            groupBoxPriorityToCityParameters.Enabled = true;
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

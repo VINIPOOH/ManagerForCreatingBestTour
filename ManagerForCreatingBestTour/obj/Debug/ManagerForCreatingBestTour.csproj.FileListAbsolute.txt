@@ -50,3 +50,6 @@ C:\Users\stnkj\Source\Repos\VINIPOOH\ManagerForCreatingBestTour\ManagerForCreati
 C:\Users\stnkj\Source\Repos\VINIPOOH\ManagerForCreatingBestTour\ManagerForCreatingBestTour\bin\Debug\ManagerForCreatingBestTour.exe.config
 C:\Users\stnkj\Source\Repos\VINIPOOH\ManagerForCreatingBestTour\ManagerForCreatingBestTour\bin\Debug\ManagerForCreatingBestTour.exe
 C:\Users\stnkj\Source\Repos\VINIPOOH\ManagerForCreatingBestTour\ManagerForCreatingBestTour\bin\Debug\ManagerForCreatingBestTour.pdb
+D:\Polzovateli\LEXA-Tima\Projects C#\ManagerForCreatingBestTour\ManagerForCreatingBestTour\obj\Debug\ManagerForCreatingBestTour.MapForm.resources
+D:\Polzovateli\LEXA-Tima\Projects C#\ManagerForCreatingBestTour\ManagerForCreatingBestTour\obj\Debug\ManagerForCreatingBestTour.ManagerForm.resources
+D:\Polzovateli\LEXA-Tima\Projects C#\ManagerForCreatingBestTour\ManagerForCreatingBestTour\obj\Debug\ManagerForCreatingBestTour.Resource1.resources
