@@ -31,6 +31,12 @@ namespace ManagerForCreatingBestTour
             int amountCytisWichWined = cityNumTrackBar.Value;
             if (populationRBtn.Checked)
             {
+                if (textBoxPeopleFrom.Text==""&&textBoxPeopleTo.Text=="")
+                {
+                    MessageBox.Show("минимальное и максимальное значения не могут быть пустыми");
+                    return;
+                }
+                A=citiesBTree.BestCitiesByPopulation(Convert.ToInt32(textBoxPeopleFrom.Text), Convert.ToInt32(textBoxPeopleTo.Text), cityNumTrackBar.Value);
                 //!!!1 вытащить из дерева нужный список добавить на офрму нужные текст боксы для данных аналоично
                 //!!!1 для последующих ийфов. Текстбоксы с мин и макс занчением можно сделать общиедля всех
                 groupBoxSearchAmountCities.Enabled = false;
@@ -38,30 +44,115 @@ namespace ManagerForCreatingBestTour
             }
             else if (underTwentyRBtn.Checked)
             {
+                if (textBoxPeopleFrom.Text == "" && textBoxPeopleTo.Text == "")
+                {
+                    MessageBox.Show("минимальное и максимальное значения не могут быть пустыми");
+                    return;
+                }
+                A = citiesBTree.BestCitiesByPopulationYounger20(Convert.ToInt32(textBoxPeopleFrom.Text), Convert.ToInt32(textBoxPeopleTo.Text), cityNumTrackBar.Value);
                 groupBoxSearchAmountCities.Enabled = false;
                 groupBoxSelectMandatoryCityToVisit.Enabled = true;
             }
             else if (citiesHashRBtn.Checked)
             {
+                A = citiesBTree.GetBestCities(cityNumTrackBar.Value);
                 groupBoxSearchAmountCities.Enabled = false;
                 groupBoxSelectMandatoryCityToVisit.Enabled = true;
             }
             else
             {
                 MessageBox.Show("Выбирите 1 параметр по которому нужно представить города");
+                return;
             }
-            
-            //cityNumTrackBar.Enabled = false;
-            //findGroupBox.Enabled = false;
-            //findCitiesBtn.Enabled = false;
             //!!!1 добавленые поля толжны стать не доступны после нажатия указаного батона
             //!!!1 также небходимо будет создать кнопку обнуления которая сбросит вообще все параметры на начало если юзер рукожоп и ошибся
             //!!!1 вывести в грид вю "givenCitiesGridViewA" список полученый в итоге
             //!!!1 записать етот полученый список в атрибьут класа "список А" 
+            for (int k=0; k< cityNumTrackBar.Value;k++) {
+                givenCitiesGridViewA.Rows.Add();
+            }
+            int a = 0;
+            foreach (City city in A)
+            { 
+                givenCitiesGridViewA[0, a].Value = city.Name;
+                givenCitiesGridViewA[2, a].Value = city.AmountPeopleYoungerTwenty ;
+                givenCitiesGridViewA[1, a].Value = city.AmountPeople;
+                a++;
+            }
         }
+        private void ShouA()
+        {
+            for (int k = givenCitiesGridViewA.RowCount - 1; k < A.GetSize(); k++)
+            {
+                givenCitiesGridViewA.Rows.Add();
+            }
+            int a = 0;
+            foreach (City city in A)
+            {
+                givenCitiesGridViewA[0, a].Value = city.Name;
+                givenCitiesGridViewA[2, a].Value = city.AmountPeopleYoungerTwenty;
+                givenCitiesGridViewA[1, a].Value = city.AmountPeople;
+                a++;
+            }
 
+        }
+        private void ShouB()
+        {
+            for (int k = gottenGridViewC.RowCount-1; k < B.GetSize(); k++)
+            {
+                gottenGridViewC.Rows.Add();
+            }
+            int a = 0;
+            foreach (City city in B)
+            {
+                gottenGridViewC[0, a].Value = city.Name;
+                gottenGridViewC[2, a].Value = city.AmountPeopleYoungerTwenty;
+                gottenGridViewC[1, a].Value = city.AmountPeople;
+                a++;
+            }
+        }
+        private void ShouC()
+        {
+            for (int k = tourGridViewB.RowCount - 1; k < C.GetSize(); k++)
+            {
+                tourGridViewB.Rows.Add();
+            }
+            int a = 0;
+            foreach (City city in C)
+            {
+                tourGridViewB[0, a].Value = city.Name;
+                tourGridViewB[2, a].Value = city.AmountPeopleYoungerTwenty;
+                tourGridViewB[1, a].Value = city.AmountPeople;
+                a++;
+            }
+        }
+        private void ShouD()
+        {
+            for (int k = gottenGridViewC.RowCount - 1; k < D.GetSize(); k++)
+            {
+                gottenGridViewC.Rows.Add();
+            }
+            int a = 0;
+            foreach (City city in D)
+            {
+                gottenGridViewC[0, a].Value = city.Name;
+                gottenGridViewC[2, a].Value = city.AmountPeopleYoungerTwenty;
+                gottenGridViewC[1, a].Value = city.AmountPeople;
+                a++;
+            }
+        }
         private void sortBtn_Click(object sender, EventArgs e)
         {
+            if (underTwentyRBtn2.Checked)
+            {
+                A.QuickSortPeopleYoungerTwenty();
+                ShouA();
+            }
+            else if (populationRBtn2.Checked)
+            {
+                A.QuickSortAmountPeople();
+                ShouA();
+            }
             //!!!1 отсортировать список и вывести его "givenCitiesGridViewA"
         }
         //!!!1по нажатию на город на гридвю А нужно из списка А удеалить указаный город Добавить его в список Б
@@ -69,8 +160,14 @@ namespace ManagerForCreatingBestTour
 
         private void MakeWayBtn_Click(object sender, EventArgs e)
         {
+            WayCreator wayCreator = new WayCreator();
+            City city = B.GetFirst();
+            B.DelFirst();
+            C = wayCreator.GetRoute(B,city);
+            ShouC();
             groupBoxSelectMandatoryCityToVisit.Enabled = false; // это должно быть в конце метода!!!!
             groupBoxDefinitionListOfCities.Enabled = true;//  это должно быть в конце метода!!!!
+
             //!!!1 в грид С передать список городов который был проложен саниным искателем пути (в искатель пути передать спаисок Б)
             //!!!1 Сделать не активными все уж ненужные елементы формы
         }
@@ -85,16 +182,13 @@ namespace ManagerForCreatingBestTour
         private void PreperToFindButton_Click(object sender, EventArgs e)
         {
             citiesBTree = new BinaryTree(populationTrackBar.Value, underTwentyTrackBar.Value);
-
             foreach (City curentCity in CitiesInfo.Cities)
             {
                 citiesBTree.Insert(curentCity);
             }
             groupBoxPriorityToCityParameters.Enabled = false;
             groupBoxSearchAmountCities.Enabled = true;
-            //populationTrackBar.Enabled = false;
-            //underTwentyTrackBar.Enabled = false;
-            //PreperToFindButton.Enabled = false;
+            
         }// исходя из введенных весов строим дерево
         
         private void mapBtn_Click(object sender, EventArgs e)
@@ -130,6 +224,16 @@ namespace ManagerForCreatingBestTour
         private void label5_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void givenCitiesGridViewA_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            string cityName= givenCitiesGridViewA.CurrentCell.Value.ToString();
+            City city = A.Find(cityName);
+            //A.DelByName(cityName);
+            B.PushLast(city);
+            ShouA(); 
+            ShouB();
         }
     }
 }
