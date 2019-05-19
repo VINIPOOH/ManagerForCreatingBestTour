@@ -17,17 +17,32 @@ namespace ManagerForCreatingBestTour
         {
             City[] cities =
             {
-                new City("Berlin", 3000000, 100),
-                new City("Kiev", 2000000, 10),
-                new City("Minsk", 500000, 20),
-                new City("Vien", 1000000, 11111110),
-                new City("Prague", 700000, 0),
-                new City("Warsaw", 1500000, 0),
-                new City("Budapesht", 600000, 0)
+                new City("Berlin", 3611000, 830530),
+                new City("Kiev", 2934000, 850860),
+                new City("Minsk", 1992000, 537840),
+                new City("Vien", 1821000, 509880),
+                new City("Prague", 1301000, 312240),
+                new City("Warsaw", 1758000, 404340),
+                new City("Budapesht", 1798000, 431520),
+                new City("Odesa", 1011000, 242640),
+                new City("Kishinev", 690000, 172500),
+                new City("Lviv", 728000, 160160),
+                new City("Gdansk", 467000, 126090),
+                new City("Krakov", 769000, 207630),
+                new City("Koshize", 240000, 55200),
+                new City("Zagreb", 802000, 184460),
+                new City("Venice", 261000, 75690),
+                new City("Munchen", 1456000, 378560),
+                new City("Zurich", 396000, 95040),
+                new City("Nurnberg", 515000, 118450),
+                new City("Koln", 1080000, 270000),
+                new City("Bremen", 568000, 124960),
             };
 
             return cities;
         }
+
+        
 
         public static int[,] Distances()
         {

@@ -11,7 +11,7 @@ namespace ProjectForTest
     {
         static void BinaryTree_GetBestCities_Test()
         {
-            BinaryTree binaryTree = new BinaryTree();
+            BinaryTree binaryTree = new BinaryTree(1, 1);
             binaryTree.Insert(CitiesInfo.Cities()[2]);
             binaryTree.Insert(CitiesInfo.Cities()[3]);
             binaryTree.Insert(CitiesInfo.Cities()[4]);
@@ -36,7 +36,7 @@ namespace ProjectForTest
 
         static void BinaryTree_BestCitiesByPopulation_Test()
         {
-            BinaryTree binaryTree = new BinaryTree();
+            BinaryTree binaryTree = new BinaryTree(1, 1);
             binaryTree.Insert(CitiesInfo.Cities()[2]);
             binaryTree.Insert(CitiesInfo.Cities()[3]);
             binaryTree.Insert(CitiesInfo.Cities()[4]);
@@ -61,7 +61,7 @@ namespace ProjectForTest
 
         static void BinaryTree_BestCitiesByPopulationYounger20_Test()
         {
-            BinaryTree binaryTree = new BinaryTree();
+            BinaryTree binaryTree = new BinaryTree(1, 1);
             binaryTree.Insert(CitiesInfo.Cities()[2]);
             binaryTree.Insert(CitiesInfo.Cities()[3]);
             binaryTree.Insert(CitiesInfo.Cities()[4]);
@@ -171,7 +171,7 @@ namespace ProjectForTest
                 Console.WriteLine(item.AmountPeople);
             }
             Console.WriteLine("dasda");
-            lst.QuickSort();
+            lst.QuickSortAmountPeople();
             foreach (var item in lst)
             {
                 Console.WriteLine(item.AmountPeople);
@@ -201,17 +201,7 @@ namespace ProjectForTest
 
         static void Main(string[] args)
         {
-            TwoWayLinkedListTest();
-            Console.WriteLine();
-            DijkstraTest();
-            Console.WriteLine();
-            GetRouteTest();
-            Console.WriteLine();
-            BinaryTree_GetBestCities_Test();
-            Console.WriteLine();
-            BinaryTree_BestCitiesByPopulation_Test();
-            Console.WriteLine();
-
+            
             Console.ReadKey();
         }
     }

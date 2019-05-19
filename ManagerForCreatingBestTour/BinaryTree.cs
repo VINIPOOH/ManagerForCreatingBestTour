@@ -11,16 +11,16 @@ namespace ManagerForCreatingBestTour
         private Node root;
         public int Count { get; set; }
 
-        public BinaryTree(int weightAmountPeopless, int weightAmountPeoplesLes20s)
+        public BinaryTree(int weightAmountPeople, int weightAmountPeopleYounger20s)
         {
             this.root = null;
             Count = 0;
-            this.weightAmountPeoples = weightAmountPeopless;
-            this.weightAmountPeoplesLes20 = weightAmountPeoplesLes20s;
+            this.weightAmountPeople = weightAmountPeople;
+            this.weightAmountPeoplesYounger20 = weightAmountPeopleYounger20s;
         }
         private const int constant = 31;
-        private int weightAmountPeoples;
-        private int weightAmountPeoplesLes20;
+        private int weightAmountPeople;
+        private int weightAmountPeoplesYounger20;
 
         public bool IsEmpty()
         {
@@ -68,7 +68,7 @@ namespace ManagerForCreatingBestTour
 
         public int GetHash(City city)
         {
-            int toReturn = city.AmountPeople * constant * weightAmountPeoples + city.AmountPeopleYoungerTwenty * constant* weightAmountPeoplesLes20;
+            int toReturn = city.AmountPeople * constant * weightAmountPeople + city.AmountPeopleYoungerTwenty * constant * weightAmountPeoplesYounger20;
             return toReturn;
         }
 
