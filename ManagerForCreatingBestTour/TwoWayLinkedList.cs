@@ -201,10 +201,12 @@ namespace ManagerForCreatingBestTour
                     if (head.data.Name == name)
                     {
                         DelFirst();
+                        Console.WriteLine("first");
                     }
                     else if (last.data.Name == name)
                     {
                         DelLast();
+                        Console.WriteLine("last");
                     }
                     else
                     {
@@ -214,7 +216,9 @@ namespace ManagerForCreatingBestTour
                         prev.pNext = next;
                         next.pPrev = prev;
                         Size--;
+                        Console.WriteLine("else");
                     }
+                    Console.WriteLine("1 -exp");
                 }
                 link = link.pNext;
             }

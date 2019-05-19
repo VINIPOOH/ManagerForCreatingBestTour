@@ -222,7 +222,37 @@ namespace ProjectForTest
 
         static void Main(string[] args)
         {
-            CitiesInfo_Distances_NewTest();
+            TwoWayLinkedList lst = new TwoWayLinkedList();
+            City city1 = new City("1", 9, 4);
+            City city2 = new City("2", 14, 8);
+            City city3 = new City("3", 231, 2);
+            City city4 = new City("4", 2, 3);
+            City city5 = new City("5", 3, 4);
+            City city6 = new City("6", 5, 8);
+            City city7 = new City("7", 26, 2);
+            City city8 = new City("8", 23, 4);
+            lst.PushLast(city5);
+            lst.PushLast(city6);
+            lst.PushLast(city7);
+            lst.PushLast(city8);
+            lst.PushLast(city1);
+            lst.PushLast(city2);
+            lst.PushLast(city3);
+            lst.PushLast(city4);
+            
+            lst.DelByName("1");
+            lst.DelByName("2");
+            lst.DelByName("3");
+            lst.DelByName("4");
+            lst.DelByName("5");
+            lst.DelByName("6");
+            lst.DelByName("7");
+            lst.DelByName("8");
+            foreach (var item in lst)
+            {
+                Console.WriteLine(item.Name);
+            }
+            //CitiesInfo_Distances_NewTest();
             Console.ReadKey();
         }
     }
