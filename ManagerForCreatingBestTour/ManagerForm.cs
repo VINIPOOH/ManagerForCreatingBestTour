@@ -19,6 +19,7 @@ namespace ManagerForCreatingBestTour
         TwoWayLinkedList B = new TwoWayLinkedList();
         TwoWayLinkedList C = new TwoWayLinkedList();
         TwoWayLinkedList D = new TwoWayLinkedList();
+        TwoWayLinkedList CClon = new TwoWayLinkedList();
         public ManagerForm()
         {
             TwoWayLinkedList toReturnList = new TwoWayLinkedList();// список городов для передачи на следущую форму 
@@ -128,16 +129,16 @@ namespace ManagerForCreatingBestTour
         }
         private void ShouD()
         {
-            for (int k = gottenGridViewC.RowCount - 1; k < D.GetSize(); k++)
+            for (int k = finalGridViewD.RowCount - 1; k < D.GetSize(); k++)
             {
-                gottenGridViewC.Rows.Add();
+                finalGridViewD.Rows.Add();
             }
             int a = 0;
             foreach (City city in D)
             {
-                gottenGridViewC[0, a].Value = city.Name;
-                gottenGridViewC[2, a].Value = city.AmountPeopleYoungerTwenty;
-                gottenGridViewC[1, a].Value = city.AmountPeople;
+                finalGridViewD[0, a].Value = city.Name;
+                finalGridViewD[2, a].Value = city.AmountPeopleYoungerTwenty;
+                finalGridViewD[1, a].Value = city.AmountPeople;
                 a++;
             }
         }
@@ -173,7 +174,16 @@ namespace ManagerForCreatingBestTour
         }
         private void SortWayBtn_Click(object sender, EventArgs e)
         {
-            
+            if (underTwentyRBtn3.Checked)
+            {
+                C.QuickSortPeopleYoungerTwenty();
+                ShouC();
+            }
+            else if (populationRBtn3.Checked)
+            {
+                C.QuickSortAmountPeople();
+                ShouC();
+            }
             //!!!1 полностю аналогично пердыдущим пердеудущему методу сортировки на сей рас с списком С
             //!!!1 далее также аналогично нужно создать с списком Д и формой Д передачю на последжнюю гридвю Д
             //!!!1 при нажатии на кнопку покахзать на карте будет передаватся на следущую форму списоук Д
@@ -234,6 +244,16 @@ namespace ManagerForCreatingBestTour
             B.PushLast(city);
             ShouA(); 
             ShouB();
+        }
+
+        private void tourGridViewB_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            string cityName = tourGridViewB.CurrentCell.Value.ToString();
+            City city = C.Find(cityName);
+            //C.DelByName(cityName);
+            D.PushLast(city);
+            ShouC();
+            ShouD();
         }
     }
 }
