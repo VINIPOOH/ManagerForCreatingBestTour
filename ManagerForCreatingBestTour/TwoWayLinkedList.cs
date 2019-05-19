@@ -201,10 +201,12 @@ namespace ManagerForCreatingBestTour
                     if (head.data.Name == name)
                     {
                         DelFirst();
+                        link = link.pNext;
                     }
                     else if (last.data.Name == name)
                     {
                         DelLast();
+                        link = link.pNext;
                     }
                     else
                     {
@@ -214,9 +216,11 @@ namespace ManagerForCreatingBestTour
                         prev.pNext = next;
                         next.pPrev = prev;
                         Size--;
+                        link = next;
+                      
                     }
                 }
-                link = link.pNext;
+                
             }
         }
 
