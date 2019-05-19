@@ -83,10 +83,13 @@ namespace ManagerForCreatingBestTour
         }
         private void ShouA()
         {
+            givenCitiesGridViewA.Rows.Clear();
             for (int k = givenCitiesGridViewA.RowCount - 1; k < A.GetSize(); k++)
             {
                 givenCitiesGridViewA.Rows.Add();
+                
             }
+            
             int a = 0;
             foreach (City city in A)
             {
@@ -99,10 +102,13 @@ namespace ManagerForCreatingBestTour
         }
         private void ShouB()
         {
+            gottenGridViewC.Rows.Clear();
             for (int k = gottenGridViewC.RowCount-1; k < B.GetSize(); k++)
             {
                 gottenGridViewC.Rows.Add();
+                
             }
+            
             int a = 0;
             foreach (City city in B)
             {
@@ -114,10 +120,13 @@ namespace ManagerForCreatingBestTour
         }
         private void ShouC()
         {
+            tourGridViewB.Rows.Clear();
             for (int k = tourGridViewB.RowCount - 1; k < C.GetSize(); k++)
             {
                 tourGridViewB.Rows.Add();
+               
             }
+            
             int a = 0;
             foreach (City city in C)
             {
@@ -129,10 +138,13 @@ namespace ManagerForCreatingBestTour
         }
         private void ShouD()
         {
+            finalGridViewD.Rows.Clear();
             for (int k = finalGridViewD.RowCount - 1; k < D.GetSize(); k++)
             {
                 finalGridViewD.Rows.Add();
+                
             }
+            
             int a = 0;
             foreach (City city in D)
             {
@@ -238,11 +250,11 @@ namespace ManagerForCreatingBestTour
 
         private void givenCitiesGridViewA_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            string cityName= givenCitiesGridViewA.CurrentCell.Value.ToString();
+            string cityName = givenCitiesGridViewA.CurrentCell.Value.ToString();
             City city = A.Find(cityName);
-            //A.DelByName(cityName);
+            A.DelByName(cityName);
             B.PushLast(city);
-            ShouA(); 
+            ShouA();
             ShouB();
         }
 
