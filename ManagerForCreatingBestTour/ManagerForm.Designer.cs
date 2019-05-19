@@ -101,7 +101,6 @@
             this.toolTipForSearchCities = new System.Windows.Forms.ToolTip(this.components);
             this.toolTipForSelectCities = new System.Windows.Forms.ToolTip(this.components);
             this.toolTipForDefenitionListCities = new System.Windows.Forms.ToolTip(this.components);
-            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.populationTrackBar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.underTwentyTrackBar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cityNumTrackBar)).BeginInit();
@@ -677,7 +676,6 @@
             // 
             // groupBoxDefinitionListOfCities
             // 
-            this.groupBoxDefinitionListOfCities.Controls.Add(this.button1);
             this.groupBoxDefinitionListOfCities.Controls.Add(this.pictureBox1);
             this.groupBoxDefinitionListOfCities.Controls.Add(this.tourGridViewB);
             this.groupBoxDefinitionListOfCities.Controls.Add(this.sortSecGroupBox);
@@ -726,18 +724,6 @@
             // 
             this.toolTipForDefenitionListCities.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
             this.toolTipForDefenitionListCities.ToolTipTitle = "Подсказка:";
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.SystemColors.Control;
-            this.button1.Location = new System.Drawing.Point(944, 222);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(188, 54);
-            this.button1.TabIndex = 55;
-            this.button1.Text = "Построить карту";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // ManagerForm
             // 
@@ -842,7 +828,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn city;
         private System.Windows.Forms.DataGridViewTextBoxColumn population;
         private System.Windows.Forms.DataGridViewTextBoxColumn underTwenty;
-        private System.Windows.Forms.Button button1;
     }
 }
 

@@ -19,6 +19,10 @@ namespace ManagerForCreatingBestTour
         TwoWayLinkedList B = new TwoWayLinkedList();
         TwoWayLinkedList C = new TwoWayLinkedList();
         TwoWayLinkedList D = new TwoWayLinkedList();
+        TwoWayLinkedList AA = new TwoWayLinkedList();
+        TwoWayLinkedList BB = new TwoWayLinkedList();
+        TwoWayLinkedList CC = new TwoWayLinkedList();
+        TwoWayLinkedList DD = new TwoWayLinkedList();
         TwoWayLinkedList CClon = new TwoWayLinkedList();
         public ManagerForm()
         {
@@ -64,6 +68,10 @@ namespace ManagerForCreatingBestTour
             {
                 MessageBox.Show("Выбирите 1 параметр по которому нужно представить города");
                 return;
+            }
+            foreach (City city in A)
+            {
+                AA.PushLast(city);
             }
             //!!!1 добавленые поля толжны стать не доступны после нажатия указаного батона
             //!!!1 также небходимо будет создать кнопку обнуления которая сбросит вообще все параметры на начало если юзер рукожоп и ошибся
@@ -177,9 +185,13 @@ namespace ManagerForCreatingBestTour
             City city = B.GetFirst();
             B.DelFirst();
             C = wayCreator.GetRoute(B,city);
-            foreach(City city1 in C)
+            foreach (City city1 in C)
             {
-                CClon.PushFirst(city1);
+                CC.PushLast(city1);
+            }
+            foreach (City city2 in C)
+            {
+                CClon.PushLast(city2);
             }
             
             ShouC();
@@ -265,8 +277,13 @@ namespace ManagerForCreatingBestTour
         private void givenCitiesGridViewA_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             string cityName = givenCitiesGridViewA.CurrentCell.Value.ToString();
-            City city = A.Find(cityName);
-            A.DelByName(cityName);
+            City city = AA.Find(cityName);
+            AA.DelByName(cityName);
+            A = new TwoWayLinkedList();
+            foreach (City city1 in AA)
+            {
+                A.PushLast(city1);
+            }
             B.PushLast(city);
             ShouA();
             ShouB();
@@ -276,7 +293,12 @@ namespace ManagerForCreatingBestTour
         {
             string cityName = tourGridViewB.CurrentCell.Value.ToString();
             City city = C.Find(cityName);
-            C.DelByName(cityName);
+            CC.DelByName(cityName);
+            C = new TwoWayLinkedList();
+            foreach (City city1 in CC)
+            {
+                C.PushLast(city1);
+            }
             D.PushLast(city);
             ShouC();
             ShouD();
