@@ -513,7 +513,7 @@ namespace ManagerForCreatingBestTour
             this.ClientSize = new System.Drawing.Size(1350, 730);
             //this.Controls.Add(this.button20);
 //=======
-            this.ClientSize = new System.Drawing.Size(875, 462);
+            //this.ClientSize = new System.Drawing.Size(875, 462);
             this.Controls.Add(this.veniceBtn);
 //>>>>>>> c12393ec3638afea213e7772ee604fe5a39c33fb
             this.Controls.Add(this.button19);

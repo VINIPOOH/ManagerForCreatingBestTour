@@ -191,6 +191,34 @@ namespace ManagerForCreatingBestTour
                 Size--;
             }
         }
+        public void DelByName(string name)
+        {
+            Node link = this.head;
+            while (link != null)
+            {
+                if (link.data.Name == name)
+                {
+                    if (head.data.Name == name)
+                    {
+                        DelFirst();
+                    }
+                    else if (last.data.Name == name)
+                    {
+                        DelLast();
+                    }
+                    else
+                    {
+                        Node toDelete = link;
+                        Node next = toDelete.pNext;
+                        Node prev = toDelete.pPrev;
+                        prev.pNext = next;
+                        next.pPrev = prev;
+                        Size--;
+                    }
+                }
+                link = link.pNext;
+            }
+        }
 
         public int IndexOf(City city)
         {
