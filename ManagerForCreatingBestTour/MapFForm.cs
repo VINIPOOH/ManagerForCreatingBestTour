@@ -32,7 +32,7 @@ namespace ManagerForCreatingBestTour
                 {
                     case "Berlin":
                         berlinBtn.BackColor = Color.Tomato;
-                        berlinBtn.Text = i + "||" + qrentCity.Name;
+                        berlinBtn.Text = i + "|" + qrentCity.Name;
                         break;
                     case "Kiev":
                         kievBtn.BackColor = Color.Tomato;
