@@ -36,15 +36,15 @@
             this.budapestBtn = new System.Windows.Forms.Button();
             this.kievBtn = new System.Windows.Forms.Button();
             this.minskBtn = new System.Windows.Forms.Button();
-            this.krakowBtn = new System.Windows.Forms.Button();
+            this.krakovBtn = new System.Windows.Forms.Button();
             this.lvivBtn = new System.Windows.Forms.Button();
-            this.kosiceBtn = new System.Windows.Forms.Button();
-            this.chisinauBtn = new System.Windows.Forms.Button();
-            this.odessaBtn = new System.Windows.Forms.Button();
+            this.koshizeBtn = new System.Windows.Forms.Button();
+            this.kishinevBtn = new System.Windows.Forms.Button();
+            this.odesaBtn = new System.Windows.Forms.Button();
             this.zagrebBtn = new System.Windows.Forms.Button();
             this.munchenBtn = new System.Windows.Forms.Button();
             this.zurichBtn = new System.Windows.Forms.Button();
-            this.nernbergBtn = new System.Windows.Forms.Button();
+            this.nurnbergBtn = new System.Windows.Forms.Button();
             this.kolnBtn = new System.Windows.Forms.Button();
             this.bremenBtn = new System.Windows.Forms.Button();
             this.gdanskBtn = new System.Windows.Forms.Button();
@@ -67,7 +67,7 @@
             this.button17 = new System.Windows.Forms.Button();
             this.button18 = new System.Windows.Forms.Button();
             this.button19 = new System.Windows.Forms.Button();
-            this.button20 = new System.Windows.Forms.Button();
+            this.veniceBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // warsawBtn
@@ -148,16 +148,16 @@
             this.minskBtn.Text = "Минск";
             this.minskBtn.UseVisualStyleBackColor = false;
             // 
-            // krakowBtn
+            // krakovBtn
             // 
-            this.krakowBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.krakowBtn.BackColor = System.Drawing.Color.LightCyan;
-            this.krakowBtn.Location = new System.Drawing.Point(389, 200);
-            this.krakowBtn.Name = "krakowBtn";
-            this.krakowBtn.Size = new System.Drawing.Size(52, 24);
-            this.krakowBtn.TabIndex = 9;
-            this.krakowBtn.Text = "Краков";
-            this.krakowBtn.UseVisualStyleBackColor = false;
+            this.krakovBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.krakovBtn.BackColor = System.Drawing.Color.LightCyan;
+            this.krakovBtn.Location = new System.Drawing.Point(389, 200);
+            this.krakovBtn.Name = "krakovBtn";
+            this.krakovBtn.Size = new System.Drawing.Size(52, 24);
+            this.krakovBtn.TabIndex = 9;
+            this.krakovBtn.Text = "Краков";
+            this.krakovBtn.UseVisualStyleBackColor = false;
             // 
             // lvivBtn
             // 
@@ -170,38 +170,38 @@
             this.lvivBtn.Text = "Львов";
             this.lvivBtn.UseVisualStyleBackColor = false;
             // 
-            // kosiceBtn
+            // koshizeBtn
             // 
-            this.kosiceBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.kosiceBtn.BackColor = System.Drawing.Color.LightCyan;
-            this.kosiceBtn.Location = new System.Drawing.Point(431, 273);
-            this.kosiceBtn.Name = "kosiceBtn";
-            this.kosiceBtn.Size = new System.Drawing.Size(56, 24);
-            this.kosiceBtn.TabIndex = 11;
-            this.kosiceBtn.Text = "Кошице";
-            this.kosiceBtn.UseVisualStyleBackColor = false;
+            this.koshizeBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.koshizeBtn.BackColor = System.Drawing.Color.LightCyan;
+            this.koshizeBtn.Location = new System.Drawing.Point(431, 273);
+            this.koshizeBtn.Name = "koshizeBtn";
+            this.koshizeBtn.Size = new System.Drawing.Size(56, 24);
+            this.koshizeBtn.TabIndex = 11;
+            this.koshizeBtn.Text = "Кошице";
+            this.koshizeBtn.UseVisualStyleBackColor = false;
             // 
-            // chisinauBtn
+            // kishinevBtn
             // 
-            this.chisinauBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.chisinauBtn.BackColor = System.Drawing.Color.LightCyan;
-            this.chisinauBtn.Location = new System.Drawing.Point(679, 378);
-            this.chisinauBtn.Name = "chisinauBtn";
-            this.chisinauBtn.Size = new System.Drawing.Size(61, 24);
-            this.chisinauBtn.TabIndex = 12;
-            this.chisinauBtn.Text = "Кишинёв";
-            this.chisinauBtn.UseVisualStyleBackColor = false;
+            this.kishinevBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.kishinevBtn.BackColor = System.Drawing.Color.LightCyan;
+            this.kishinevBtn.Location = new System.Drawing.Point(679, 378);
+            this.kishinevBtn.Name = "kishinevBtn";
+            this.kishinevBtn.Size = new System.Drawing.Size(61, 24);
+            this.kishinevBtn.TabIndex = 12;
+            this.kishinevBtn.Text = "Кишинёв";
+            this.kishinevBtn.UseVisualStyleBackColor = false;
             // 
-            // odessaBtn
+            // odesaBtn
             // 
-            this.odessaBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.odessaBtn.BackColor = System.Drawing.Color.LightCyan;
-            this.odessaBtn.Location = new System.Drawing.Point(751, 367);
-            this.odessaBtn.Name = "odessaBtn";
-            this.odessaBtn.Size = new System.Drawing.Size(53, 24);
-            this.odessaBtn.TabIndex = 13;
-            this.odessaBtn.Text = "Одесса";
-            this.odessaBtn.UseVisualStyleBackColor = false;
+            this.odesaBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.odesaBtn.BackColor = System.Drawing.Color.LightCyan;
+            this.odesaBtn.Location = new System.Drawing.Point(751, 367);
+            this.odesaBtn.Name = "odesaBtn";
+            this.odesaBtn.Size = new System.Drawing.Size(53, 24);
+            this.odesaBtn.TabIndex = 13;
+            this.odesaBtn.Text = "Одесса";
+            this.odesaBtn.UseVisualStyleBackColor = false;
             // 
             // zagrebBtn
             // 
@@ -236,16 +236,16 @@
             this.zurichBtn.Text = "Цюрих";
             this.zurichBtn.UseVisualStyleBackColor = false;
             // 
-            // nernbergBtn
+            // nurnbergBtn
             // 
-            this.nernbergBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.nernbergBtn.BackColor = System.Drawing.Color.AliceBlue;
-            this.nernbergBtn.Location = new System.Drawing.Point(104, 213);
-            this.nernbergBtn.Name = "nernbergBtn";
-            this.nernbergBtn.Size = new System.Drawing.Size(66, 24);
-            this.nernbergBtn.TabIndex = 17;
-            this.nernbergBtn.Text = "Нюрнберг";
-            this.nernbergBtn.UseVisualStyleBackColor = false;
+            this.nurnbergBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.nurnbergBtn.BackColor = System.Drawing.Color.AliceBlue;
+            this.nurnbergBtn.Location = new System.Drawing.Point(104, 213);
+            this.nurnbergBtn.Name = "nurnbergBtn";
+            this.nurnbergBtn.Size = new System.Drawing.Size(66, 24);
+            this.nurnbergBtn.TabIndex = 17;
+            this.nurnbergBtn.Text = "Нюрнберг";
+            this.nurnbergBtn.UseVisualStyleBackColor = false;
             // 
             // kolnBtn
             // 
@@ -490,16 +490,16 @@
             this.button19.Text = "Дрезден";
             this.button19.UseVisualStyleBackColor = false;
             // 
-            // button20
+            // veniceBtn
             // 
-            this.button20.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button20.BackColor = System.Drawing.Color.LightCyan;
-            this.button20.Location = new System.Drawing.Point(127, 431);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(60, 24);
-            this.button20.TabIndex = 40;
-            this.button20.Text = "Венеция";
-            this.button20.UseVisualStyleBackColor = false;
+            this.veniceBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.veniceBtn.BackColor = System.Drawing.Color.LightCyan;
+            this.veniceBtn.Location = new System.Drawing.Point(127, 431);
+            this.veniceBtn.Name = "veniceBtn";
+            this.veniceBtn.Size = new System.Drawing.Size(60, 24);
+            this.veniceBtn.TabIndex = 40;
+            this.veniceBtn.Text = "Венеция";
+            this.veniceBtn.UseVisualStyleBackColor = false;
             // 
             // MapForm
             // 
@@ -508,7 +508,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(875, 462);
-            this.Controls.Add(this.button20);
+            this.Controls.Add(this.veniceBtn);
             this.Controls.Add(this.button19);
             this.Controls.Add(this.button18);
             this.Controls.Add(this.button17);
@@ -531,15 +531,15 @@
             this.Controls.Add(this.gdanskBtn);
             this.Controls.Add(this.bremenBtn);
             this.Controls.Add(this.kolnBtn);
-            this.Controls.Add(this.nernbergBtn);
+            this.Controls.Add(this.nurnbergBtn);
             this.Controls.Add(this.zurichBtn);
             this.Controls.Add(this.munchenBtn);
             this.Controls.Add(this.zagrebBtn);
-            this.Controls.Add(this.odessaBtn);
-            this.Controls.Add(this.chisinauBtn);
-            this.Controls.Add(this.kosiceBtn);
+            this.Controls.Add(this.odesaBtn);
+            this.Controls.Add(this.kishinevBtn);
+            this.Controls.Add(this.koshizeBtn);
             this.Controls.Add(this.lvivBtn);
-            this.Controls.Add(this.krakowBtn);
+            this.Controls.Add(this.krakovBtn);
             this.Controls.Add(this.minskBtn);
             this.Controls.Add(this.kievBtn);
             this.Controls.Add(this.budapestBtn);
@@ -563,15 +563,15 @@
         private System.Windows.Forms.Button budapestBtn;
         private System.Windows.Forms.Button kievBtn;
         private System.Windows.Forms.Button minskBtn;
-        private System.Windows.Forms.Button krakowBtn;
+        private System.Windows.Forms.Button krakovBtn;
         private System.Windows.Forms.Button lvivBtn;
-        private System.Windows.Forms.Button kosiceBtn;
-        private System.Windows.Forms.Button chisinauBtn;
-        private System.Windows.Forms.Button odessaBtn;
+        private System.Windows.Forms.Button koshizeBtn;
+        private System.Windows.Forms.Button kishinevBtn;
+        private System.Windows.Forms.Button odesaBtn;
         private System.Windows.Forms.Button zagrebBtn;
         private System.Windows.Forms.Button munchenBtn;
         private System.Windows.Forms.Button zurichBtn;
-        private System.Windows.Forms.Button nernbergBtn;
+        private System.Windows.Forms.Button nurnbergBtn;
         private System.Windows.Forms.Button kolnBtn;
         private System.Windows.Forms.Button bremenBtn;
         private System.Windows.Forms.Button gdanskBtn;
@@ -594,6 +594,6 @@
         private System.Windows.Forms.Button button17;
         private System.Windows.Forms.Button button18;
         private System.Windows.Forms.Button button19;
-        private System.Windows.Forms.Button button20;
+        private System.Windows.Forms.Button veniceBtn;
     }
 }

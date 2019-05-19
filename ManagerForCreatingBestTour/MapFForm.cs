@@ -44,6 +44,45 @@ namespace ManagerForCreatingBestTour
                     case "Budapest":
                         budapestBtn.BackColor = Color.Tomato;
                         break;
+                    case "Odesa":
+                        odesaBtn.BackColor = Color.Tomato;
+                        break;
+                    case "Kishinev":
+                        kishinevBtn.BackColor = Color.Tomato;
+                        break;
+                    case "Lviv":
+                        lvivBtn.BackColor = Color.Tomato;
+                        break;
+                    case "Gdansk":
+                        gdanskBtn.BackColor = Color.Tomato;
+                        break;
+                    case "Krakov":
+                        krakovBtn.BackColor = Color.Tomato;
+                        break;
+                    case "Koshize":
+                        koshizeBtn.BackColor = Color.Tomato;
+                        break;
+                    case "Zagreb":
+                        zagrebBtn.BackColor = Color.Tomato;
+                        break;
+                    case "Venice":
+                        veniceBtn.BackColor = Color.Tomato;
+                        break;
+                    case "Munchen":
+                        munchenBtn.BackColor = Color.Tomato;
+                        break;
+                    case "Zurich":
+                        zurichBtn.BackColor = Color.Tomato;
+                        break;
+                    case "Nurnberg":
+                        nurnbergBtn.BackColor = Color.Tomato;
+                        break;
+                    case "Koln":
+                        kolnBtn.BackColor = Color.Tomato;
+                        break;
+                    case "Bremen":
+                        bremenBtn.BackColor = Color.Tomato;
+                        break;
                 }
             }
         }
