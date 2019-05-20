@@ -76,10 +76,9 @@ namespace ManagerForCreatingBestTour
             // 
             this.warsawBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.warsawBtn.BackColor = System.Drawing.Color.LightCyan;
-            this.warsawBtn.Location = new System.Drawing.Point(630, 128);
-            this.warsawBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.warsawBtn.Location = new System.Drawing.Point(441, 90);
             this.warsawBtn.Name = "warsawBtn";
-            this.warsawBtn.Size = new System.Drawing.Size(92, 37);
+            this.warsawBtn.Size = new System.Drawing.Size(61, 24);
             this.warsawBtn.TabIndex = 2;
             this.warsawBtn.Text = "Варшава";
             this.warsawBtn.UseVisualStyleBackColor = false;
@@ -89,10 +88,9 @@ namespace ManagerForCreatingBestTour
             this.berlinBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.berlinBtn.BackColor = System.Drawing.Color.LightCyan;
             this.berlinBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.berlinBtn.Location = new System.Drawing.Point(294, 89);
-            this.berlinBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.berlinBtn.Location = new System.Drawing.Point(205, 62);
             this.berlinBtn.Name = "berlinBtn";
-            this.berlinBtn.Size = new System.Drawing.Size(80, 37);
+            this.berlinBtn.Size = new System.Drawing.Size(53, 24);
             this.berlinBtn.TabIndex = 3;
             this.berlinBtn.Text = "Берлин";
             this.berlinBtn.UseVisualStyleBackColor = false;
@@ -101,10 +99,9 @@ namespace ManagerForCreatingBestTour
             // 
             this.prahaBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.prahaBtn.BackColor = System.Drawing.Color.LightCyan;
-            this.prahaBtn.Location = new System.Drawing.Point(322, 295);
-            this.prahaBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.prahaBtn.Location = new System.Drawing.Point(235, 204);
             this.prahaBtn.Name = "prahaBtn";
-            this.prahaBtn.Size = new System.Drawing.Size(81, 37);
+            this.prahaBtn.Size = new System.Drawing.Size(54, 24);
             this.prahaBtn.TabIndex = 4;
             this.prahaBtn.Text = "Прага";
             this.prahaBtn.UseVisualStyleBackColor = false;
@@ -113,10 +110,9 @@ namespace ManagerForCreatingBestTour
             // 
             this.wienBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.wienBtn.BackColor = System.Drawing.Color.LightCyan;
-            this.wienBtn.Location = new System.Drawing.Point(412, 454);
-            this.wienBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.wienBtn.Location = new System.Drawing.Point(292, 314);
             this.wienBtn.Name = "wienBtn";
-            this.wienBtn.Size = new System.Drawing.Size(64, 37);
+            this.wienBtn.Size = new System.Drawing.Size(43, 24);
             this.wienBtn.TabIndex = 5;
             this.wienBtn.Text = "Вена";
             this.wienBtn.UseVisualStyleBackColor = false;
@@ -125,10 +121,9 @@ namespace ManagerForCreatingBestTour
             // 
             this.budapestBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.budapestBtn.BackColor = System.Drawing.Color.LightCyan;
-            this.budapestBtn.Location = new System.Drawing.Point(528, 520);
-            this.budapestBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.budapestBtn.Location = new System.Drawing.Point(370, 358);
             this.budapestBtn.Name = "budapestBtn";
-            this.budapestBtn.Size = new System.Drawing.Size(99, 37);
+            this.budapestBtn.Size = new System.Drawing.Size(66, 24);
             this.budapestBtn.TabIndex = 6;
             this.budapestBtn.Text = "Будапешт";
             this.budapestBtn.UseVisualStyleBackColor = false;
@@ -137,10 +132,9 @@ namespace ManagerForCreatingBestTour
             // 
             this.kievBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.kievBtn.BackColor = System.Drawing.Color.LightCyan;
-            this.kievBtn.Location = new System.Drawing.Point(1088, 242);
-            this.kievBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.kievBtn.Location = new System.Drawing.Point(759, 169);
             this.kievBtn.Name = "kievBtn";
-            this.kievBtn.Size = new System.Drawing.Size(60, 37);
+            this.kievBtn.Size = new System.Drawing.Size(40, 24);
             this.kievBtn.TabIndex = 7;
             this.kievBtn.Text = "Киев";
             this.kievBtn.UseVisualStyleBackColor = false;
@@ -149,10 +143,9 @@ namespace ManagerForCreatingBestTour
             // 
             this.minskBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.minskBtn.BackColor = System.Drawing.Color.LightCyan;
-            this.minskBtn.Location = new System.Drawing.Point(921, -5);
-            this.minskBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.minskBtn.Location = new System.Drawing.Point(636, -3);
             this.minskBtn.Name = "minskBtn";
-            this.minskBtn.Size = new System.Drawing.Size(80, 37);
+            this.minskBtn.Size = new System.Drawing.Size(53, 24);
             this.minskBtn.TabIndex = 8;
             this.minskBtn.Text = "Минск";
             this.minskBtn.UseVisualStyleBackColor = false;
@@ -161,10 +154,9 @@ namespace ManagerForCreatingBestTour
             // 
             this.krakovBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.krakovBtn.BackColor = System.Drawing.Color.LightCyan;
-            this.krakovBtn.Location = new System.Drawing.Point(584, 308);
-            this.krakovBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.krakovBtn.Location = new System.Drawing.Point(413, 213);
             this.krakovBtn.Name = "krakovBtn";
-            this.krakovBtn.Size = new System.Drawing.Size(78, 37);
+            this.krakovBtn.Size = new System.Drawing.Size(52, 24);
             this.krakovBtn.TabIndex = 9;
             this.krakovBtn.Text = "Краков";
             this.krakovBtn.UseVisualStyleBackColor = false;
@@ -173,10 +165,9 @@ namespace ManagerForCreatingBestTour
             // 
             this.lvivBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.lvivBtn.BackColor = System.Drawing.Color.LightCyan;
-            this.lvivBtn.Location = new System.Drawing.Point(780, 325);
-            this.lvivBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.lvivBtn.Location = new System.Drawing.Point(540, 223);
             this.lvivBtn.Name = "lvivBtn";
-            this.lvivBtn.Size = new System.Drawing.Size(75, 37);
+            this.lvivBtn.Size = new System.Drawing.Size(50, 24);
             this.lvivBtn.TabIndex = 10;
             this.lvivBtn.Text = "Львов";
             this.lvivBtn.UseVisualStyleBackColor = false;
@@ -185,10 +176,9 @@ namespace ManagerForCreatingBestTour
             // 
             this.koshizeBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.koshizeBtn.BackColor = System.Drawing.Color.LightCyan;
-            this.koshizeBtn.Location = new System.Drawing.Point(646, 420);
-            this.koshizeBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.koshizeBtn.Location = new System.Drawing.Point(451, 285);
             this.koshizeBtn.Name = "koshizeBtn";
-            this.koshizeBtn.Size = new System.Drawing.Size(84, 37);
+            this.koshizeBtn.Size = new System.Drawing.Size(56, 24);
             this.koshizeBtn.TabIndex = 11;
             this.koshizeBtn.Text = "Кошице";
             this.koshizeBtn.UseVisualStyleBackColor = false;
@@ -197,10 +187,9 @@ namespace ManagerForCreatingBestTour
             // 
             this.kishinevBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.kishinevBtn.BackColor = System.Drawing.Color.LightCyan;
-            this.kishinevBtn.Location = new System.Drawing.Point(1018, 582);
-            this.kishinevBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.kishinevBtn.Location = new System.Drawing.Point(716, 397);
             this.kishinevBtn.Name = "kishinevBtn";
-            this.kishinevBtn.Size = new System.Drawing.Size(92, 37);
+            this.kishinevBtn.Size = new System.Drawing.Size(61, 24);
             this.kishinevBtn.TabIndex = 12;
             this.kishinevBtn.Text = "Кишинёв";
             this.kishinevBtn.UseVisualStyleBackColor = false;
@@ -209,10 +198,9 @@ namespace ManagerForCreatingBestTour
             // 
             this.odesaBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.odesaBtn.BackColor = System.Drawing.Color.LightCyan;
-            this.odesaBtn.Location = new System.Drawing.Point(1126, 565);
-            this.odesaBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.odesaBtn.Location = new System.Drawing.Point(783, 387);
             this.odesaBtn.Name = "odesaBtn";
-            this.odesaBtn.Size = new System.Drawing.Size(80, 37);
+            this.odesaBtn.Size = new System.Drawing.Size(53, 24);
             this.odesaBtn.TabIndex = 13;
             this.odesaBtn.Text = "Одесса";
             this.odesaBtn.UseVisualStyleBackColor = false;
@@ -221,10 +209,9 @@ namespace ManagerForCreatingBestTour
             // 
             this.zagrebBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.zagrebBtn.BackColor = System.Drawing.Color.LightCyan;
-            this.zagrebBtn.Location = new System.Drawing.Point(372, 651);
-            this.zagrebBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.zagrebBtn.Location = new System.Drawing.Point(263, 447);
             this.zagrebBtn.Name = "zagrebBtn";
-            this.zagrebBtn.Size = new System.Drawing.Size(90, 37);
+            this.zagrebBtn.Size = new System.Drawing.Size(60, 24);
             this.zagrebBtn.TabIndex = 14;
             this.zagrebBtn.Text = "Загреб";
             this.zagrebBtn.UseVisualStyleBackColor = false;
@@ -233,10 +220,9 @@ namespace ManagerForCreatingBestTour
             // 
             this.munchenBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.munchenBtn.BackColor = System.Drawing.Color.LightCyan;
-            this.munchenBtn.Location = new System.Drawing.Point(166, 437);
-            this.munchenBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.munchenBtn.Location = new System.Drawing.Point(118, 302);
             this.munchenBtn.Name = "munchenBtn";
-            this.munchenBtn.Size = new System.Drawing.Size(98, 37);
+            this.munchenBtn.Size = new System.Drawing.Size(65, 24);
             this.munchenBtn.TabIndex = 15;
             this.munchenBtn.Text = "Мюнхен";
             this.munchenBtn.UseVisualStyleBackColor = false;
@@ -245,10 +231,9 @@ namespace ManagerForCreatingBestTour
             // 
             this.zurichBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.zurichBtn.BackColor = System.Drawing.Color.LightCyan;
-            this.zurichBtn.Location = new System.Drawing.Point(26, 474);
-            this.zurichBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.zurichBtn.Location = new System.Drawing.Point(18, 327);
             this.zurichBtn.Name = "zurichBtn";
-            this.zurichBtn.Size = new System.Drawing.Size(81, 37);
+            this.zurichBtn.Size = new System.Drawing.Size(54, 24);
             this.zurichBtn.TabIndex = 16;
             this.zurichBtn.Text = "Цюрих";
             this.zurichBtn.UseVisualStyleBackColor = false;
@@ -257,10 +242,9 @@ namespace ManagerForCreatingBestTour
             // 
             this.nurnbergBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.nurnbergBtn.BackColor = System.Drawing.Color.AliceBlue;
-            this.nurnbergBtn.Location = new System.Drawing.Point(156, 328);
-            this.nurnbergBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.nurnbergBtn.Location = new System.Drawing.Point(113, 227);
             this.nurnbergBtn.Name = "nurnbergBtn";
-            this.nurnbergBtn.Size = new System.Drawing.Size(99, 37);
+            this.nurnbergBtn.Size = new System.Drawing.Size(66, 24);
             this.nurnbergBtn.TabIndex = 17;
             this.nurnbergBtn.Text = "Нюрнберг";
             this.nurnbergBtn.UseVisualStyleBackColor = false;
@@ -269,10 +253,9 @@ namespace ManagerForCreatingBestTour
             // 
             this.kolnBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.kolnBtn.BackColor = System.Drawing.Color.LightCyan;
-            this.kolnBtn.Location = new System.Drawing.Point(-2, 174);
-            this.kolnBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.kolnBtn.Location = new System.Drawing.Point(3, 121);
             this.kolnBtn.Name = "kolnBtn";
-            this.kolnBtn.Size = new System.Drawing.Size(70, 37);
+            this.kolnBtn.Size = new System.Drawing.Size(47, 24);
             this.kolnBtn.TabIndex = 18;
             this.kolnBtn.Text = "Кёльн";
             this.kolnBtn.UseVisualStyleBackColor = false;
@@ -282,10 +265,9 @@ namespace ManagerForCreatingBestTour
             this.bremenBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.bremenBtn.BackColor = System.Drawing.Color.LightCyan;
             this.bremenBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.bremenBtn.Location = new System.Drawing.Point(93, 18);
-            this.bremenBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bremenBtn.Location = new System.Drawing.Point(71, 14);
             this.bremenBtn.Name = "bremenBtn";
-            this.bremenBtn.Size = new System.Drawing.Size(92, 37);
+            this.bremenBtn.Size = new System.Drawing.Size(61, 24);
             this.bremenBtn.TabIndex = 19;
             this.bremenBtn.Text = "Бремен";
             this.bremenBtn.UseVisualStyleBackColor = false;
@@ -294,10 +276,9 @@ namespace ManagerForCreatingBestTour
             // 
             this.gdanskBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.gdanskBtn.BackColor = System.Drawing.Color.LightCyan;
-            this.gdanskBtn.Location = new System.Drawing.Point(520, 0);
-            this.gdanskBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gdanskBtn.Location = new System.Drawing.Point(366, 2);
             this.gdanskBtn.Name = "gdanskBtn";
-            this.gdanskBtn.Size = new System.Drawing.Size(90, 37);
+            this.gdanskBtn.Size = new System.Drawing.Size(60, 24);
             this.gdanskBtn.TabIndex = 20;
             this.gdanskBtn.Text = "Гданськ";
             this.gdanskBtn.UseVisualStyleBackColor = false;
@@ -306,10 +287,9 @@ namespace ManagerForCreatingBestTour
             // 
             this.button1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button1.BackColor = System.Drawing.Color.LightCyan;
-            this.button1.Location = new System.Drawing.Point(710, 209);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button1.Location = new System.Drawing.Point(491, 145);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(87, 37);
+            this.button1.Size = new System.Drawing.Size(58, 24);
             this.button1.TabIndex = 21;
             this.button1.Text = "Люблин";
             this.button1.UseVisualStyleBackColor = false;
@@ -318,10 +298,9 @@ namespace ManagerForCreatingBestTour
             // 
             this.button2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button2.BackColor = System.Drawing.Color.AliceBlue;
-            this.button2.Location = new System.Drawing.Point(498, 374);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button2.Location = new System.Drawing.Point(352, 255);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(88, 37);
+            this.button2.Size = new System.Drawing.Size(59, 24);
             this.button2.TabIndex = 22;
             this.button2.Text = "Острава";
             this.button2.UseVisualStyleBackColor = false;
@@ -330,10 +309,9 @@ namespace ManagerForCreatingBestTour
             // 
             this.button3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button3.BackColor = System.Drawing.Color.AliceBlue;
-            this.button3.Location = new System.Drawing.Point(430, 377);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button3.Location = new System.Drawing.Point(307, 257);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(62, 37);
+            this.button3.Size = new System.Drawing.Size(41, 24);
             this.button3.TabIndex = 23;
             this.button3.Text = "Брно";
             this.button3.UseVisualStyleBackColor = false;
@@ -342,10 +320,9 @@ namespace ManagerForCreatingBestTour
             // 
             this.button4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button4.BackColor = System.Drawing.Color.AliceBlue;
-            this.button4.Location = new System.Drawing.Point(364, 548);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button4.Location = new System.Drawing.Point(254, 377);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 37);
+            this.button4.Size = new System.Drawing.Size(50, 24);
             this.button4.TabIndex = 24;
             this.button4.Text = "Грац";
             this.button4.UseVisualStyleBackColor = false;
@@ -354,10 +331,9 @@ namespace ManagerForCreatingBestTour
             // 
             this.button5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button5.BackColor = System.Drawing.Color.AliceBlue;
-            this.button5.Location = new System.Drawing.Point(776, 580);
-            this.button5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button5.Location = new System.Drawing.Point(539, 398);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 37);
+            this.button5.Size = new System.Drawing.Size(50, 24);
             this.button5.TabIndex = 25;
             this.button5.Text = "Клуж";
             this.button5.UseVisualStyleBackColor = false;
@@ -366,10 +342,9 @@ namespace ManagerForCreatingBestTour
             // 
             this.button6.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button6.BackColor = System.Drawing.Color.AliceBlue;
-            this.button6.Location = new System.Drawing.Point(927, 552);
-            this.button6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button6.Location = new System.Drawing.Point(647, 380);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 37);
+            this.button6.Size = new System.Drawing.Size(50, 24);
             this.button6.TabIndex = 26;
             this.button6.Text = "Яссы";
             this.button6.UseVisualStyleBackColor = false;
@@ -378,10 +353,9 @@ namespace ManagerForCreatingBestTour
             // 
             this.button7.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button7.BackColor = System.Drawing.Color.AliceBlue;
-            this.button7.Location = new System.Drawing.Point(452, 217);
-            this.button7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button7.Location = new System.Drawing.Point(321, 150);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 37);
+            this.button7.Size = new System.Drawing.Size(50, 24);
             this.button7.TabIndex = 27;
             this.button7.Text = "Врослав";
             this.button7.UseVisualStyleBackColor = false;
@@ -390,10 +364,9 @@ namespace ManagerForCreatingBestTour
             // 
             this.button8.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button8.BackColor = System.Drawing.Color.AliceBlue;
-            this.button8.Location = new System.Drawing.Point(566, 168);
-            this.button8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button8.Location = new System.Drawing.Point(395, 118);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 37);
+            this.button8.Size = new System.Drawing.Size(50, 24);
             this.button8.TabIndex = 28;
             this.button8.Text = "Лодзь";
             this.button8.UseVisualStyleBackColor = false;
@@ -402,10 +375,9 @@ namespace ManagerForCreatingBestTour
             // 
             this.button9.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button9.BackColor = System.Drawing.Color.AliceBlue;
-            this.button9.Location = new System.Drawing.Point(724, 52);
-            this.button9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button9.Location = new System.Drawing.Point(502, 38);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(96, 37);
+            this.button9.Size = new System.Drawing.Size(64, 24);
             this.button9.TabIndex = 29;
             this.button9.Text = "Белосток";
             this.button9.UseVisualStyleBackColor = false;
@@ -414,10 +386,9 @@ namespace ManagerForCreatingBestTour
             // 
             this.button10.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button10.BackColor = System.Drawing.Color.AliceBlue;
-            this.button10.Location = new System.Drawing.Point(396, 42);
-            this.button10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button10.Location = new System.Drawing.Point(276, 30);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(75, 37);
+            this.button10.Size = new System.Drawing.Size(50, 24);
             this.button10.TabIndex = 30;
             this.button10.Text = "Щецин";
             this.button10.UseVisualStyleBackColor = false;
@@ -426,10 +397,9 @@ namespace ManagerForCreatingBestTour
             // 
             this.button11.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button11.BackColor = System.Drawing.Color.AliceBlue;
-            this.button11.Location = new System.Drawing.Point(495, 52);
-            this.button11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button11.Location = new System.Drawing.Point(345, 40);
             this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(93, 37);
+            this.button11.Size = new System.Drawing.Size(62, 24);
             this.button11.TabIndex = 31;
             this.button11.Text = "Быдгощь";
             this.button11.UseVisualStyleBackColor = false;
@@ -438,10 +408,9 @@ namespace ManagerForCreatingBestTour
             // 
             this.button12.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button12.BackColor = System.Drawing.Color.AliceBlue;
-            this.button12.Location = new System.Drawing.Point(66, 368);
-            this.button12.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button12.Location = new System.Drawing.Point(51, 257);
             this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(94, 37);
+            this.button12.Size = new System.Drawing.Size(63, 24);
             this.button12.TabIndex = 32;
             this.button12.Text = "Штутгард";
             this.button12.UseVisualStyleBackColor = false;
@@ -450,10 +419,9 @@ namespace ManagerForCreatingBestTour
             // 
             this.button13.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button13.BackColor = System.Drawing.Color.AliceBlue;
-            this.button13.Location = new System.Drawing.Point(70, 152);
-            this.button13.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button13.Location = new System.Drawing.Point(48, 106);
             this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(108, 40);
+            this.button13.Size = new System.Drawing.Size(72, 26);
             this.button13.TabIndex = 33;
             this.button13.Text = "Дортмунд";
             this.button13.UseVisualStyleBackColor = false;
@@ -462,10 +430,9 @@ namespace ManagerForCreatingBestTour
             // 
             this.button14.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button14.BackColor = System.Drawing.Color.AliceBlue;
-            this.button14.Location = new System.Drawing.Point(130, 83);
-            this.button14.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button14.Location = new System.Drawing.Point(91, 58);
             this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(98, 37);
+            this.button14.Size = new System.Drawing.Size(65, 24);
             this.button14.TabIndex = 34;
             this.button14.Text = "Ганновер";
             this.button14.UseVisualStyleBackColor = false;
@@ -474,10 +441,9 @@ namespace ManagerForCreatingBestTour
             // 
             this.button15.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button15.BackColor = System.Drawing.Color.AliceBlue;
-            this.button15.Location = new System.Drawing.Point(476, 314);
-            this.button15.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button15.Location = new System.Drawing.Point(337, 216);
             this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(104, 37);
+            this.button15.Size = new System.Drawing.Size(69, 24);
             this.button15.TabIndex = 35;
             this.button15.Text = "Катовице";
             this.button15.UseVisualStyleBackColor = false;
@@ -486,10 +452,9 @@ namespace ManagerForCreatingBestTour
             // 
             this.button16.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button16.BackColor = System.Drawing.Color.AliceBlue;
-            this.button16.Location = new System.Drawing.Point(1161, 448);
-            this.button16.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button16.Location = new System.Drawing.Point(811, 310);
             this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(110, 37);
+            this.button16.Size = new System.Drawing.Size(73, 24);
             this.button16.TabIndex = 36;
             this.button16.Text = "Кривой Рог";
             this.button16.UseVisualStyleBackColor = false;
@@ -498,10 +463,9 @@ namespace ManagerForCreatingBestTour
             // 
             this.button17.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button17.BackColor = System.Drawing.Color.AliceBlue;
-            this.button17.Location = new System.Drawing.Point(1166, 515);
-            this.button17.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button17.Location = new System.Drawing.Point(814, 354);
             this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(110, 37);
+            this.button17.Size = new System.Drawing.Size(73, 24);
             this.button17.TabIndex = 37;
             this.button17.Text = "Николаев";
             this.button17.UseVisualStyleBackColor = false;
@@ -510,10 +474,9 @@ namespace ManagerForCreatingBestTour
             // 
             this.button18.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button18.BackColor = System.Drawing.Color.AliceBlue;
-            this.button18.Location = new System.Drawing.Point(228, 185);
-            this.button18.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button18.Location = new System.Drawing.Point(164, 126);
             this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(90, 37);
+            this.button18.Size = new System.Drawing.Size(60, 24);
             this.button18.TabIndex = 38;
             this.button18.Text = "Лейпциг";
             this.button18.UseVisualStyleBackColor = false;
@@ -522,10 +485,9 @@ namespace ManagerForCreatingBestTour
             // 
             this.button19.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button19.BackColor = System.Drawing.Color.AliceBlue;
-            this.button19.Location = new System.Drawing.Point(291, 212);
-            this.button19.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button19.Location = new System.Drawing.Point(209, 148);
             this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(106, 37);
+            this.button19.Size = new System.Drawing.Size(71, 24);
             this.button19.TabIndex = 39;
             this.button19.Text = "Дрезден";
             this.button19.UseVisualStyleBackColor = false;
@@ -534,21 +496,20 @@ namespace ManagerForCreatingBestTour
             // 
             this.veniceBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.veniceBtn.BackColor = System.Drawing.Color.LightCyan;
-            this.veniceBtn.Location = new System.Drawing.Point(190, 663);
-            this.veniceBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.veniceBtn.Location = new System.Drawing.Point(134, 454);
             this.veniceBtn.Name = "veniceBtn";
-            this.veniceBtn.Size = new System.Drawing.Size(90, 37);
+            this.veniceBtn.Size = new System.Drawing.Size(60, 24);
             this.veniceBtn.TabIndex = 40;
             this.veniceBtn.Text = "Венеция";
             this.veniceBtn.UseVisualStyleBackColor = false;
             // 
             // MapForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::ManagerForCreatingBestTour.Resource1.Map;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1924, 1051);
+            this.ClientSize = new System.Drawing.Size(913, 487);
             this.Controls.Add(this.veniceBtn);
             this.Controls.Add(this.button19);
             this.Controls.Add(this.button18);
@@ -591,7 +552,6 @@ namespace ManagerForCreatingBestTour
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "MapForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Map";
