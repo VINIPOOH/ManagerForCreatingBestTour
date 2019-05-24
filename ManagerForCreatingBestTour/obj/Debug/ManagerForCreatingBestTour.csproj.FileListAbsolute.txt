@@ -67,3 +67,15 @@ D:\Polzovateli\LEXA-Tima\Projects C#\ManagerForCreatingBestTour - копия\Man
 D:\Polzovateli\LEXA-Tima\Projects C#\ManagerForCreatingBestTour - копия\ManagerForCreatingBestTour\obj\Debug\ManagerForCreatingBestTour.exe
 D:\Polzovateli\LEXA-Tima\Projects C#\ManagerForCreatingBestTour - копия\ManagerForCreatingBestTour\obj\Debug\ManagerForCreatingBestTour.pdb
 C:\Users\VINI\Desktop\KPI\TA\prodgect\ManagerForCreatingBestTour\ManagerForCreatingBestTour\obj\Debug\ManagerForCreatingBestTour.csprojAssemblyReference.cache
+C:\Users\stnkj\source\repos\newTA\ManagerForCreatingBestTour\ManagerForCreatingBestTour\bin\Debug\ManagerForCreatingBestTour.exe.config
+C:\Users\stnkj\source\repos\newTA\ManagerForCreatingBestTour\ManagerForCreatingBestTour\bin\Debug\ManagerForCreatingBestTour.exe
+C:\Users\stnkj\source\repos\newTA\ManagerForCreatingBestTour\ManagerForCreatingBestTour\bin\Debug\ManagerForCreatingBestTour.pdb
+C:\Users\stnkj\source\repos\newTA\ManagerForCreatingBestTour\ManagerForCreatingBestTour\obj\Debug\ManagerForCreatingBestTour.csprojAssemblyReference.cache
+C:\Users\stnkj\source\repos\newTA\ManagerForCreatingBestTour\ManagerForCreatingBestTour\obj\Debug\ManagerForCreatingBestTour.MapForm.resources
+C:\Users\stnkj\source\repos\newTA\ManagerForCreatingBestTour\ManagerForCreatingBestTour\obj\Debug\ManagerForCreatingBestTour.ManagerForm.resources
+C:\Users\stnkj\source\repos\newTA\ManagerForCreatingBestTour\ManagerForCreatingBestTour\obj\Debug\ManagerForCreatingBestTour.Properties.Resources.resources
+C:\Users\stnkj\source\repos\newTA\ManagerForCreatingBestTour\ManagerForCreatingBestTour\obj\Debug\ManagerForCreatingBestTour.Resource1.resources
+C:\Users\stnkj\source\repos\newTA\ManagerForCreatingBestTour\ManagerForCreatingBestTour\obj\Debug\ManagerForCreatingBestTour.csproj.GenerateResource.cache
+C:\Users\stnkj\source\repos\newTA\ManagerForCreatingBestTour\ManagerForCreatingBestTour\obj\Debug\ManagerForCreatingBestTour.csproj.CoreCompileInputs.cache
+C:\Users\stnkj\source\repos\newTA\ManagerForCreatingBestTour\ManagerForCreatingBestTour\obj\Debug\ManagerForCreatingBestTour.exe
+C:\Users\stnkj\source\repos\newTA\ManagerForCreatingBestTour\ManagerForCreatingBestTour\obj\Debug\ManagerForCreatingBestTour.pdb

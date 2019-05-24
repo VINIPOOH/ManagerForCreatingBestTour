@@ -101,6 +101,7 @@
             this.toolTipForSearchCities = new System.Windows.Forms.ToolTip(this.components);
             this.toolTipForSelectCities = new System.Windows.Forms.ToolTip(this.components);
             this.toolTipForDefenitionListCities = new System.Windows.Forms.ToolTip(this.components);
+            this.clearBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.populationTrackBar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.underTwentyTrackBar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cityNumTrackBar)).BeginInit();
@@ -123,20 +124,18 @@
             // 
             // populationTrackBar
             // 
-            this.populationTrackBar.Location = new System.Drawing.Point(9, 83);
-            this.populationTrackBar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.populationTrackBar.Location = new System.Drawing.Point(6, 54);
             this.populationTrackBar.Name = "populationTrackBar";
-            this.populationTrackBar.Size = new System.Drawing.Size(308, 69);
+            this.populationTrackBar.Size = new System.Drawing.Size(205, 45);
             this.populationTrackBar.TabIndex = 0;
             this.populationTrackBar.TickStyle = System.Windows.Forms.TickStyle.TopLeft;
             this.populationTrackBar.Scroll += new System.EventHandler(this.populationTrackBar_Scroll);
             // 
             // underTwentyTrackBar
             // 
-            this.underTwentyTrackBar.Location = new System.Drawing.Point(9, 198);
-            this.underTwentyTrackBar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.underTwentyTrackBar.Location = new System.Drawing.Point(6, 129);
             this.underTwentyTrackBar.Name = "underTwentyTrackBar";
-            this.underTwentyTrackBar.Size = new System.Drawing.Size(308, 69);
+            this.underTwentyTrackBar.Size = new System.Drawing.Size(205, 45);
             this.underTwentyTrackBar.TabIndex = 1;
             this.underTwentyTrackBar.TickStyle = System.Windows.Forms.TickStyle.TopLeft;
             this.underTwentyTrackBar.Scroll += new System.EventHandler(this.underTwentyTrackBar_Scroll);
@@ -144,11 +143,10 @@
             // cityNumTrackBar
             // 
             this.cityNumTrackBar.AccessibleDescription = "";
-            this.cityNumTrackBar.Location = new System.Drawing.Point(21, 49);
-            this.cityNumTrackBar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cityNumTrackBar.Location = new System.Drawing.Point(14, 32);
             this.cityNumTrackBar.Maximum = 20;
             this.cityNumTrackBar.Name = "cityNumTrackBar";
-            this.cityNumTrackBar.Size = new System.Drawing.Size(308, 69);
+            this.cityNumTrackBar.Size = new System.Drawing.Size(205, 45);
             this.cityNumTrackBar.TabIndex = 2;
             this.cityNumTrackBar.TabStop = false;
             this.cityNumTrackBar.Tag = "";
@@ -158,30 +156,27 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(14, 48);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(9, 31);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(185, 20);
+            this.label3.Size = new System.Drawing.Size(123, 13);
             this.label3.TabIndex = 5;
             this.label3.Text = "Количество населения";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(14, 152);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(9, 99);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(244, 20);
+            this.label4.Size = new System.Drawing.Size(159, 13);
             this.label4.TabIndex = 6;
             this.label4.Text = "Количество людей младше 20";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(27, 25);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(18, 16);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(167, 20);
+            this.label5.Size = new System.Drawing.Size(110, 13);
             this.label5.TabIndex = 7;
             this.label5.Text = "Количество городов";
             this.label5.Click += new System.EventHandler(this.label5_Click);
@@ -193,10 +188,9 @@
             this.city,
             this.population,
             this.underTwenty});
-            this.givenCitiesGridViewA.Location = new System.Drawing.Point(9, 57);
-            this.givenCitiesGridViewA.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.givenCitiesGridViewA.Location = new System.Drawing.Point(6, 37);
             this.givenCitiesGridViewA.Name = "givenCitiesGridViewA";
-            this.givenCitiesGridViewA.Size = new System.Drawing.Size(550, 154);
+            this.givenCitiesGridViewA.Size = new System.Drawing.Size(367, 100);
             this.givenCitiesGridViewA.TabIndex = 12;
             this.givenCitiesGridViewA.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.givenCitiesGridViewA_CellContentClick);
             // 
@@ -222,10 +216,9 @@
             // sortBtn
             // 
             this.sortBtn.BackColor = System.Drawing.SystemColors.Control;
-            this.sortBtn.Location = new System.Drawing.Point(9, 220);
-            this.sortBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.sortBtn.Location = new System.Drawing.Point(6, 143);
             this.sortBtn.Name = "sortBtn";
-            this.sortBtn.Size = new System.Drawing.Size(188, 54);
+            this.sortBtn.Size = new System.Drawing.Size(125, 35);
             this.sortBtn.TabIndex = 13;
             this.sortBtn.Text = "Сортировать";
             this.sortBtn.UseVisualStyleBackColor = false;
@@ -234,10 +227,9 @@
             // MakeWayBtn
             // 
             this.MakeWayBtn.BackColor = System.Drawing.SystemColors.Control;
-            this.MakeWayBtn.Location = new System.Drawing.Point(699, 220);
-            this.MakeWayBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.MakeWayBtn.Location = new System.Drawing.Point(466, 143);
             this.MakeWayBtn.Name = "MakeWayBtn";
-            this.MakeWayBtn.Size = new System.Drawing.Size(188, 54);
+            this.MakeWayBtn.Size = new System.Drawing.Size(125, 35);
             this.MakeWayBtn.TabIndex = 19;
             this.MakeWayBtn.Text = "Найти транзитные города";
             this.MakeWayBtn.UseVisualStyleBackColor = false;
@@ -246,10 +238,9 @@
             // SortWayBtn
             // 
             this.SortWayBtn.BackColor = System.Drawing.SystemColors.Control;
-            this.SortWayBtn.Location = new System.Drawing.Point(9, 222);
-            this.SortWayBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.SortWayBtn.Location = new System.Drawing.Point(6, 144);
             this.SortWayBtn.Name = "SortWayBtn";
-            this.SortWayBtn.Size = new System.Drawing.Size(188, 54);
+            this.SortWayBtn.Size = new System.Drawing.Size(125, 35);
             this.SortWayBtn.TabIndex = 23;
             this.SortWayBtn.Text = "Сортировать";
             this.SortWayBtn.UseVisualStyleBackColor = false;
@@ -258,10 +249,9 @@
             // mapBtn
             // 
             this.mapBtn.BackColor = System.Drawing.SystemColors.Control;
-            this.mapBtn.Location = new System.Drawing.Point(699, 222);
-            this.mapBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.mapBtn.Location = new System.Drawing.Point(466, 144);
             this.mapBtn.Name = "mapBtn";
-            this.mapBtn.Size = new System.Drawing.Size(188, 54);
+            this.mapBtn.Size = new System.Drawing.Size(125, 35);
             this.mapBtn.TabIndex = 24;
             this.mapBtn.Text = "Построить карту";
             this.mapBtn.UseVisualStyleBackColor = false;
@@ -270,10 +260,9 @@
             // findCitiesBtn
             // 
             this.findCitiesBtn.BackColor = System.Drawing.SystemColors.Control;
-            this.findCitiesBtn.Location = new System.Drawing.Point(498, 275);
-            this.findCitiesBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.findCitiesBtn.Location = new System.Drawing.Point(332, 179);
             this.findCitiesBtn.Name = "findCitiesBtn";
-            this.findCitiesBtn.Size = new System.Drawing.Size(188, 54);
+            this.findCitiesBtn.Size = new System.Drawing.Size(125, 35);
             this.findCitiesBtn.TabIndex = 29;
             this.findCitiesBtn.Text = "Найти города";
             this.findCitiesBtn.UseVisualStyleBackColor = false;
@@ -289,11 +278,9 @@
             this.findGroupBox.Controls.Add(this.citiesHashRBtn);
             this.findGroupBox.Controls.Add(this.underTwentyRBtn);
             this.findGroupBox.Controls.Add(this.populationRBtn);
-            this.findGroupBox.Location = new System.Drawing.Point(32, 122);
-            this.findGroupBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.findGroupBox.Location = new System.Drawing.Point(21, 79);
             this.findGroupBox.Name = "findGroupBox";
-            this.findGroupBox.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.findGroupBox.Size = new System.Drawing.Size(458, 208);
+            this.findGroupBox.Size = new System.Drawing.Size(305, 135);
             this.findGroupBox.TabIndex = 30;
             this.findGroupBox.TabStop = false;
             this.findGroupBox.Text = "Искать по:";
@@ -301,56 +288,52 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(10, 132);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(7, 86);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(31, 20);
+            this.label6.Size = new System.Drawing.Size(21, 13);
             this.label6.TabIndex = 38;
             this.label6.Text = "от:\r\n";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(158, 132);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(105, 86);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(33, 20);
+            this.label1.Size = new System.Drawing.Size(22, 13);
             this.label1.TabIndex = 37;
             this.label1.Text = "до:\r\n";
             // 
             // textBoxPeopleTo
             // 
-            this.textBoxPeopleTo.Location = new System.Drawing.Point(200, 128);
-            this.textBoxPeopleTo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBoxPeopleTo.Location = new System.Drawing.Point(133, 83);
             this.textBoxPeopleTo.Name = "textBoxPeopleTo";
-            this.textBoxPeopleTo.Size = new System.Drawing.Size(96, 26);
+            this.textBoxPeopleTo.Size = new System.Drawing.Size(65, 20);
             this.textBoxPeopleTo.TabIndex = 36;
+            this.textBoxPeopleTo.Text = "3611000";
             // 
             // textBoxPeopleFrom
             // 
-            this.textBoxPeopleFrom.Location = new System.Drawing.Point(51, 128);
-            this.textBoxPeopleFrom.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBoxPeopleFrom.Location = new System.Drawing.Point(34, 83);
             this.textBoxPeopleFrom.Name = "textBoxPeopleFrom";
-            this.textBoxPeopleFrom.Size = new System.Drawing.Size(96, 26);
+            this.textBoxPeopleFrom.Size = new System.Drawing.Size(65, 20);
             this.textBoxPeopleFrom.TabIndex = 35;
+            this.textBoxPeopleFrom.Text = "0";
             // 
             // labelAmountPeopleInCity
             // 
             this.labelAmountPeopleInCity.AutoSize = true;
-            this.labelAmountPeopleInCity.Location = new System.Drawing.Point(10, 102);
-            this.labelAmountPeopleInCity.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelAmountPeopleInCity.Location = new System.Drawing.Point(7, 66);
             this.labelAmountPeopleInCity.Name = "labelAmountPeopleInCity";
-            this.labelAmountPeopleInCity.Size = new System.Drawing.Size(255, 20);
+            this.labelAmountPeopleInCity.Size = new System.Drawing.Size(174, 13);
             this.labelAmountPeopleInCity.TabIndex = 34;
             this.labelAmountPeopleInCity.Text = "Диапазон выбраного параметра\r\n";
             // 
             // citiesHashRBtn
             // 
             this.citiesHashRBtn.AutoSize = true;
-            this.citiesHashRBtn.Location = new System.Drawing.Point(9, 168);
-            this.citiesHashRBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.citiesHashRBtn.Location = new System.Drawing.Point(6, 109);
             this.citiesHashRBtn.Name = "citiesHashRBtn";
-            this.citiesHashRBtn.Size = new System.Drawing.Size(308, 24);
+            this.citiesHashRBtn.Size = new System.Drawing.Size(207, 17);
             this.citiesHashRBtn.TabIndex = 33;
             this.citiesHashRBtn.TabStop = true;
             this.citiesHashRBtn.Text = "Вычисленому балу качества города";
@@ -359,10 +342,9 @@
             // underTwentyRBtn
             // 
             this.underTwentyRBtn.AutoSize = true;
-            this.underTwentyRBtn.Location = new System.Drawing.Point(9, 65);
-            this.underTwentyRBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.underTwentyRBtn.Location = new System.Drawing.Point(6, 42);
             this.underTwentyRBtn.Name = "underTwentyRBtn";
-            this.underTwentyRBtn.Size = new System.Drawing.Size(269, 24);
+            this.underTwentyRBtn.Size = new System.Drawing.Size(177, 17);
             this.underTwentyRBtn.TabIndex = 32;
             this.underTwentyRBtn.TabStop = true;
             this.underTwentyRBtn.Text = "Количество людей младше 20";
@@ -371,10 +353,9 @@
             // populationRBtn
             // 
             this.populationRBtn.AutoSize = true;
-            this.populationRBtn.Location = new System.Drawing.Point(9, 29);
-            this.populationRBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.populationRBtn.Location = new System.Drawing.Point(6, 19);
             this.populationRBtn.Name = "populationRBtn";
-            this.populationRBtn.Size = new System.Drawing.Size(118, 24);
+            this.populationRBtn.Size = new System.Drawing.Size(81, 17);
             this.populationRBtn.TabIndex = 31;
             this.populationRBtn.TabStop = true;
             this.populationRBtn.Text = "Население";
@@ -384,11 +365,9 @@
             // 
             this.sortGroupBox.Controls.Add(this.populationRBtn2);
             this.sortGroupBox.Controls.Add(this.underTwentyRBtn2);
-            this.sortGroupBox.Location = new System.Drawing.Point(291, 220);
-            this.sortGroupBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.sortGroupBox.Location = new System.Drawing.Point(194, 143);
             this.sortGroupBox.Name = "sortGroupBox";
-            this.sortGroupBox.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.sortGroupBox.Size = new System.Drawing.Size(288, 105);
+            this.sortGroupBox.Size = new System.Drawing.Size(192, 68);
             this.sortGroupBox.TabIndex = 34;
             this.sortGroupBox.TabStop = false;
             this.sortGroupBox.Text = "Сортировать по:";
@@ -396,10 +375,9 @@
             // populationRBtn2
             // 
             this.populationRBtn2.AutoSize = true;
-            this.populationRBtn2.Location = new System.Drawing.Point(9, 65);
-            this.populationRBtn2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.populationRBtn2.Location = new System.Drawing.Point(6, 42);
             this.populationRBtn2.Name = "populationRBtn2";
-            this.populationRBtn2.Size = new System.Drawing.Size(118, 24);
+            this.populationRBtn2.Size = new System.Drawing.Size(81, 17);
             this.populationRBtn2.TabIndex = 33;
             this.populationRBtn2.TabStop = true;
             this.populationRBtn2.Text = "Население";
@@ -408,10 +386,9 @@
             // underTwentyRBtn2
             // 
             this.underTwentyRBtn2.AutoSize = true;
-            this.underTwentyRBtn2.Location = new System.Drawing.Point(9, 29);
-            this.underTwentyRBtn2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.underTwentyRBtn2.Location = new System.Drawing.Point(6, 19);
             this.underTwentyRBtn2.Name = "underTwentyRBtn2";
-            this.underTwentyRBtn2.Size = new System.Drawing.Size(269, 24);
+            this.underTwentyRBtn2.Size = new System.Drawing.Size(177, 17);
             this.underTwentyRBtn2.TabIndex = 32;
             this.underTwentyRBtn2.TabStop = true;
             this.underTwentyRBtn2.Text = "Количество людей младше 20";
@@ -424,10 +401,9 @@
             this.dataGridViewTextBoxColumn7,
             this.dataGridViewTextBoxColumn8,
             this.dataGridViewTextBoxColumn9});
-            this.tourGridViewB.Location = new System.Drawing.Point(9, 45);
-            this.tourGridViewB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tourGridViewB.Location = new System.Drawing.Point(6, 29);
             this.tourGridViewB.Name = "tourGridViewB";
-            this.tourGridViewB.Size = new System.Drawing.Size(550, 154);
+            this.tourGridViewB.Size = new System.Drawing.Size(367, 100);
             this.tourGridViewB.TabIndex = 39;
             this.tourGridViewB.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tourGridViewB_CellContentClick);
             // 
@@ -454,10 +430,9 @@
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn10});
-            this.gottenGridViewC.Location = new System.Drawing.Point(699, 57);
-            this.gottenGridViewC.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gottenGridViewC.Location = new System.Drawing.Point(466, 37);
             this.gottenGridViewC.Name = "gottenGridViewC";
-            this.gottenGridViewC.Size = new System.Drawing.Size(550, 154);
+            this.gottenGridViewC.Size = new System.Drawing.Size(367, 100);
             this.gottenGridViewC.TabIndex = 40;
             // 
             // dataGridViewTextBoxColumn1
@@ -483,10 +458,9 @@
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4,
             this.dataGridViewTextBoxColumn11});
-            this.finalGridViewD.Location = new System.Drawing.Point(699, 45);
-            this.finalGridViewD.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.finalGridViewD.Location = new System.Drawing.Point(466, 29);
             this.finalGridViewD.Name = "finalGridViewD";
-            this.finalGridViewD.Size = new System.Drawing.Size(550, 154);
+            this.finalGridViewD.Size = new System.Drawing.Size(367, 100);
             this.finalGridViewD.TabIndex = 41;
             // 
             // dataGridViewTextBoxColumn3
@@ -508,10 +482,9 @@
             // PreperToFindButton
             // 
             this.PreperToFindButton.BackColor = System.Drawing.SystemColors.Control;
-            this.PreperToFindButton.Location = new System.Drawing.Point(18, 275);
-            this.PreperToFindButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.PreperToFindButton.Location = new System.Drawing.Point(12, 179);
             this.PreperToFindButton.Name = "PreperToFindButton";
-            this.PreperToFindButton.Size = new System.Drawing.Size(268, 54);
+            this.PreperToFindButton.Size = new System.Drawing.Size(179, 35);
             this.PreperToFindButton.TabIndex = 42;
             this.PreperToFindButton.Text = "Подготовить города из базы к последующему поиску";
             this.PreperToFindButton.UseVisualStyleBackColor = false;
@@ -520,10 +493,9 @@
             // underTwentyRBtn3
             // 
             this.underTwentyRBtn3.AutoSize = true;
-            this.underTwentyRBtn3.Location = new System.Drawing.Point(9, 29);
-            this.underTwentyRBtn3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.underTwentyRBtn3.Location = new System.Drawing.Point(6, 19);
             this.underTwentyRBtn3.Name = "underTwentyRBtn3";
-            this.underTwentyRBtn3.Size = new System.Drawing.Size(269, 24);
+            this.underTwentyRBtn3.Size = new System.Drawing.Size(177, 17);
             this.underTwentyRBtn3.TabIndex = 32;
             this.underTwentyRBtn3.TabStop = true;
             this.underTwentyRBtn3.Text = "Количество людей младше 20";
@@ -532,10 +504,9 @@
             // populationRBtn3
             // 
             this.populationRBtn3.AutoSize = true;
-            this.populationRBtn3.Location = new System.Drawing.Point(9, 65);
-            this.populationRBtn3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.populationRBtn3.Location = new System.Drawing.Point(6, 42);
             this.populationRBtn3.Name = "populationRBtn3";
-            this.populationRBtn3.Size = new System.Drawing.Size(118, 24);
+            this.populationRBtn3.Size = new System.Drawing.Size(81, 17);
             this.populationRBtn3.TabIndex = 34;
             this.populationRBtn3.TabStop = true;
             this.populationRBtn3.Text = "Население";
@@ -545,11 +516,9 @@
             // 
             this.sortSecGroupBox.Controls.Add(this.populationRBtn3);
             this.sortSecGroupBox.Controls.Add(this.underTwentyRBtn3);
-            this.sortSecGroupBox.Location = new System.Drawing.Point(291, 208);
-            this.sortSecGroupBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.sortSecGroupBox.Location = new System.Drawing.Point(194, 135);
             this.sortSecGroupBox.Name = "sortSecGroupBox";
-            this.sortSecGroupBox.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.sortSecGroupBox.Size = new System.Drawing.Size(288, 105);
+            this.sortSecGroupBox.Size = new System.Drawing.Size(192, 68);
             this.sortSecGroupBox.TabIndex = 35;
             this.sortSecGroupBox.TabStop = false;
             this.sortSecGroupBox.Text = "Сортировать по:";
@@ -557,46 +526,42 @@
             // labelAmountCities
             // 
             this.labelAmountCities.AutoSize = true;
-            this.labelAmountCities.Location = new System.Drawing.Point(404, 83);
-            this.labelAmountCities.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelAmountCities.Location = new System.Drawing.Point(269, 54);
             this.labelAmountCities.Name = "labelAmountCities";
-            this.labelAmountCities.Size = new System.Drawing.Size(152, 20);
+            this.labelAmountCities.Size = new System.Drawing.Size(105, 13);
             this.labelAmountCities.TabIndex = 43;
             this.labelAmountCities.Text = "Текущее значение:";
             // 
             // labelAmountPeople
             // 
             this.labelAmountPeople.AutoSize = true;
-            this.labelAmountPeople.Location = new System.Drawing.Point(339, 83);
-            this.labelAmountPeople.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelAmountPeople.Location = new System.Drawing.Point(226, 54);
             this.labelAmountPeople.Name = "labelAmountPeople";
-            this.labelAmountPeople.Size = new System.Drawing.Size(152, 20);
+            this.labelAmountPeople.Size = new System.Drawing.Size(105, 13);
             this.labelAmountPeople.TabIndex = 44;
             this.labelAmountPeople.Text = "Текущее значение:";
             // 
             // labelAmountPeopleUnderTwenty
             // 
             this.labelAmountPeopleUnderTwenty.AutoSize = true;
-            this.labelAmountPeopleUnderTwenty.Location = new System.Drawing.Point(339, 198);
-            this.labelAmountPeopleUnderTwenty.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelAmountPeopleUnderTwenty.Location = new System.Drawing.Point(226, 129);
             this.labelAmountPeopleUnderTwenty.Name = "labelAmountPeopleUnderTwenty";
-            this.labelAmountPeopleUnderTwenty.Size = new System.Drawing.Size(152, 20);
+            this.labelAmountPeopleUnderTwenty.Size = new System.Drawing.Size(105, 13);
             this.labelAmountPeopleUnderTwenty.TabIndex = 45;
             this.labelAmountPeopleUnderTwenty.Text = "Текущее значение:";
             // 
             // groupBoxSearchAmountCities
             // 
+            this.groupBoxSearchAmountCities.Controls.Add(this.clearBtn);
             this.groupBoxSearchAmountCities.Controls.Add(this.pictureBox3);
             this.groupBoxSearchAmountCities.Controls.Add(this.labelAmountCities);
             this.groupBoxSearchAmountCities.Controls.Add(this.cityNumTrackBar);
             this.groupBoxSearchAmountCities.Controls.Add(this.label5);
             this.groupBoxSearchAmountCities.Controls.Add(this.findGroupBox);
             this.groupBoxSearchAmountCities.Controls.Add(this.findCitiesBtn);
-            this.groupBoxSearchAmountCities.Location = new System.Drawing.Point(660, 11);
-            this.groupBoxSearchAmountCities.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBoxSearchAmountCities.Location = new System.Drawing.Point(440, 7);
             this.groupBoxSearchAmountCities.Name = "groupBoxSearchAmountCities";
-            this.groupBoxSearchAmountCities.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBoxSearchAmountCities.Size = new System.Drawing.Size(696, 338);
+            this.groupBoxSearchAmountCities.Size = new System.Drawing.Size(464, 220);
             this.groupBoxSearchAmountCities.TabIndex = 46;
             this.groupBoxSearchAmountCities.TabStop = false;
             this.groupBoxSearchAmountCities.Text = "Поиск количества городов по выброному параметру";
@@ -605,10 +570,9 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = global::ManagerForCreatingBestTour.Resource1.hint2;
-            this.pictureBox3.Location = new System.Drawing.Point(446, 0);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox3.Location = new System.Drawing.Point(297, 0);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(30, 31);
+            this.pictureBox3.Size = new System.Drawing.Size(20, 20);
             this.pictureBox3.TabIndex = 56;
             this.pictureBox3.TabStop = false;
             this.toolTipForSearchCities.SetToolTip(this.pictureBox3, resources.GetString("pictureBox3.ToolTip"));
@@ -623,11 +587,9 @@
             this.groupBoxPriorityToCityParameters.Controls.Add(this.labelAmountPeople);
             this.groupBoxPriorityToCityParameters.Controls.Add(this.underTwentyTrackBar);
             this.groupBoxPriorityToCityParameters.Controls.Add(this.PreperToFindButton);
-            this.groupBoxPriorityToCityParameters.Location = new System.Drawing.Point(18, 11);
-            this.groupBoxPriorityToCityParameters.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBoxPriorityToCityParameters.Location = new System.Drawing.Point(12, 7);
             this.groupBoxPriorityToCityParameters.Name = "groupBoxPriorityToCityParameters";
-            this.groupBoxPriorityToCityParameters.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBoxPriorityToCityParameters.Size = new System.Drawing.Size(556, 338);
+            this.groupBoxPriorityToCityParameters.Size = new System.Drawing.Size(371, 220);
             this.groupBoxPriorityToCityParameters.TabIndex = 47;
             this.groupBoxPriorityToCityParameters.TabStop = false;
             this.groupBoxPriorityToCityParameters.Text = "Оценка важности параметров городов";
@@ -636,10 +598,9 @@
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.Image = global::ManagerForCreatingBestTour.Resource1.hint2;
-            this.pictureBox4.Location = new System.Drawing.Point(362, 0);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox4.Location = new System.Drawing.Point(241, 0);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(30, 31);
+            this.pictureBox4.Size = new System.Drawing.Size(20, 20);
             this.pictureBox4.TabIndex = 53;
             this.pictureBox4.TabStop = false;
             this.toolTipForGrpBoxCityParametrs.SetToolTip(this.pictureBox4, "Оценка параметра показывает на сколько важен для вас этот параметр при выборе гор" +
@@ -653,11 +614,9 @@
             this.groupBoxSelectMandatoryCityToVisit.Controls.Add(this.sortGroupBox);
             this.groupBoxSelectMandatoryCityToVisit.Controls.Add(this.gottenGridViewC);
             this.groupBoxSelectMandatoryCityToVisit.Controls.Add(this.MakeWayBtn);
-            this.groupBoxSelectMandatoryCityToVisit.Location = new System.Drawing.Point(18, 349);
-            this.groupBoxSelectMandatoryCityToVisit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBoxSelectMandatoryCityToVisit.Location = new System.Drawing.Point(12, 227);
             this.groupBoxSelectMandatoryCityToVisit.Name = "groupBoxSelectMandatoryCityToVisit";
-            this.groupBoxSelectMandatoryCityToVisit.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBoxSelectMandatoryCityToVisit.Size = new System.Drawing.Size(1338, 334);
+            this.groupBoxSelectMandatoryCityToVisit.Size = new System.Drawing.Size(892, 217);
             this.groupBoxSelectMandatoryCityToVisit.TabIndex = 48;
             this.groupBoxSelectMandatoryCityToVisit.TabStop = false;
             this.groupBoxSelectMandatoryCityToVisit.Text = "Выбор обязательных городов для посещения";
@@ -666,10 +625,9 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = global::ManagerForCreatingBestTour.Resource1.hint2;
-            this.pictureBox2.Location = new System.Drawing.Point(392, 0);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox2.Location = new System.Drawing.Point(261, 0);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(30, 31);
+            this.pictureBox2.Size = new System.Drawing.Size(20, 20);
             this.pictureBox2.TabIndex = 55;
             this.pictureBox2.TabStop = false;
             this.toolTipForSelectCities.SetToolTip(this.pictureBox2, resources.GetString("pictureBox2.ToolTip"));
@@ -682,11 +640,9 @@
             this.groupBoxDefinitionListOfCities.Controls.Add(this.SortWayBtn);
             this.groupBoxDefinitionListOfCities.Controls.Add(this.mapBtn);
             this.groupBoxDefinitionListOfCities.Controls.Add(this.finalGridViewD);
-            this.groupBoxDefinitionListOfCities.Location = new System.Drawing.Point(18, 692);
-            this.groupBoxDefinitionListOfCities.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBoxDefinitionListOfCities.Location = new System.Drawing.Point(12, 450);
             this.groupBoxDefinitionListOfCities.Name = "groupBoxDefinitionListOfCities";
-            this.groupBoxDefinitionListOfCities.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBoxDefinitionListOfCities.Size = new System.Drawing.Size(1338, 322);
+            this.groupBoxDefinitionListOfCities.Size = new System.Drawing.Size(892, 209);
             this.groupBoxDefinitionListOfCities.TabIndex = 49;
             this.groupBoxDefinitionListOfCities.TabStop = false;
             this.groupBoxDefinitionListOfCities.Text = "Определение списка городов для посещения";
@@ -695,10 +651,9 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::ManagerForCreatingBestTour.Resource1.hint2;
-            this.pictureBox1.Location = new System.Drawing.Point(375, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox1.Location = new System.Drawing.Point(250, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(30, 31);
+            this.pictureBox1.Size = new System.Drawing.Size(20, 20);
             this.pictureBox1.TabIndex = 54;
             this.pictureBox1.TabStop = false;
             this.toolTipForDefenitionListCities.SetToolTip(this.pictureBox1, "В первой табличке отображается полный список городов вместе со списком транзитных" +
@@ -725,18 +680,28 @@
             this.toolTipForDefenitionListCities.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
             this.toolTipForDefenitionListCities.ToolTipTitle = "Подсказка:";
             // 
+            // clearBtn
+            // 
+            this.clearBtn.BackColor = System.Drawing.SystemColors.Control;
+            this.clearBtn.Location = new System.Drawing.Point(332, 139);
+            this.clearBtn.Name = "clearBtn";
+            this.clearBtn.Size = new System.Drawing.Size(125, 35);
+            this.clearBtn.TabIndex = 57;
+            this.clearBtn.Text = "Очистить параметры";
+            this.clearBtn.UseVisualStyleBackColor = false;
+            this.clearBtn.Click += new System.EventHandler(this.clearBtn_Click);
+            // 
             // ManagerForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1377, 1018);
+            this.ClientSize = new System.Drawing.Size(913, 487);
             this.Controls.Add(this.groupBoxDefinitionListOfCities);
             this.Controls.Add(this.groupBoxSelectMandatoryCityToVisit);
             this.Controls.Add(this.groupBoxPriorityToCityParameters);
             this.Controls.Add(this.groupBoxSearchAmountCities);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "ManagerForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Best Tour Manager";
@@ -828,6 +793,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn city;
         private System.Windows.Forms.DataGridViewTextBoxColumn population;
         private System.Windows.Forms.DataGridViewTextBoxColumn underTwenty;
+        private System.Windows.Forms.Button clearBtn;
     }
 }
 

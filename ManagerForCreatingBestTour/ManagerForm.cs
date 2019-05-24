@@ -36,22 +36,36 @@ namespace ManagerForCreatingBestTour
             int amountCytisWichWined = cityNumTrackBar.Value;
             if (populationRBtn.Checked)
             {
-                if (textBoxPeopleFrom.Text==""&&textBoxPeopleTo.Text=="")
-                {
-                    MessageBox.Show("минимальное и максимальное значения не могут быть пустыми");
-                    return;
+                try
+                {                    
+                    if (textBoxPeopleFrom.Text == "")
+                    {
+                        MessageBox.Show("Минимальное и максимальное значения не могут быть пустыми.");
+                        textBoxPeopleFrom.Text = "0";
+                        return;
+                    }
+                    if (textBoxPeopleTo.Text == "")
+                    {
+                        MessageBox.Show("Минимальное и максимальное значения не могут быть пустыми.");
+                        textBoxPeopleTo.Text = "3611000";
+                        return;
+                    }
+                    A =citiesBTree.BestCitiesByPopulation(Convert.ToInt32(textBoxPeopleFrom.Text), Convert.ToInt32(textBoxPeopleTo.Text), cityNumTrackBar.Value);
+                    //!!!1 вытащить из дерева нужный список добавить на офрму нужные текст боксы для данных аналоично
+                    //!!!1 для последующих ийфов. Текстбоксы с мин и макс занчением можно сделать общиедля всех
+                    groupBoxSearchAmountCities.Enabled = false;
+                    groupBoxSelectMandatoryCityToVisit.Enabled = true;
                 }
-                A=citiesBTree.BestCitiesByPopulation(Convert.ToInt32(textBoxPeopleFrom.Text), Convert.ToInt32(textBoxPeopleTo.Text), cityNumTrackBar.Value);
-                //!!!1 вытащить из дерева нужный список добавить на офрму нужные текст боксы для данных аналоично
-                //!!!1 для последующих ийфов. Текстбоксы с мин и макс занчением можно сделать общиедля всех
-                groupBoxSearchAmountCities.Enabled = false;
-                groupBoxSelectMandatoryCityToVisit.Enabled = true;
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
             }
             else if (underTwentyRBtn.Checked)
             {
                 if (textBoxPeopleFrom.Text == "" && textBoxPeopleTo.Text == "")
                 {
-                    MessageBox.Show("минимальное и максимальное значения не могут быть пустыми");
+                    MessageBox.Show("Минимальное и максимальное значения не могут быть пустыми.");
                     return;
                 }
                 A = citiesBTree.BestCitiesByPopulationYounger20(Convert.ToInt32(textBoxPeopleFrom.Text), Convert.ToInt32(textBoxPeopleTo.Text), cityNumTrackBar.Value);
@@ -87,7 +101,7 @@ namespace ManagerForCreatingBestTour
                 givenCitiesGridViewA[2, a].Value = city.AmountPeopleYoungerTwenty ;
                 givenCitiesGridViewA[1, a].Value = city.AmountPeople;
                 a++;
-            }
+            }           
         }
         private void ShouA()
         {
@@ -312,6 +326,12 @@ namespace ManagerForCreatingBestTour
             //}
             C = CClon;
             ShouC();
+        }
+
+        private void clearBtn_Click(object sender, EventArgs e)
+        {
+            textBoxPeopleFrom.Clear();
+            textBoxPeopleTo.Clear();
         }
     }
 }
