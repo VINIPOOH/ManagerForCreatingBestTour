@@ -113,6 +113,12 @@ namespace ManagerForCreatingBestTour
                 }
             }
         }
-       
+
+        private void BackButon_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ManagerForm managerForm = new ManagerForm();
+            managerForm.Show();
+        }
     }
 }
