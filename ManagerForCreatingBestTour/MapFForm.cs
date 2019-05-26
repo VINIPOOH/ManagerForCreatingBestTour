@@ -32,83 +32,83 @@ namespace ManagerForCreatingBestTour
                 {
                     case "Berlin":
                         berlinBtn.BackColor = Color.Tomato;
-                        berlinBtn.Text = i + "|" + qrentCity.Name;
+                        berlinBtn.Text = i + "|" + berlinBtn.Text;
                         break;
                     case "Kiev":
                         kievBtn.BackColor = Color.Tomato;
-                        kievBtn.Text = i + "|" + qrentCity.Name;
+                        kievBtn.Text = i + "|" + kievBtn.Text;
                         break;
                     case "Minsk":
                         minskBtn.BackColor = Color.Tomato;
-                        minskBtn.Text = i + "|" + qrentCity.Name;
+                        minskBtn.Text = i + "|" + minskBtn.Text;
                         break;
                     case "Wien":
                         wienBtn.BackColor = Color.Tomato;
-                        wienBtn.Text = i + "|" + qrentCity.Name;
+                        wienBtn.Text = i + "|" + wienBtn.Text;
                         break;
                     case "Prague":
                         pragueBtn.BackColor = Color.Tomato;
-                        pragueBtn.Text = i + "|" + qrentCity.Name;
+                        pragueBtn.Text = i + "|" + pragueBtn.Text;
                         break;
                     case "Warsaw":
                         warsawBtn.BackColor = Color.Tomato;
-                        warsawBtn.Text = i + "|" + qrentCity.Name;
+                        warsawBtn.Text = i + "|" + warsawBtn.Text;
                         break;
                     case "Budapest":
                         budapestBtn.BackColor = Color.Tomato;
-                        budapestBtn.Text = i + "|" + qrentCity.Name;
+                        budapestBtn.Text = i + "|" + budapestBtn.Text;
                         break;
                     case "Odesa":
                         odesaBtn.BackColor = Color.Tomato;
-                        odesaBtn.Text = i + "|" + qrentCity.Name;
+                        odesaBtn.Text = i + "|" + odesaBtn.Text;
                         break;
                     case "Kishinev":
                         kishinevBtn.BackColor = Color.Tomato;
-                        kishinevBtn.Text = i + "|" + qrentCity.Name;
+                        kishinevBtn.Text = i + "|" + kishinevBtn.Text;
                         break;
                     case "Lviv":
                         lvivBtn.BackColor = Color.Tomato;
-                        lvivBtn.Text = i + "|" + qrentCity.Name;
+                        lvivBtn.Text = i + "|" + lvivBtn.Text;
                         break;
                     case "Gdansk":
                         gdanskBtn.BackColor = Color.Tomato;
-                        gdanskBtn.Text = i + "|" + qrentCity.Name;
+                        gdanskBtn.Text = i + "|" + gdanskBtn.Text;
                         break;
                     case "Krakov":
                         krakovBtn.BackColor = Color.Tomato;
-                        krakovBtn.Text = i + "|" + qrentCity.Name;
+                        krakovBtn.Text = i + "|" + krakovBtn.Text;
                         break;
                     case "Koshize":
                         koshizeBtn.BackColor = Color.Tomato;
-                        koshizeBtn.Text = i + "|" + qrentCity.Name;
+                        koshizeBtn.Text = i + "|" + koshizeBtn.Text;
                         break;
                     case "Zagreb":
                         zagrebBtn.BackColor = Color.Tomato;
-                        zagrebBtn.Text = i + "|" + qrentCity.Name;
+                        zagrebBtn.Text = i + "|" + zagrebBtn.Text;
                         break;
                     case "Venice":
                         veniceBtn.BackColor = Color.Tomato;
-                        veniceBtn.Text = i + "|" + qrentCity.Name;
+                        veniceBtn.Text = i + "|" + veniceBtn.Text;
                         break;
                     case "Munchen":
                         munchenBtn.BackColor = Color.Tomato;
-                        munchenBtn.Text = i + "|" + qrentCity.Name;
+                        munchenBtn.Text = i + "|" + munchenBtn.Text;
                         break;
                     case "Zurich":
                         zurichBtn.BackColor = Color.Tomato;
-                        zurichBtn.Text = i + "|" + qrentCity.Name;
+                        zurichBtn.Text = i + "|" + zurichBtn.Text;
                         break;
                     case "Nurnberg":
                         nurnbergBtn.BackColor = Color.Tomato;
-                        nurnbergBtn.Text = i + "|" + qrentCity.Name;
+                        nurnbergBtn.Text = i + "|" + nurnbergBtn.Text;
                         break;
                     case "Koln":
                         kolnBtn.BackColor = Color.Tomato;
-                        kolnBtn.Text = i + "|" + qrentCity.Name;
+                        kolnBtn.Text = i + "|" + kolnBtn.Text;
                         break;
                     case "Bremen":
                         bremenBtn.BackColor = Color.Tomato;
-                        bremenBtn.Text = i + "|" + qrentCity.Name;
+                        bremenBtn.Text = i + "|" + bremenBtn.Text;
                         break;
                 }
             }
