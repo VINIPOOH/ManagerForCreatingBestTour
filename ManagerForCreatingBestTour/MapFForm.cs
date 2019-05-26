@@ -42,7 +42,7 @@ namespace ManagerForCreatingBestTour
                         minskBtn.BackColor = Color.Tomato;
                         minskBtn.Text = i + "|" + minskBtn.Text;
                         break;
-                    case "Wien":
+                    case "Vien":
                         wienBtn.BackColor = Color.Tomato;
                         wienBtn.Text = i + "|" + wienBtn.Text;
                         break;
@@ -54,7 +54,7 @@ namespace ManagerForCreatingBestTour
                         warsawBtn.BackColor = Color.Tomato;
                         warsawBtn.Text = i + "|" + warsawBtn.Text;
                         break;
-                    case "Budapest":
+                    case "Budapesht":
                         budapestBtn.BackColor = Color.Tomato;
                         budapestBtn.Text = i + "|" + budapestBtn.Text;
                         break;
